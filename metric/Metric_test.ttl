@@ -14,7 +14,7 @@
     dcterms:identifier "https://github.com/OSTrails/assessment-component-metadata-records/tree/main/metric/Metric_test.ttl"^^xsd:string ;
     dcterms:title "Metric"^^xsd:string ;
     rdfs:label "Metric1"^^xsd:string ;
-    vivo:abbreviation "Metric"^^xsd:string ;
+    vivo:abbreviation "Metric1"^^xsd:string ;
     dcterms:description """Metric mocked description"""^^xsd:string ;
     dcat:keyword <http://www.fairsharing.org/ontology/domain/DRAO_0000281>;
     dcat:theme  <http://purl.obolibrary.org/obo/NCIT_C17039>; 
