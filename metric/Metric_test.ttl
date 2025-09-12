@@ -15,7 +15,7 @@
     dcterms:title "Metric"^^xsd:string ;
     rdfs:label "Metric1"^^xsd:string ;
     vivo:abbreviation "Metric1"^^xsd:string ;
-    dcterms:description """Metric mocked description"""^^xsd:string ;
+    dcterms:description """Metric mocked metadata description"""^^xsd:string ;
     dcat:keyword <http://www.fairsharing.org/ontology/domain/DRAO_0000281>;
     dcat:theme  <http://purl.obolibrary.org/obo/NCIT_C17039>; 
     dcat:version "0.0.5"^^xsd:string ;
