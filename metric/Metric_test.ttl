@@ -13,7 +13,7 @@
 <https://github.com/OSTrails/assessment-component-metadata-records/tree/main/metric/Metric_test.ttl> a ftr:Benchmark ;
     dcterms:identifier "https://github.com/OSTrails/assessment-component-metadata-records/tree/main/metric/Metric_test.ttl"^^xsd:string ;
     dcterms:title "Metric"^^xsd:string ;
-    rdfs:label "Metric1"^^xsd:string ;
+    rdfs:label "Metric11"^^xsd:string ;
     vivo:abbreviation "Metric1"^^xsd:string ;
     dcterms:description """Metric mocked metadata description"""^^xsd:string ;
     dcat:keyword <http://www.fairsharing.org/ontology/domain/DRAO_0000281>;
