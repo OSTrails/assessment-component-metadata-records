@@ -14,10 +14,10 @@
 
 <https://github.com/OSTrails/assessment-component-metadata-records/tree/main/metric/Met1.ttl> a dqv:Metric ;
     dcterms:identifier "https://github.com/OSTrails/assessment-component-metadata-records/tree/main/metric/Met1.ttl"^^xsd:string ;
-    dcterms:title "Metric"^^xsd:string ;
+    dcterms:title "Metric2"^^xsd:string ;
     rdfs:label "Met1"^^xsd:string ;
     vivo:abbreviation "Met1"^^xsd:string ;
-    dcterms:description """Metric description"""^^xsd:string ;
+    dcterms:description """Metric description 2"""^^xsd:string ;
     dcat:keyword "FAIR"^^xsd:string, "Keyy22"^^xsd:string, "Keyy3"^^xsd:string ;
     dcat:theme <http://purl.obolibrary.org/obo/NCIT_C17039>, <http://purl.obolibrary.org/obo/NCIT_C17039999> ;
     ftr:inDimension <https://doi.org/10.25504/FAIRsharing.a2cea7>, <https://doi.org/10.25504/FAIRsharing.e05e98>, <https://doi.org/10.25504/FAIRsharing.820324> ;
@@ -55,3 +55,5 @@
 <http://purl.obolibrary.org/obo/test> a ftr:Test, dcat:DataService .    
 
 <http://purl.obolibrary.org/obo/benchmark> a ftr:Benchmark .
+
+
