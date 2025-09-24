@@ -1,0 +1,57 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ftr: <https://w3id.org/ftr#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+@prefix dpv: <https://w3id.org/dpv#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+<https://github.com/OSTrails/assessment-component-metadata-records/tree/main/metric/Met1.ttl> a dqv:Metric ;
+    dcterms:identifier "https://github.com/OSTrails/assessment-component-metadata-records/tree/main/metric/Met1.ttl"^^xsd:string ;
+    dcterms:title "Metric"^^xsd:string ;
+    rdfs:label "Met1"^^xsd:string ;
+    vivo:abbreviation "Met1"^^xsd:string ;
+    dcterms:description """Metric description"""^^xsd:string ;
+    dcat:keyword "FAIR"^^xsd:string, "Keyy22"^^xsd:string, "Keyy3"^^xsd:string ;
+    dcat:theme <http://purl.obolibrary.org/obo/NCIT_C17039>, <http://purl.obolibrary.org/obo/NCIT_C17039999> ;
+    ftr:inDimension <https://doi.org/10.25504/FAIRsharing.a2cea7>, <https://doi.org/10.25504/FAIRsharing.e05e98>, <https://doi.org/10.25504/FAIRsharing.820324> ;
+    dcat:version "0.0.5"^^xsd:string ;
+    adms:versionNotes "Met1"^^xsd:string ;
+    dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
+    ftr:status "Active"@en ;
+    dcat:landingPage <http://www.fairsharing.org/ontology/landing> ;
+    
+    
+    
+    ftr:supportedBy  <www.silicon.es>; 
+    dpv:IsApplicableFor <https://vocabularies.coar-repositories.org/resource_types/c_ab20/>;
+      
+    sio:SIO_000234 <http://purl.obolibrary.org/obo/test> ;
+    
+    ftr:hasBenchmark <http://purl.obolibrary.org/obo/benchmark> ;
+    
+    
+    
+    ftr:hasPositiveValidation <http://purl.obolibrary.org/obo/positive>; 
+    ftr:hasNegativeValidation <http://purl.obolibrary.org/obo/negative>; 
+    dcat:contactPoint  <https://orcid.org/0000-0001-5974-589X>  . 
+
+
+
+<https://orcid.org/0000-0001-5974-589X> a vcard:Individual ;
+    vcard:fn "Pablo Alarcón-Moreno"^^xsd:string ;
+    vcard:hasEmail <mailto:pablo.alarcon@upm.es> .
+    
+
+
+
+
+<http://purl.obolibrary.org/obo/test> a ftr:Test, dcat:DataService .    
+
+<http://purl.obolibrary.org/obo/benchmark> a ftr:Benchmark .
