@@ -3,9 +3,6 @@ name: Generate folder indexes
 on:
   push:
     branches: [main]
-    paths:
-      - '**.ttl'
-      - '.github/workflows/generate-indexes.yml'
 
 jobs:
   build:
@@ -25,17 +22,18 @@ jobs:
           import os
           from pathlib import Path
 
-          # Folders to process
           folders = ["test", "metric", "benchmark", "algorithm"]
 
           for folder in folders:
               path = Path(folder)
               if not path.exists():
+                  print(f"Folder '{folder}' not found, skipping.")
                   continue
 
               ttl_files = sorted([f.name for f in path.glob("*.ttl")])
-              title = folder.capitalize() + " records"
+              print(f"Found {len(ttl_files)} .ttl files in {folder}: {ttl_files}")
 
+              title = folder.capitalize() + " records"
               html = [
                   "<!DOCTYPE html>",
                   "<html>",
@@ -56,7 +54,14 @@ jobs:
               ]
 
               index_path = path / "index.html"
-              index_path.write_text("\n".join(html), encoding="utf-8")
+              old_content = index_path.read_text(encoding="utf-8") if index_path.exists() else ""
+              new_content = "\n".join(html)
+              if new_content.strip() == old_content.strip():
+                  print(f"No change for {folder}/index.html")
+              else:
+                  print(f"Updating {folder}/index.html")
+                  index_path.write_text(new_content, encoding="utf-8")
+
 
       - name: Commit and push changes
         run: |
