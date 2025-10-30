@@ -29,7 +29,7 @@
     dcat:endpointDescription <http://creativecommons.org/licenses/by/4.0/endpontdescription> ;
     
     doap:repository <http://creativecommons.org/licenses/by/4.0/repo> ;
-    ftr:supportedBy  <https://whythisisnotaurl.com>; 
+    ftr:supportedBy  <https://creativecommons.org/tool>; 
     dpv:IsApplicableFor <https://schema.org/MediaObject>, <http://semanticscience.org/resource/SIO_000510>;
     dcterms:creator <https://ror.org/05rdf8595>; 
     sio:SIO_000233 <https://doi.org/10.25504/FAIRsharing.DfMGZW> ;
@@ -47,10 +47,3 @@
     rdfs:label "FAIR Metric - FAIR Maturity Indicator -  Open protocol for (meta)data retrieval - Gen2-MI-A1.1"^^xsd:string ;
 
     dcterms:identifier "10.25504/FAIRsharing.DfMGZW"^^xsd:string .
-
-
-
-
-
-
-
