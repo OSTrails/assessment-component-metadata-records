@@ -1,0 +1,71 @@
+name: Generate folder indexes
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**.ttl'
+      - '.github/workflows/generate-indexes.yml'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Generate index.html files
+        run: |
+          import os
+          from pathlib import Path
+
+          # Folders to process
+          folders = ["test", "metric", "benchmark", "algorithm"]
+
+          for folder in folders:
+              path = Path(folder)
+              if not path.exists():
+                  continue
+
+              ttl_files = sorted([f.name for f in path.glob("*.ttl")])
+              title = folder.capitalize() + " records"
+
+              html = [
+                  "<!DOCTYPE html>",
+                  "<html>",
+                  "<head>",
+                  f"  <meta charset='utf-8'>",
+                  f"  <title>{title}</title>",
+                  "</head>",
+                  "<body>",
+                  f"  <h1>{title}</h1>",
+                  "  <ul>",
+              ]
+              for f in ttl_files:
+                  html.append(f"    <li><a href='{f}'>{f}</a></li>")
+              html += [
+                  "  </ul>",
+                  "</body>",
+                  "</html>"
+              ]
+
+              index_path = path / "index.html"
+              index_path.write_text("\n".join(html), encoding="utf-8")
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add test/*.html metric/*.html benchmark/*.html algorithm/*.html || true
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Auto-update folder index.html files"
+            git push
+          fi
