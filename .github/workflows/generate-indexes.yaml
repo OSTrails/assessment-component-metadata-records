@@ -19,6 +19,7 @@ jobs:
 
       - name: Generate index.html files
         run: |
+          python <<EOF
           import os
           from pathlib import Path
 
@@ -61,7 +62,7 @@ jobs:
               else:
                   print(f"Updating {folder}/index.html")
                   index_path.write_text(new_content, encoding="utf-8")
-
+          EOF
 
       - name: Commit and push changes
         run: |
