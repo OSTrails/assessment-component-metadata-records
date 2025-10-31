@@ -14,9 +14,9 @@
 
 <https://ostrails.github.io/assessment-component-metadata-records/test/TestLicense.ttl> a ftr:Test, dcat:DataService ;
     dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/test/TestLicense.ttl"^^xsd:string ;
-    dcterms:title "FAIR Test - License2"^^xsd:string ;
+    dcterms:title "FAIR Test - License5"^^xsd:string ;
     rdfs:label "TestLicense"^^xsd:string ;
-    vivo:abbreviation "TestLicense2"^^xsd:string ;
+    vivo:abbreviation "TestLicense"^^xsd:string ;
     dcterms:description """FAIR Test - License description"""^^xsd:string ;
     dcat:keyword "FAIR"^^xsd:string, "TestKeyword"^^xsd:string, "Testkeyword2"^^xsd:string ;
     ftr:applicationArea <http://purl.obolibrary.org/obo/NCIT_C17039> ;
