@@ -1,17 +1,79 @@
-<h1>Assessment Interoperability Framework Component Metadata Records</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assessment Component Metadata Records</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      color: #222;
+    }
+    h1, h2 {
+      color: #003366;
+    }
+    a {
+      color: #0072ce;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      margin-left: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Assessment Component Metadata Records</h1>
 
-<p>This is a repository to store the DCAT metadata records for various components of the Assessment Interoperability Framework defined by OSTrails.</p>
+  <h2>Overview</h2>
+  <p>
+    The <strong>Assessment Interoperability Framework (AIF)</strong> defines a 
+    <strong>DCAT Application Profile</strong> to describe both conceptual entities 
+    (e.g., <em>Benchmark</em>, <em>Metric</em>) and code entities 
+    (e.g., <em>Test</em>, <em>Algorithm</em>). These metadata records can be hosted 
+    anywhere on the Web.
+  </p>
+  <p>
+    This repository provides a <strong>generic and persistent location</strong> for 
+    archiving such records, enabling their discovery and indexing by 
+    <strong><a href="https://tools.ostrails.eu/fdp-index/search" target="_blank">OSTrails Index</a></strong>.
+  </p>
 
-<p>This repository is used, by default, by the DSW Authoring Tool, when a metadata record is completed; however, it can be used by anyone through obtaining an account, or by forking and making a pull-request.</p>
+  <h2>Purpose</h2>
+  <p>
+    This repository serves as a submission endpoint for the 
+    <strong><a href="https://ostrails-fair.fair-wizard.com/wizard/" target="_blank">
+    FAIR Wizard authoring tool</a></strong>, a questionnaire-based knowledge model 
+    designed to collect and structure metadata for FAIR Assessment components, including:
+  </p>
+  <ul>
+    <li><strong><a href="https://ostrails.github.io/assessment-component-metadata-records/test/">Test</a></strong></li>
+    <li><strong><a href="https://ostrails.github.io/assessment-component-metadata-records/metric/">Metric</a></strong></li>
+    <li><strong><a href="https://ostrails.github.io/assessment-component-metadata-records/benchmark/">Benchmark</a></strong></li>
+    <li><strong><a href="https://ostrails.github.io/assessment-component-metadata-records/algorithm/">Algorithm</a></strong></li>
+  </ul>
+  <p>
+    Once metadata are completed through the FAIR Wizard, the resulting DCAT-based record 
+    can be automatically pushed into this repository for submission and indexing.
+  </p>
 
-
-
-These metadata records are served from subfolders as follows:<br/>
-
-<ul>
- <li> <a href="https://ostrails.github.io/assessment-component-metadata-records/benchmark/">Benchmarks</a></li>
-<li> <a href="https://ostrails.github.io/assessment-component-metadata-records/metric/">Metrics</a></li>
-<li> <a href="https://ostrails.github.io/assessment-component-metadata-records/algorithm/">Algorithms</a></li>
-<li>  <a href="https://ostrails.github.io/assessment-component-metadata-records/test/">Tests</a></li>
-</ul>
-
+  <h2>Accessibility</h2>
+  <p>
+    This repository is published via <strong>GitHub Pages</strong>, supporting 
+    <strong>RDF content negotiation</strong>. This allows both human users and machine 
+    agents to access and consume the resources stored here according to FAIR principles.
+  </p>
+  <p>
+    You can explore the web interface and browse the available records at:<br>
+    <a href="https://ostrails.github.io/assessment-component-metadata-records/" target="_blank">
+      https://ostrails.github.io/assessment-component-metadata-records/
+    </a>
+  </p>
+</body>
+</html>
