@@ -4,6 +4,9 @@ on:
   push:
     branches: [main]
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -19,7 +22,7 @@ jobs:
 
       - name: Generate index.html files
         run: |
-          python <<EOF
+          python <<'EOF'
           import os
           from pathlib import Path
 
@@ -39,8 +42,14 @@ jobs:
                   "<!DOCTYPE html>",
                   "<html>",
                   "<head>",
-                  f"  <meta charset='utf-8'>",
+                  "  <meta charset='utf-8'>",
                   f"  <title>{title}</title>",
+                  "  <style>",
+                  "    body { font-family: sans-serif; margin: 2em; }",
+                  "    h1 { color: #333; }",
+                  "    a { text-decoration: none; color: #0366d6; }",
+                  "    a:hover { text-decoration: underline; }",
+                  "  </style>",
                   "</head>",
                   "<body>",
                   f"  <h1>{title}</h1>",
@@ -65,13 +74,17 @@ jobs:
           EOF
 
       - name: Commit and push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+
           git add test/*.html metric/*.html benchmark/*.html algorithm/*.html || true
+
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
             git commit -m "Auto-update folder index.html files"
-            git push
+            git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} HEAD:${{ github.ref }}
           fi
