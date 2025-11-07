@@ -22,11 +22,9 @@ jobs:
           python-version: '3.x'
 
       - name: Wait for GitHub Pages deployment
-        uses: peaceiris/actions-wait-for-pages@v1
-        with:
-          timeout: 600
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: | 
+          echo "Waiting 5 minutes for GitHub Pages to refresh..." 
+          sleep 300
 
       - name: Check last non-bot commit and POST if single .ttl in test/ folder (debug)
         run: |
