@@ -20,6 +20,72 @@ jobs:
         with:
           python-version: '3.x'
 
+      - name: Wait for GitHub Pages to update
+        run: |
+          echo "Waiting 70 seconds for GitHub Pages to refresh..."
+          sleep 70
+
+      - name: Check last commit and POST if single .ttl in test folder (debug mode)
+        run: |
+          echo "DEBUG: Checking last commit for .ttl in 'test/' folder..."
+          echo "-----------------------------------------"
+
+          echo "Last commit hash:"
+          git log -1 --format="%H"
+
+          echo "Files changed in last commit:"
+          LAST_COMMIT_FILES=$(git diff-tree --no-commit-id --name-only -r HEAD)
+          echo "$LAST_COMMIT_FILES"
+          echo "-----------------------------------------"
+
+          # Count total changed files
+          COUNT=$(echo "$LAST_COMMIT_FILES" | wc -l | tr -d ' ')
+          echo "Total number of files in last commit: $COUNT"
+
+          # Check if any files in test folder
+          TEST_FILES=$(echo "$LAST_COMMIT_FILES" | grep -E '^test/' || true)
+          if [ -n "$TEST_FILES" ]; then
+            echo "The last commit modified files in 'test/' folder:"
+            echo "$TEST_FILES"
+          else
+            echo "The last commit did NOT modify any files in 'test/' folder."
+          fi
+          echo "-----------------------------------------"
+
+          # Show all .ttl files in test folder currently
+          echo "Current TTL files in 'test/' folder:"
+          ls -1 test/*.ttl 2>/dev/null || echo "No TTL files found in test/."
+          echo "-----------------------------------------"
+
+          # Check if exactly one file was modified and it’s a .ttl in test/
+          if [ "$COUNT" -eq 1 ] && echo "$LAST_COMMIT_FILES" | grep -qE '^test/.+\.ttl$'; then
+            FILE_PATH=$(echo "$LAST_COMMIT_FILES" | grep -E '^test/.+\.ttl$')
+            FILE_NAME=$(basename "$FILE_PATH")
+            echo "Detected a single TTL file in test/: $FILE_PATH"
+
+            CLIENT_URL="https://ostrails.github.io/assessment-component-metadata-records/test/${FILE_NAME}"
+            JSON_PAYLOAD=$(printf '{"clientUrl": "%s"}' "$CLIENT_URL")
+
+            echo "CLIENT_URL to POST: $CLIENT_URL"
+            echo "JSON payload: $JSON_PAYLOAD"
+
+            # Check local existence before posting
+            if [ -f "$FILE_PATH" ]; then
+              echo "Local file exists: $FILE_PATH"
+              echo "Performing POST request..."
+              curl -v -L -H "content-type: application/json" \
+                -d "$JSON_PAYLOAD" \
+                https://tools.ostrails.eu/fdp-index-proxy/proxy
+            else
+              echo "Local file not found: $FILE_PATH — skipping POST."
+            fi
+          else
+            echo "Conditions not met for POST."
+            echo "   - Single file commit required: found $COUNT file(s)"
+            echo "   - Must be in 'test/' and end with '.ttl'"
+            echo "-----------------------------------------"
+          fi
+
       - name: Generate index.html files
         run: |
           python <<'EOF'
@@ -87,33 +153,4 @@ jobs:
           else
             git commit -m "Auto-update folder index.html files"
             git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} HEAD:${{ github.ref }}
-          fi
-
-      - name: Wait for GitHub Pages to update
-        run: |
-          echo "Waiting 60 seconds for GitHub Pages to refresh..."
-          sleep 60
-
-      - name: Check last commit and POST if single .ttl in test folder
-        run: |
-          echo "Checking last commit..."
-          LAST_COMMIT_FILES=$(git diff-tree --no-commit-id --name-only -r HEAD)
-          echo "Files in last commit:"
-          echo "$LAST_COMMIT_FILES"
-
-          COUNT=$(echo "$LAST_COMMIT_FILES" | wc -l)
-          if [ "$COUNT" -eq 1 ] && echo "$LAST_COMMIT_FILES" | grep -qE '^test/.+\.ttl$'; then
-            FILE_PATH=$(echo "$LAST_COMMIT_FILES" | grep -E '^test/.+\.ttl$')
-            FILE_NAME=$(basename "$FILE_PATH")
-            echo "One TTL file detected in test/: $FILE_PATH"
-
-            CLIENT_URL="https://ostrails.github.io/assessment-component-metadata-records/test/${FILE_NAME}"
-            JSON_PAYLOAD=$(printf '{"clientUrl": "%s"}' "$CLIENT_URL")
-            echo "Posting to FDP Index Proxy with payload: $JSON_PAYLOAD"
-
-            curl -v -L -H "content-type: application/json" \
-              -d "$JSON_PAYLOAD" \
-              https://tools.ostrails.eu/fdp-index-proxy/proxy
-          else
-            echo "No eligible single .ttl addition in test/ folder. Skipping POST."
           fi
