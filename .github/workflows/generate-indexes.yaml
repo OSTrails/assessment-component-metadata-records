@@ -13,8 +13,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout repository (full history)
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -22,57 +24,62 @@ jobs:
           python-version: '3.x'
 
       - name: Wait for GitHub Pages deployment
-        run: | 
-          echo "Waiting 5 minutes for GitHub Pages to refresh..." 
+        run: |
+          echo "Waiting 5 minutes for GitHub Pages to refresh..."
           sleep 300
 
       - name: Check last non-bot commit and POST if single .ttl in test/ folder (debug)
         run: |
           echo "Checking last non-bot commit (ignoring GitHub Actions commits)..."
-
-          # Get the last non-bot commit SHA
-          LAST_REAL_COMMIT=$(git log --no-merges --format="%H %an" | grep -v "github-actions\[bot\]" | head -n 1 | awk '{print $1}')
-          echo "Last real commit: $LAST_REAL_COMMIT"
-
-          # Get list of changed files in that commit
-          echo "Files changed in that commit:"
-          LAST_COMMIT_FILES=$(git diff-tree --no-commit-id --name-only -r $LAST_REAL_COMMIT)
-          echo "$LAST_COMMIT_FILES"
-
-          COUNT=$(echo "$LAST_COMMIT_FILES" | wc -l | tr -d ' ')
-          echo "Total number of changed files: $COUNT"
           echo "-----------------------------------------"
 
-          # Check if any are in the test/ folder
+          # Find last non-bot commit
+          LAST_REAL_COMMIT=$(git log --no-merges --format="%H %an" | grep -v "github-actions\[bot\]" | head -n 1 | awk '{print $1}')
+          echo "Last real commit SHA: $LAST_REAL_COMMIT"
+
+          echo "DEBUG: Commit details:"
+          git show --oneline --name-only $LAST_REAL_COMMIT || echo "Failed to show commit info"
+          echo "-----------------------------------------"
+
+          # List changed files
+          LAST_COMMIT_FILES=$(git show --name-only --pretty="" $LAST_REAL_COMMIT)
+          echo "Changed files in that commit:"
+          echo "$LAST_COMMIT_FILES"
+          echo "-----------------------------------------"
+
+          COUNT=$(echo "$LAST_COMMIT_FILES" | grep -v '^$' | wc -l | tr -d ' ')
+          echo "Total changed files: $COUNT"
+
+          # Check if any are in the test folder
           TEST_FILES=$(echo "$LAST_COMMIT_FILES" | grep -E '^test/' || true)
           if [ -n "$TEST_FILES" ]; then
-            echo "Commit affected 'test/' folder: "
+            echo "Commit affected 'test/' folder:"
             echo "$TEST_FILES"
           else
-            echo "Commit did not touch 'test/' folder."
+            echo "Commit did not affect 'test/' folder."
           fi
           echo "-----------------------------------------"
 
-          # Show all TTL files in test/ for reference
           echo "Current TTL files in test/:"
           ls -1 test/*.ttl 2>/dev/null || echo "No TTL files currently in test/"
           echo "-----------------------------------------"
 
-          # If commit added exactly one TTL file under test/
+          # If commit changed exactly one TTL file in test/
           if [ "$COUNT" -eq 1 ] && echo "$LAST_COMMIT_FILES" | grep -qE '^test/.+\.ttl$'; then
             FILE_PATH=$(echo "$LAST_COMMIT_FILES" | grep -E '^test/.+\.ttl$')
             FILE_NAME=$(basename "$FILE_PATH")
-            echo "Detected single TTL file: $FILE_PATH"
+            echo "Single TTL file detected: $FILE_PATH"
 
             CLIENT_URL="https://ostrails.github.io/assessment-component-metadata-records/test/${FILE_NAME}"
             JSON_PAYLOAD=$(printf '{"clientUrl": "%s"}' "$CLIENT_URL")
 
             echo "CLIENT_URL: $CLIENT_URL"
             echo "JSON payload: $JSON_PAYLOAD"
+            echo "-----------------------------------------"
 
-            echo "Checking if URL is reachable..."
+            echo "Checking if file is available on GitHub Pages..."
             if curl --head --silent --fail "$CLIENT_URL" > /dev/null; then
-              echo "File is available on GitHub Pages. Proceeding to POST..."
+              echo "File available on GitHub Pages. Sending POST request..."
               curl -v -L -H "content-type: application/json" \
                 -d "$JSON_PAYLOAD" \
                 https://tools.ostrails.eu/fdp-index-proxy/proxy
@@ -96,11 +103,11 @@ jobs:
           for folder in folders:
               path = Path(folder)
               if not path.exists():
-                  print(f"Folder '{folder}' not found, skipping.")
+                  print(f"Skipping: folder '{folder}' not found.")
                   continue
 
               ttl_files = sorted([f.name for f in path.glob("*.ttl")])
-              print(f"Found {len(ttl_files)} .ttl files in {folder}: {ttl_files}")
+              print(f"Found {len(ttl_files)} .ttl files in '{folder}': {ttl_files}")
 
               title = folder.capitalize() + " records"
               html = [
@@ -119,9 +126,12 @@ jobs:
               html += ["  </ul>", "</body>", "</html>"]
 
               index_path = path / "index.html"
-              old_content = index_path.read_text(encoding="utf-8") if index_path.exists() else ""
               new_content = "\n".join(html)
+              old_content = index_path.read_text(encoding="utf-8") if index_path.exists() else ""
               if new_content.strip() != old_content.strip():
+                  index_path.write_text(new_content, encoding="utf-8")
+                  print(f"Updated {folder}/index.html")
+              else:
                   print(f"No change for {folder}/index.html")
           EOF
 
