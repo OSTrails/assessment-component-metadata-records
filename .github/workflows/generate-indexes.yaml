@@ -88,3 +88,32 @@ jobs:
             git commit -m "Auto-update folder index.html files"
             git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} HEAD:${{ github.ref }}
           fi
+
+      - name: Wait for GitHub Pages to update
+        run: |
+          echo "Waiting 60 seconds for GitHub Pages to refresh..."
+          sleep 60
+
+      - name: Check last commit and POST if single .ttl in test folder
+        run: |
+          echo "Checking last commit..."
+          LAST_COMMIT_FILES=$(git diff-tree --no-commit-id --name-only -r HEAD)
+          echo "Files in last commit:"
+          echo "$LAST_COMMIT_FILES"
+
+          COUNT=$(echo "$LAST_COMMIT_FILES" | wc -l)
+          if [ "$COUNT" -eq 1 ] && echo "$LAST_COMMIT_FILES" | grep -qE '^test/.+\.ttl$'; then
+            FILE_PATH=$(echo "$LAST_COMMIT_FILES" | grep -E '^test/.+\.ttl$')
+            FILE_NAME=$(basename "$FILE_PATH")
+            echo "One TTL file detected in test/: $FILE_PATH"
+
+            CLIENT_URL="https://ostrails.github.io/assessment-component-metadata-records/test/${FILE_NAME}"
+            JSON_PAYLOAD=$(printf '{"clientUrl": "%s"}' "$CLIENT_URL")
+            echo "Posting to FDP Index Proxy with payload: $JSON_PAYLOAD"
+
+            curl -v -L -H "content-type: application/json" \
+              -d "$JSON_PAYLOAD" \
+              https://tools.ostrails.eu/fdp-index-proxy/proxy
+          else
+            echo "No eligible single .ttl addition in test/ folder. Skipping POST."
+          fi
