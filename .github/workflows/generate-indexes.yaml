@@ -1,4 +1,4 @@
-name: Generate folder indexes
+name: Generate folder indexes and trigger FDP proxy
 
 on:
   push:
@@ -6,6 +6,7 @@ on:
 
 permissions:
   contents: write
+  pages: read
 
 jobs:
   build:
@@ -20,76 +21,76 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Wait for GitHub Pages to update
+      - name: Wait for GitHub Pages deployment
+        uses: peaceiris/actions-wait-for-pages@v1
+        with:
+          timeout: 600
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Check last non-bot commit and POST if single .ttl in test/ folder (debug)
         run: |
-          echo "Waiting 70 seconds for GitHub Pages to refresh..."
-          sleep 70
+          echo "Checking last non-bot commit (ignoring GitHub Actions commits)..."
 
-      - name: Check last commit and POST if single .ttl in test folder (debug mode)
-        run: |
-          echo "DEBUG: Checking last commit for .ttl in 'test/' folder..."
-          echo "-----------------------------------------"
+          # Get the last non-bot commit SHA
+          LAST_REAL_COMMIT=$(git log --no-merges --format="%H %an" | grep -v "github-actions\[bot\]" | head -n 1 | awk '{print $1}')
+          echo "Last real commit: $LAST_REAL_COMMIT"
 
-          echo "Last commit hash:"
-          git log -1 --format="%H"
-
-          echo "Files changed in last commit:"
-          LAST_COMMIT_FILES=$(git diff-tree --no-commit-id --name-only -r HEAD)
+          # Get list of changed files in that commit
+          echo "Files changed in that commit:"
+          LAST_COMMIT_FILES=$(git diff-tree --no-commit-id --name-only -r $LAST_REAL_COMMIT)
           echo "$LAST_COMMIT_FILES"
+
+          COUNT=$(echo "$LAST_COMMIT_FILES" | wc -l | tr -d ' ')
+          echo "Total number of changed files: $COUNT"
           echo "-----------------------------------------"
 
-          # Count total changed files
-          COUNT=$(echo "$LAST_COMMIT_FILES" | wc -l | tr -d ' ')
-          echo "Total number of files in last commit: $COUNT"
-
-          # Check if any files in test folder
+          # Check if any are in the test/ folder
           TEST_FILES=$(echo "$LAST_COMMIT_FILES" | grep -E '^test/' || true)
           if [ -n "$TEST_FILES" ]; then
-            echo "The last commit modified files in 'test/' folder:"
+            echo "Commit affected 'test/' folder: "
             echo "$TEST_FILES"
           else
-            echo "The last commit did NOT modify any files in 'test/' folder."
+            echo "Commit did not touch 'test/' folder."
           fi
           echo "-----------------------------------------"
 
-          # Show all .ttl files in test folder currently
-          echo "Current TTL files in 'test/' folder:"
-          ls -1 test/*.ttl 2>/dev/null || echo "No TTL files found in test/."
+          # Show all TTL files in test/ for reference
+          echo "Current TTL files in test/:"
+          ls -1 test/*.ttl 2>/dev/null || echo "No TTL files currently in test/"
           echo "-----------------------------------------"
 
-          # Check if exactly one file was modified and it’s a .ttl in test/
+          # If commit added exactly one TTL file under test/
           if [ "$COUNT" -eq 1 ] && echo "$LAST_COMMIT_FILES" | grep -qE '^test/.+\.ttl$'; then
             FILE_PATH=$(echo "$LAST_COMMIT_FILES" | grep -E '^test/.+\.ttl$')
             FILE_NAME=$(basename "$FILE_PATH")
-            echo "Detected a single TTL file in test/: $FILE_PATH"
+            echo "Detected single TTL file: $FILE_PATH"
 
             CLIENT_URL="https://ostrails.github.io/assessment-component-metadata-records/test/${FILE_NAME}"
             JSON_PAYLOAD=$(printf '{"clientUrl": "%s"}' "$CLIENT_URL")
 
-            echo "CLIENT_URL to POST: $CLIENT_URL"
+            echo "CLIENT_URL: $CLIENT_URL"
             echo "JSON payload: $JSON_PAYLOAD"
 
-            # Check local existence before posting
-            if [ -f "$FILE_PATH" ]; then
-              echo "Local file exists: $FILE_PATH"
-              echo "Performing POST request..."
+            echo "Checking if URL is reachable..."
+            if curl --head --silent --fail "$CLIENT_URL" > /dev/null; then
+              echo "File is available on GitHub Pages. Proceeding to POST..."
               curl -v -L -H "content-type: application/json" \
                 -d "$JSON_PAYLOAD" \
                 https://tools.ostrails.eu/fdp-index-proxy/proxy
             else
-              echo "Local file not found: $FILE_PATH — skipping POST."
+              echo "File not yet reachable on GitHub Pages: $CLIENT_URL"
+              echo "Skipping POST."
             fi
           else
-            echo "Conditions not met for POST."
-            echo "   - Single file commit required: found $COUNT file(s)"
-            echo "   - Must be in 'test/' and end with '.ttl'"
-            echo "-----------------------------------------"
+            echo "Conditions not met for POST:"
+            echo "   - Single file commit required (found $COUNT)"
+            echo "   - File must be in test/ and end with .ttl"
           fi
 
       - name: Generate index.html files
         run: |
           python <<'EOF'
-          import os
           from pathlib import Path
 
           folders = ["test", "metric", "benchmark", "algorithm"]
@@ -110,12 +111,6 @@ jobs:
                   "<head>",
                   "  <meta charset='utf-8'>",
                   f"  <title>{title}</title>",
-                  "  <style>",
-                  "    body { font-family: sans-serif; margin: 2em; }",
-                  "    h1 { color: #333; }",
-                  "    a { text-decoration: none; color: #0366d6; }",
-                  "    a:hover { text-decoration: underline; }",
-                  "  </style>",
                   "</head>",
                   "<body>",
                   f"  <h1>{title}</h1>",
@@ -123,20 +118,13 @@ jobs:
               ]
               for f in ttl_files:
                   html.append(f"    <li><a href='{f}'>{f}</a></li>")
-              html += [
-                  "  </ul>",
-                  "</body>",
-                  "</html>"
-              ]
+              html += ["  </ul>", "</body>", "</html>"]
 
               index_path = path / "index.html"
               old_content = index_path.read_text(encoding="utf-8") if index_path.exists() else ""
               new_content = "\n".join(html)
-              if new_content.strip() == old_content.strip():
+              if new_content.strip() != old_content.strip():
                   print(f"No change for {folder}/index.html")
-              else:
-                  print(f"Updating {folder}/index.html")
-                  index_path.write_text(new_content, encoding="utf-8")
           EOF
 
       - name: Commit and push changes
@@ -147,7 +135,6 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
           git add test/*.html metric/*.html benchmark/*.html algorithm/*.html || true
-
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
