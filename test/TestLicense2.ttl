@@ -17,7 +17,7 @@
     dcterms:title "FAIR TestX - License"^^xsd:string ;
     rdfs:label "TestLicense"^^xsd:string ;
     vivo:abbreviation "TestLicense"^^xsd:string ;
-    dcterms:description """FAIR Test - License description"""^^xsd:string ;
+    dcterms:description """FAIR Test - License description, new test performed"""^^xsd:string ;
     dcat:keyword "FAIR"^^xsd:string, "TestKeyword"^^xsd:string, "Testkeyword2"^^xsd:string ;
     ftr:applicationArea <http://purl.obolibrary.org/obo/NCIT_C17039> ;
     dcat:version "0.0.1"^^xsd:string ;
