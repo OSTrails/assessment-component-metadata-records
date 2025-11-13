@@ -40,7 +40,7 @@ Fail: if any of the conditions in 'pass' fail; specifically, if the GUID is not 
     
     
     
-    sio:SIO_000233 <https://doi.org/> ;
+    sio:SIO_000233 <> ;
     
     
     
@@ -55,11 +55,8 @@ Fail: if any of the conditions in 'pass' fail; specifically, if the GUID is not 
     vcard:hasEmail <mailto:allyson.lister@oerc.ox.ac.uk> .
     
 
-
-
-<https://doi.org/> a dqv:Metric ;
+<> a dqv:Metric, ftr:Metric,  dcat:Resource;
     rdfs:label "FAIR Metric ARK F1 - Persistent Identifiers for Database Content"^^xsd:string ;
-
     dcterms:identifier ""^^xsd:string .
 
 
