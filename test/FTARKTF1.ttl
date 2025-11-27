@@ -13,7 +13,7 @@
 @prefix adms: <http://www.w3.org/ns/adms#> .
 
 <https://ostrails.github.io/assessment-component-metadata-records/test/FTARKTF1.ttl> a ftr:Test, dcat:DataService ;
-    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/test/FTARKTF1.ttl"^^xsd:string ;
+    dcterms:identifier "https://fairsharing.org/7163"^^xsd:string ;
     dcterms:title "FAIR Test - ARK T-F1 - Persistent Identifiers for Database Content"^^xsd:string ;
     rdfs:label "FTARKTF1"^^xsd:string ;
     vivo:abbreviation "FTARKTF1"^^xsd:string ;
@@ -31,7 +31,7 @@ Fail: if any of the conditions in 'pass' fail; specifically, if the GUID is not 
     ftr:status "Active"@en ;
     dcat:landingPage <https://fairsharing.org/7163> ;
     dcat:endpointURL <https://dev-api.fairsharing.org/fair_tests/ft_ark_f1> ;
-    dcat:endpointDescription <https://fairsharing.org/API_doc> ;
+    dcat:endpointDescription <https://dev-api.fairsharing.org/test_descriptions/ft_ark_f1/api> ;
     
     doap:repository <https://github.com/FAIRsharing/FAIRsharing-API> ;
     ftr:supportedBy  <https://tools.ostrails.eu/champion>; 
