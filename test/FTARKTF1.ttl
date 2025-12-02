@@ -36,26 +36,27 @@ Fail: if any of the conditions in 'pass' fail; specifically, if the GUID is not 
     doap:repository <https://github.com/FAIRsharing/FAIRsharing-API> ;
     ftr:supportedBy  <https://tools.ostrails.eu/champion>; 
     dpv:IsApplicableFor <https://vocabularies.coar-repositories.org/resource_types/c_1843/>;
-    dcterms:creator <>; 
+    dcterms:creator <https://fairsharing.org/organisations/2281>; 
     
     
     
-    sio:SIO_000233 <> ;
+    sio:SIO_000233 <https://fairsharing.org/7163> ;
     
     
     
+    dcterms:publisher  <https://orcid.org/0000-0002-7702-4495>  ; 
     dcat:contactPoint  <https://orcid.org/0000-0002-7702-4495>  . 
 
 
-<> a vcard:Organisation ;
+<https://fairsharing.org/organisations/2281> a vcard:Organisation ;
     vcard:organisation-name "Oxford e-Research Centre, Department of Engineering Science, University of Oxford, Oxford, UK"^^xsd:string .
 
-<https://orcid.org/0000-0002-7702-4495> a vcard:Individual ;
+<https://orcid.org/0000-0002-7702-4495> a vcard:Individual, foaf:Agent ;
     vcard:fn "Allyson Lister"^^xsd:string ;
     vcard:hasEmail <mailto:allyson.lister@oerc.ox.ac.uk> .
     
 
-<> a dqv:Metric, ftr:Metric,  dcat:Resource;
+<https://fairsharing.org/7163> a dqv:Metric, ftr:Metric, dcat:Resource;
     rdfs:label "FAIR Metric ARK F1 - Persistent Identifiers for Database Content"^^xsd:string ;
     dcterms:identifier ""^^xsd:string .
 
