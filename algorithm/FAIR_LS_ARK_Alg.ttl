@@ -17,7 +17,7 @@
     dcterms:title "FAIR Assessment of Life Science Repositories and Knowledgebases"^^xsd:string ;
     rdfs:label "FAIR_LS_ARK_Alg"^^xsd:string ;
     vivo:abbreviation "FAIR_LS_ARK_Alg"^^xsd:string ;
-    dcterms:description """The FAIR LS ARK Benchmark, combined with the FAIR LS ARK Alg scoring algorithm, is intended to assess any life science database registered in FAIRsharing for FAIRness. Such a score will be created from database-level metadata as stored within FAIRsharing. In order for your database to be assessed, you only need to have it registered in FAIRsharing."""^^xsd:string ;
+    dcterms:description """The FAIR LS ARK Benchmark, combined with the FAIR LS ARK Alg Scoring algorithm, is intended to assess any life science database registered in FAIRsharing for FAIRness. Such a score will be created from database-level metadata as stored within FAIRsharing. In order for your database to be assessed, you only need to have it registered in FAIRsharing."""^^xsd:string ;
     dcat:keyword "FAIR"^^xsd:string, "Benchmarking"^^xsd:string, "algorithm"^^xsd:string ;
     ftr:applicationArea <http://aims.fao.org/aos/agrovoc/c_4318> ;
     
