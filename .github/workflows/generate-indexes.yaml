@@ -28,7 +28,7 @@ jobs:
           echo "Waiting 5 minutes for GitHub Pages to refresh..."
           sleep 300
 
-      - name: Check last non-bot commit and POST if single .ttl in test/ folder (debug)
+      - name: Check last non-bot commit and POST if single .ttl in test/ or algorithm/ folder (debug)
         run: |
           echo "Checking last non-bot commit (ignoring GitHub Actions commits)..."
           echo "-----------------------------------------"
@@ -50,27 +50,26 @@ jobs:
           COUNT=$(echo "$LAST_COMMIT_FILES" | grep -v '^$' | wc -l | tr -d ' ')
           echo "Total changed files: $COUNT"
 
-          # Check if any are in the test folder
-          TEST_FILES=$(echo "$LAST_COMMIT_FILES" | grep -E '^test/' || true)
-          if [ -n "$TEST_FILES" ]; then
-            echo "Commit affected 'test/' folder:"
-            echo "$TEST_FILES"
+          # Accept folders: test/ and algorithm/
+          TARGET_FILES=$(echo "$LAST_COMMIT_FILES" | grep -E '^(test|algorithm)/.+\.ttl$' || true)
+
+          if [ -n "$TARGET_FILES" ]; then
+            echo "Commit affected target folders:"
+            echo "$TARGET_FILES"
           else
-            echo "Commit did not affect 'test/' folder."
+            echo "Commit did not affect test/ or algorithm/ folder."
           fi
-          echo "-----------------------------------------"
 
-          echo "Current TTL files in test/:"
-          ls -1 test/*.ttl 2>/dev/null || echo "No TTL files currently in test/"
-          echo "-----------------------------------------"
-
-          # If commit changed exactly one TTL file in test/
-          if [ "$COUNT" -eq 1 ] && echo "$LAST_COMMIT_FILES" | grep -qE '^test/.+\.ttl$'; then
-            FILE_PATH=$(echo "$LAST_COMMIT_FILES" | grep -E '^test/.+\.ttl$')
+          # Proceed only if exactly one file AND it matches folder pattern
+          if [ "$COUNT" -eq 1 ] && echo "$LAST_COMMIT_FILES" | grep -qE '^(test|algorithm)/.+\.ttl$'; then
+            FILE_PATH=$(echo "$LAST_COMMIT_FILES" | grep -E '^(test|algorithm)/.+\.ttl$')
             FILE_NAME=$(basename "$FILE_PATH")
-            echo "Single TTL file detected: $FILE_PATH"
+            FOLDER=$(echo "$FILE_PATH" | cut -d'/' -f1)
 
-            CLIENT_URL="https://ostrails.github.io/assessment-component-metadata-records/test/${FILE_NAME}"
+            echo "Single TTL file detected: $FILE_PATH"
+            echo "Folder: $FOLDER"
+
+            CLIENT_URL="https://ostrails.github.io/assessment-component-metadata-records/${FOLDER}/${FILE_NAME}"
             JSON_PAYLOAD=$(printf '{"clientUrl": "%s"}' "$CLIENT_URL")
 
             echo "CLIENT_URL: $CLIENT_URL"
@@ -90,9 +89,8 @@ jobs:
           else
             echo "Conditions not met for POST:"
             echo "   - Single file commit required (found $COUNT)"
-            echo "   - File must be in test/ and end with .ttl"
+            echo "   - File must be in test/ or algorithm/ and end with .ttl"
           fi
-
       - name: Generate index.html files
         run: |
           python <<'EOF'
