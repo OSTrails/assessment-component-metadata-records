@@ -14,24 +14,24 @@
 
 <https://ostrails.github.io/assessment-component-metadata-records/test/FTARKTF1.ttl> a ftr:Test, dcat:DataService ;
     dcterms:identifier "https://fairsharing.org/7163"^^xsd:string ;
-    dcterms:title "FAIR Test - ARK T-F1 - Persistent Identifiers for Database Content"^^xsd:string ;
+    dcterms:title "FAIR Test - ARK T-F1 - Persistent identifiers for database content"^^xsd:string ;
     rdfs:label "FTARKTF1"^^xsd:string ;
     vivo:abbreviation "FTARKTF1"^^xsd:string ;
-    dcterms:description """The 'FAIR Test ARK T-F1 - Persistent Identifiers for Database Content' is a database-level test that requires the minting of persistent identifiers for at least some of the content within the database being evaluated. It expects a FAIRsharing URL or DOI as its input and evaluates that FAIRsharing record for the presence of an implemented id schema. An important facet of FAIR for databases is that they mint persistent identifiers. As described by the GFF, global uniqueness guarantees the unambiguous referencing of the described resource; it is insufficient for it to be unique only locally. Persistence refers to the requirement that this globally unique identifier is never reused elsewhere and continues to identify the same resource over time. These features are key to the Findability of the database being evaluated.
+    dcterms:description """The 'FAIR Test ARK T-F1 - Persistent Identifiers for Database Content' is a database-level test that requires the minting of persistent identifiers for at least some of the content within the database being evaluated. FM ARK F1 expects a FAIRsharing URL or DOI as its input and evaluates that FAIRsharing record for the guaranteed persistence of the identifier schema as defined by the identifier schema record type in FAIRsharing (see our gitbook documentation linked as part of this record for more information about id schemas for databases and how to curate them in a FAIRsharing record). An important facet of FAIR for databases is that they mint persistent identifiers. As described by the GFF, global uniqueness guarantees the unambiguous referencing of the described resource; it is insufficient for it to be unique only locally. Persistence refers to the requirement that this globally unique identifier is never reused elsewhere and continues to identify the same resource over time. These features are key to the Findability of the database being evaluated.
 The test will return as follows:
-Pass: GUID must point to an existing FAIRsharing database record; the record must have an 'implements' to an id_schema record.
-Indeterminate: GUID is non-existent or malformed.
-Fail: if any of the conditions in 'pass' fail; specifically, if the GUID is not a database record, OR if there is no 'implements' relationship to an id_schema. """^^xsd:string ;
-    dcat:keyword "centrally registered identifier"^^xsd:string ;
+Pass: URL/DOI must point to an existing FAIRsharing database record; the record must have an 'implements' to an id_schema record; that id_schema record must have the persistent field set to 'true'.
+Indeterminate: URL/DOI is non-existent or malformed.
+Fail: if any of the conditions in 'pass' fail; specifically, if the URL/DOI is not a database record, OR if there is no 'implements' relationship to an id_schema, OR if the persistent field is set to 'false'. """^^xsd:string ;
+    
     ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000401> ;
     
-    dcat:version "0.1.0"^^xsd:string ;
+    dcat:version "0.2.0"^^xsd:string ;
     
     dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
     ftr:status "Active"@en ;
     dcat:landingPage <https://fairsharing.org/7163> ;
-    dcat:endpointURL <https://dev-api.fairsharing.org/fair_tests/ft_ark_f1> ;
-    dcat:endpointDescription <https://dev-api.fairsharing.org/test_descriptions/ft_ark_f1/api> ;
+    dcat:endpointURL <https://api.fairsharing.org/fair_tests/ft_ark_f1> ;
+    dcat:endpointDescription <https://api.fairsharing.org/test_descriptions/ft_ark_f1/api> ;
     
     doap:repository <https://github.com/FAIRsharing/FAIRsharing-API> ;
     ftr:supportedBy  <https://tools.ostrails.eu/champion>; 
