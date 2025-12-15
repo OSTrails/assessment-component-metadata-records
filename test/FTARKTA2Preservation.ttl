@@ -13,7 +13,7 @@
 @prefix adms: <http://www.w3.org/ns/adms#> .
 
 <https://ostrails.github.io/assessment-component-metadata-records/test/FTARKTA2Preservation.ttl> a ftr:Test, dcat:DataService ;
-    dcterms:identifier "https://fairsharing.org/7457"^^xsd:string ;
+    dcterms:identifier "https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance#fairsharing-developed-tests"^^xsd:string ;
     dcterms:title "FAIR Test - ARK T-A2 - Database has a preservation policy"^^xsd:string ;
     rdfs:label "FTARKTA2Preservation"^^xsd:string ;
     vivo:abbreviation "FTARKTA2Preservation"^^xsd:string ;
@@ -29,9 +29,9 @@ Fail: if any of the conditions in 'pass' fail; specifically, if the URL/DOI is n
     
     dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
     ftr:status "Active"@en ;
-    dcat:landingPage <https://fairsharing.org/7457> ;
-    dcat:endpointURL <https://dev-api.fairsharing.org/fair_tests/ft_ark_a2preservation> ;
-    dcat:endpointDescription <https://dev-api.fairsharing.org/test_descriptions/ft_ark_a2preservation/api> ;
+    dcat:landingPage <https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance#fairsharing-developed-tests> ;
+    dcat:endpointURL <https://api.fairsharing.org/fair_tests/ft_ark_a2preservation> ;
+    dcat:endpointDescription <https://api.fairsharing.org/test_descriptions/ft_ark_a2preservation/api> ;
     
     doap:repository <https://github.com/FAIRsharing/FAIRsharing-API> ;
     ftr:supportedBy  <https://tools.ostrails.eu/champion>; 
@@ -40,7 +40,7 @@ Fail: if any of the conditions in 'pass' fail; specifically, if the URL/DOI is n
     
     
     
-    sio:SIO_000233 <https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance#fair-principles-a2-metadata-are-accessible-even-when-the-data-are-no-longer-available> ;
+    sio:SIO_000233 <https://github.com/FAIRMetrics/Metrics/blob/master/MaturityIndicators/Gen2/Gen2_MI_A2.md> ;
     
     
     
@@ -56,9 +56,9 @@ Fail: if any of the conditions in 'pass' fail; specifically, if the URL/DOI is n
     vcard:hasEmail <mailto:allyson.lister@oerc.ox.ac.uk> .
     
 
-<https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance#fair-principles-a2-metadata-are-accessible-even-when-the-data-are-no-longer-available> a dqv:Metric, ftr:Metric, dcat:Resource;
-    rdfs:label "FAIR Metric ARK A2-Preservation – Database has a preservation policy"^^xsd:string ;
-    dcterms:identifier "https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance#fair-principles-a2-metadata-are-accessible-even-when-the-data-are-no-longer-available"^^xsd:string .
+<https://github.com/FAIRMetrics/Metrics/blob/master/MaturityIndicators/Gen2/Gen2_MI_A2.md> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric - FAIR Maturity Indicator - Metadata persistence - Gen2-MI-A2"^^xsd:string ;
+    dcterms:identifier "https://github.com/FAIRMetrics/Metrics/blob/master/MaturityIndicators/Gen2/Gen2_MI_A2.md"^^xsd:string .
 
 
 
