@@ -35,7 +35,7 @@
     dcterms:creator <https://fairsharing.org/organisations/2281>; 
     
     
-    
+    ftr:scoringFunction <https://docs.google.com/spreadsheets/d/1BroHwggqSs9p33uA-Z7CLz_XJx903IuBu6c8uoInhtk/>;
     
     
     
