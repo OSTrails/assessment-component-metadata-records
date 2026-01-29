@@ -1,0 +1,58 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ftr: <https://w3id.org/ftr#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+@prefix dpv: <https://w3id.org/dpv#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I2_M_CEK.ttl> a ftr:Metric, dqv:Metric, dcat:Resource ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I2_M_CEK.ttl"^^xsd:string ;
+    dcterms:title "FAIR Metric - Metadata Uses CESSDA ELSST Keywords"^^xsd:string ;
+    rdfs:label "FM_I2_M_CEK"^^xsd:string ;
+    vivo:abbreviation "FM_I2_M_CEK"^^xsd:string ;
+    dcterms:description """checks whether keywords used in the metadata belong to the ELSST controlled vocabulary."""^^xsd:string ;
+    dcat:keyword "FAIR"^^xsd:string ;
+    ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000002> ;
+    ftr:inDimension <https://w3id.org/fair/principles/terms/I2> ;
+    dcat:version "1.0.0"^^xsd:string ;
+    
+    dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
+    ftr:status "Active"@en ;
+    
+    
+    
+    
+    
+    
+    dpv:IsApplicableFor <https://schema.org/Dataset>;
+    dcterms:creator <https://ror.org/02wg9xc72>; 
+    
+    
+    
+    
+    ftr:hasPositiveValidation <https://datacatalogue.cessda.eu/oai-pmh/v0/oai?verb=GetRecord&metadataPrefix=oai_ddi25&identifier=c23e8a47f7562ec9abf32f0ad53c1da0e6c563d0e2b36f10279746c91348ddcf>; 
+    ftr:hasNegativeValidation <https://datacatalogue.cessda.eu/oai-pmh/v0/oai?verb=GetRecord&metadataPrefix=oai_ddi25&identifier=e2bfcff447c5ddc6c93c29836a4a8965fa30cbf867e90f854a3352871848f93e>,  <https://datacatalogue.cessda.eu/oai-pmh/v0/oai?verb=GetRecord&metadataPrefix=oai_ddi25&identifier=b36ee86b5530f0eaa5efdd8e2e4536ff92f9259433b20f8fac3d725e519e748c>; 
+    dcterms:publisher  <https://orcid.org/0000-0002-4402-9644>  ; 
+    dcat:contactPoint  <https://orcid.org/0000-0002-4402-9644>  . 
+
+
+<https://ror.org/02wg9xc72> a vcard:Organisation ;
+    vcard:organisation-name "Consortium of European Social Science Data Archives"^^xsd:string .
+
+<https://orcid.org/0000-0002-4402-9644> a vcard:Individual, foaf:Agent ;
+    vcard:fn "John Shepherdson"^^xsd:string ;
+    vcard:hasEmail <mailto:john.shepherdson@cessda.eu> .
+    
+
+
+
+
+
+
