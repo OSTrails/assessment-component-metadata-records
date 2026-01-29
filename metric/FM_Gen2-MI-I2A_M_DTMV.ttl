@@ -1,0 +1,58 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ftr: <https://w3id.org/ftr#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+@prefix dpv: <https://w3id.org/dpv#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_Gen2-MI-I2A_M_DTMV.ttl> a ftr:Metric, dqv:Metric, dcat:Resource ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_Gen2-MI-I2A_M_DTMV.ttl"^^xsd:string ;
+    dcterms:title "FAIR Metric - Metadata Uses DDI Time Method Vocabulary"^^xsd:string ;
+    rdfs:label "FM_Gen2-MI-I2A_M_DTMV"^^xsd:string ;
+    vivo:abbreviation "FM_Gen2-MI-I2A_M_DTMV"^^xsd:string ;
+    dcterms:description """Checks if certain information elements contain terms from the DDI Time Method controlled vocabulary."""^^xsd:string ;
+    dcat:keyword "FAIR"^^xsd:string ;
+    ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000002> ;
+    ftr:inDimension <https://w3id.org/fair/principles/terms/I2> ;
+    dcat:version "1.0.0"^^xsd:string ;
+    
+    dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
+    ftr:status "Active"@en ;
+    
+    
+    
+    
+    
+    
+    dpv:IsApplicableFor <https://schema.org/Dataset>;
+    dcterms:creator <https://ror.org/02wg9xc72>; 
+    
+    
+    
+    
+    ftr:hasPositiveValidation <https://datacatalogue.cessda.eu/oai-pmh/v0/oai?verb=GetRecord&metadataPrefix=oai_ddi25&identifier=6990c361d92fb69e46e1f267d0c63e8a48d8647f30b782400f97a31b2dc745c9>; 
+    ftr:hasNegativeValidation <https://datacatalogue.cessda.eu/oai-pmh/v0/oai?verb=GetRecord&metadataPrefix=oai_ddi25&identifier=efc3d8686e0a9f74340e88d5ee7f5af4676451d37dbca7fb3dfe851370515934>; 
+    dcterms:publisher  <https://orcid.org/0000-0002-4402-9644>  ; 
+    dcat:contactPoint  <https://orcid.org/0000-0002-4402-9644>  . 
+
+
+<https://ror.org/02wg9xc72> a vcard:Organisation ;
+    vcard:organisation-name "Consortium of European Social Science Data Archives"^^xsd:string .
+
+<https://orcid.org/0000-0002-4402-9644> a vcard:Individual, foaf:Agent ;
+    vcard:fn "John Shepherdson"^^xsd:string ;
+    vcard:hasEmail <mailto:john.shepherdson@cessda.eu> .
+    
+
+
+
+
+
+
