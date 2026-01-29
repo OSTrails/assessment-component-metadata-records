@@ -1,0 +1,67 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ftr: <https://w3id.org/ftr#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+@prefix dpv: <https://w3id.org/dpv#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+<https://ostrails.github.io/assessment-component-metadata-records/test/FT_R1-2_M_CPI.ttl> a ftr:Test, dcat:DataService ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/test/FT_R1-2_M_CPI.ttl"^^xsd:string ;
+    dcterms:title "FAIR Test - Metadata Contains CESSDA Provenance Information"^^xsd:string ;
+    rdfs:label "FT_R1-2_M_CPI"^^xsd:string ;
+    vivo:abbreviation "FT_R1-2_M_CPI"^^xsd:string ;
+    dcterms:description """Verifies that a record contains provenance metadata elements. The test examines three elements:
+distrbtr (distributor/publisher) in the distribution statement (/codeBook/stdyDscr/citation/distStmt/distrbtr)
+AuthEnty (author/authoring entity) in the responsibility statement (/codeBook/stdyDscr/citation/rspStmt/AuthEnty)
+grantNo (grant number) in the production statement (/codeBook/stdyDscr/citation/prodStmt/grantNo) of DDI 2.5 metadata."""^^xsd:string ;
+    dcat:keyword "FAIR"^^xsd:string ;
+    ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000002> ;
+    
+    dcat:version "1.0.0"^^xsd:string ;
+    adms:versionNotes "FT_R1-2_M_CPI"^^xsd:string ;
+    dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
+    ftr:status "Active"@en ;
+    
+    dcat:endpointURL <https://fair-tests.cessda.eu/api/provenance> ;
+    dcat:endpointDescription <https://github.com/cessda/cessda.fair-tests/blob/main/README.md> ;
+    
+    doap:repository <https://github.com/cessda/cessda.fair-tests> ;
+    ftr:supportedBy  <https://tools.ostrails.eu/champion/>; 
+    dpv:IsApplicableFor <https://schema.org/Dataset>;
+    dcterms:creator <https://ror.org/02wg9xc72>; 
+    
+    
+    
+    sio:SIO_000233 <https://purl.org/fair-metrics/FM_R1.2> ;
+    
+    
+    
+    dcterms:publisher  <https://orcid.org/0000-0002-4402-9644>  ; 
+    dcat:contactPoint  <https://orcid.org/0000-0002-4402-9644>  . 
+
+
+<https://ror.org/02wg9xc72> a vcard:Organisation ;
+    vcard:organisation-name "Consortium of European Social Science Data Archives"^^xsd:string .
+
+<https://orcid.org/0000-0002-4402-9644> a vcard:Individual, foaf:Agent ;
+    vcard:fn "John Shepherdson"^^xsd:string ;
+    vcard:hasEmail <mailto:john.shepherdson@cessda.eu> .
+    
+
+<https://purl.org/fair-metrics/FM_R1.2> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metrics -  Detailed Provenance"^^xsd:string ;
+    dcterms:identifier "https://purl.org/fair-metrics/FM_R1.2"^^xsd:string .
+
+
+
+
+
+
+
