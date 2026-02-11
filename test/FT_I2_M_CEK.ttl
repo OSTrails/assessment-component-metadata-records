@@ -21,12 +21,12 @@
     dcat:keyword "FAIR"^^xsd:string ;
     ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000002> ;
     
-    dcat:version "1.0.1"^^xsd:string ;
+    dcat:version "1.0.2"^^xsd:string ;
     adms:versionNotes "FT_I2_M_CEK"^^xsd:string ;
     dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
     ftr:status "Active"@en ;
     
-    dcat:endpointURL <https://fair-tests.cessda.eu/api/elsst-keywords> ;
+    dcat:endpointURL <https://fair-tests.cessda.eu/assess/test/elsst-keywords> ;
     dcat:endpointDescription <https://fair-tests.cessda.eu/api/elsst-keywords.ttl> ;
     
     doap:repository <https://github.com/cessda/cessda.fair-tests> ;
