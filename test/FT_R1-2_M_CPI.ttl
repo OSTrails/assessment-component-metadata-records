@@ -30,7 +30,7 @@ grantNo (grant number) in the production statement (/codeBook/stdyDscr/citation/
     ftr:status "Active"@en ;
     
     dcat:endpointURL <https://fair-tests.cessda.eu/assess/test/provenance> ;
-    dcat:endpointDescription <https://fair-tests.cessda.eu/api/provenance> ;
+    dcat:endpointDescription <https://fair-tests.cessda.eu/api/provenance.ttl> ;
     
     doap:repository <https://github.com/cessda/cessda.fair-tests> ;
     ftr:supportedBy  <https://tools.ostrails.eu/champion/>; 
