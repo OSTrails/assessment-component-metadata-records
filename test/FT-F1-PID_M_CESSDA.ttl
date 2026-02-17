@@ -22,7 +22,7 @@
     dcat:keyword "PID"^^xsd:string ;
     ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000401> ;
     
-    dcat:version "1.0.2"^^xsd:string ;
+    dcat:version "1.0.3"^^xsd:string ;
     adms:versionNotes "FT-F1-PID_M_CESSDA"^^xsd:string ;
     dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
     ftr:status "Active"@en ;
@@ -40,7 +40,7 @@
     sio:SIO_000233 <https://github.com/FAIRMetrics/Metrics/blob/master/MaturityIndicators/Gen2/Gen2_MI_F1B.md> ;
     
   
-    sio:SIO_000233 <https://fairsharing.org/> ;
+    sio:SIO_000233 <https://github.com/cessda/cessda.fair-tests/blob/main/Test_Logic.md> ;
     
     
     
@@ -60,9 +60,9 @@
     rdfs:label "FAIR Metric - FAIR Maturity Indicator - Identifier Persistence - Gen2-MI-F1B"^^xsd:string ;
     dcterms:identifier "https://github.com/FAIRMetrics/Metrics/blob/master/MaturityIndicators/Gen2/Gen2_MI_F1B.md"^^xsd:string .
 
-<https://fairsharing.org/> a dqv:Metric, ftr:Metric, dcat:Resource;
+<https://github.com/cessda/cessda.fair-tests/blob/main/Test_Logic.md> a dqv:Metric, ftr:Metric, dcat:Resource;
     rdfs:label "FAIR Metric– F1-PID – Metadata - Identifiers use ARK, DOI, HANDLE or URN PID schemas"^^xsd:string ;
-    dcterms:identifier "https://fairsharing.org/"^^xsd:string .
+    dcterms:identifier "https://github.com/cessda/cessda.fair-tests/blob/main/Test_Logic.md"^^xsd:string .
 
 
 
