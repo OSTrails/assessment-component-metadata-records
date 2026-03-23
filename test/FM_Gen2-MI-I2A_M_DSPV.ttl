@@ -39,7 +39,7 @@
     sio:SIO_000233 <https://github.com/FAIRMetrics/Metrics/blob/master/MaturityIndicators/Gen2/Gen2_MI_F1B.md> ;
     
   
-    sio:SIO_000233 <https://fairsharing.org/> ;
+    sio:SIO_000233 <https://github.com/cessda/cessda.fair-tests/blob/main/Test_Logic.md> ;
     
     
     
@@ -59,9 +59,9 @@
     rdfs:label "FAIR Metric - FAIR Maturity Indicator - Identifier Persistence - Gen2-MI-F1B"^^xsd:string ;
     dcterms:identifier "https://github.com/FAIRMetrics/Metrics/blob/master/MaturityIndicators/Gen2/Gen2_MI_F1B.md"^^xsd:string .
 
-<https://fairsharing.org/> a dqv:Metric, ftr:Metric, dcat:Resource;
+<https://github.com/cessda/cessda.fair-tests/blob/main/Test_Logic.md> a dqv:Metric, ftr:Metric, dcat:Resource;
     rdfs:label "FAIR Metric - Metadata Uses DDI Sampling Procedure Vocabulary"^^xsd:string ;
-    dcterms:identifier "https://fairsharing.org/"^^xsd:string .
+    dcterms:identifier "https://github.com/cessda/cessda.fair-tests/blob/main/Test_Logic.md"^^xsd:string .
 
 
 
