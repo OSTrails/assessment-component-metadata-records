@@ -1,0 +1,66 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ftr: <https://w3id.org/ftr#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+@prefix dpv: <https://w3id.org/dpv#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+
+<https://ostrails.github.io/assessment-component-metadata-records/test/FT_I1_M_DbKrSyn.ttl> a ftr:Test, dcat:DataService ;
+    dcterms:identifier "https://fairsharing.org/7836"^^xsd:string ;
+    dcterms:title "FAIR Test - I1 - Metadata - Database-level knowledge representation languages (syntactic)"^^xsd:string ;
+    rdfs:label "FT_I1_M_DbKrSyn"^^xsd:string ;
+    vivo:abbreviation "FT_I1_M_DbKrSyn"^^xsd:string ;
+    dcterms:description """The 'FAIR Test - I1 - Metadata - Database-level knowledge representation languages (syntactic)' is a database-level test that checks for relationships between the FAIRSharing metadata record and any model/format records with a syntactic format. If a FAIRsharing database record is found and is linked to a syntactic model/format record then this test will pass. If the record submitted is not a database or is not so linked then the test will fail. An indeterminate value will be returned if no FAIRsharing record metadata is found."""^^xsd:string ;
+    
+    ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000401> ;
+    
+    dcat:version "0.1.0"^^xsd:string ;
+    
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    ftr:status "Active"@en ;
+    dcat:landingPage <https://fairsharing.org/7836> ;    
+    dcat:endpointURL <https://api.fairsharing.org/fair_tests/ft_i1_m_db_knowledge_syntactic> ;
+    dcat:endpointDescription <https://api.fairsharing.org/test_descriptions/ft_i1_m_db_knowledge_syntactic/api> ;
+    
+    doap:repository <https://github.com/FAIRsharing/FAIRsharing-API> ;
+    ftr:supportedBy  <https://tools.ostrails.eu/champion>; 
+    dpv:IsApplicableFor <https://vocabularies.coar-repositories.org/resource_types/c_1843/>;
+    dcterms:creator <https://fairsharing.org/organisations/2281>; 
+    
+    
+    
+    sio:SIO_000233 <https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance/fair-benchmark-institutional-repository-datasets#fair-metric-i1-metadata-database-level-knowledge-representation-languages-syntactic> ;
+    
+    
+    
+    dcterms:publisher  <https://orcid.org/0000-0002-6468-9260>  ; 
+    dcat:contactPoint  <https://orcid.org/0000-0002-6468-9260>  . 
+
+
+<https://fairsharing.org/organisations/2281> a vcard:Organisation ;
+    vcard:organisation-name "Oxford e-Research Centre, Department of Engineering Science, University of Oxford, Oxford, UK"^^xsd:string .
+
+<https://orcid.org/0000-0002-6468-9260> a vcard:Individual, foaf:Agent ;
+    vcard:fn "Milo Thurston"^^xsd:string ;
+    vcard:hasEmail <mailto:milo.thurston@oerc.ox.ac.uk> .
+    
+
+<https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance/fair-benchmark-institutional-repository-datasets#fair-metric-i1-metadata-database-level-knowledge-representation-languages-syntactic> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – I1 – Metadata - Database-level knowledge representation languages (syntactic)"^^xsd:string ;
+    dcterms:identifier "https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance/fair-benchmark-institutional-repository-datasets#fair-metric-i1-metadata-database-level-knowledge-representation-languages-syntactic"^^xsd:string .
+
+
+
+
+
+
+
