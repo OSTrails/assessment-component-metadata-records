@@ -20,7 +20,7 @@
     rdfs:label "ABBREVIATION"^^xsd:string ;
     vivo:abbreviation "ABBREVIATION"^^xsd:string ;
     dcterms:description """DESCRIPTION"""^^xsd:string ;
-    
+    dcat:keyword "biological regulation"^^xsd:string ;
     
     
     dcat:version "1.0.0"^^xsd:string ;
