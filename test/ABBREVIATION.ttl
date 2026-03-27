@@ -1,0 +1,58 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ftr: <https://w3id.org/ftr#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+@prefix dpv: <https://w3id.org/dpv#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+
+<https://ostrails.github.io/assessment-component-metadata-records/test/ABBREVIATION.ttl> a ftr:Test, dcat:DataService ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/test/ABBREVIATION.ttl"^^xsd:string ;
+    dcterms:title "TITLE"^^xsd:string ;
+    rdfs:label "ABBREVIATION"^^xsd:string ;
+    vivo:abbreviation "ABBREVIATION"^^xsd:string ;
+    dcterms:description """DESCRIPTION"""^^xsd:string ;
+    
+    
+    
+    dcat:version "1.0.0"^^xsd:string ;
+    
+    dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
+    ftr:status "Active"@en ;
+    dcat:landingPage <https://ostrails.github.io/assessment-component-metadata-records/test/ABBREVIATION.ttl> ;    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    dcterms:publisher  <https://orcid.org/0009-0007-1059-8578>  ; 
+    dcat:contactPoint  <https://orcid.org/0009-0007-1059-8578>  . 
+
+
+
+<https://orcid.org/0009-0007-1059-8578> a vcard:Individual, foaf:Agent ;
+    vcard:fn "Sara Curiel Manzanas"^^xsd:string ;
+    vcard:hasEmail <mailto:saracurielmanzanas@gmail.com> .
+    
+
+
+
+
+
+
