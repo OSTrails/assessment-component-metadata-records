@@ -1,0 +1,61 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ftr: <https://w3id.org/ftr#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+@prefix dpv: <https://w3id.org/dpv#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+
+<https://ostrails.github.io/assessment-component-metadata-records/test/FT_F1_M_IdGloballyUnique.ttl> a ftr:Test, dcat:DataService ;
+    dcterms:identifier "https://fairsharing.org/7820"^^xsd:string ;
+    dcterms:title "FAIR Test – F1 – Metadata - Identifier is globally unique"^^xsd:string ;
+    rdfs:label "FT_F1_M_IdGloballyUnique"^^xsd:string ;
+    vivo:abbreviation "FT_F1_M_IdGloballyUnique"^^xsd:string ;
+    dcterms:description """The 'FAIR Test - F1 - Metadata - evaluate identifier global uniqueness' is a database-level test that requires the presence of globally unique identifiers for at least some of the content within the database being evaluated. FT_F1_M_IdGloballyUnique expects a FAIRsharing URL or DOI as its input and evaluates the database described by the FAIRsharing record for the guaranteed global uniqueness of the linked identifier schemas as defined by the identifier schema record type in FAIRsharing. As described by the GFF, global uniqueness guarantees the unambiguous referencing of the described resource; it is insufficient for it to be unique only locally. This feature is key to the Findability of the database being evaluated. The test will return as follows: Pass: URL/DOI must point to an existing FAIRsharing database record; the record must have an 'implements' to an id_schema record; that id_schema record must have the globally unique field set to 'true'. Indeterminate: URL/DOI is non-existent or malformed. Fail: if any of the conditions in 'pass' fail; specifically, if the URL/DOI is not a database record, OR if there is no 'implements' relationship to an id_schema, OR if any globally unique fields are set to 'false'. 
+"""^^xsd:string ;
+    
+    ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000401> ;
+    
+    dcat:version "0.1.0"^^xsd:string ;
+    
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    ftr:status "Active"@en ;
+    dcat:landingPage <https://fairsharing.org/7820> ;    
+    dcat:endpointURL <https://api.fairsharing.org/fair_tests/ft_f1_m_idgloballyunique> ;
+    dcat:endpointDescription <https://api.fairsharing.org/test_descriptions/ft_f1_m_idgloballyunique/api> ;
+    
+    doap:repository <https://github.com/FAIRsharing/FAIRsharing-API> ;
+    ftr:supportedBy  <https://tools.ostrails.eu/champion>; 
+    dpv:IsApplicableFor <https://vocabularies.coar-repositories.org/resource_types/c_1843/>;
+    dcterms:creator <https://fairsharing.org/organisations/2281>; 
+    
+    
+    
+    
+    
+    
+    dcterms:publisher  <https://orcid.org/0000-0002-6468-9260>  ; 
+    dcat:contactPoint  <https://orcid.org/0000-0002-6468-9260>  . 
+
+
+<https://fairsharing.org/organisations/2281> a vcard:Organisation ;
+    vcard:organisation-name "Oxford e-Research Centre, Department of Engineering Science, University of Oxford, Oxford, UK"^^xsd:string .
+
+<https://orcid.org/0000-0002-6468-9260> a vcard:Individual, foaf:Agent ;
+    vcard:fn "Milo Thurston"^^xsd:string ;
+    vcard:hasEmail <mailto:milo.thurston@oerc.ox.ac.uk> .
+    
+
+
+
+
+
+
