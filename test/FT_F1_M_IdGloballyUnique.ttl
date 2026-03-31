@@ -16,11 +16,12 @@
 
 <https://ostrails.github.io/assessment-component-metadata-records/test/FT_F1_M_IdGloballyUnique.ttl> a ftr:Test, dcat:DataService ;
     dcterms:identifier "https://fairsharing.org/7820"^^xsd:string ;
-    dcterms:title "FAIR Test – F1 – Metadata - Identifier is globally unique"^^xsd:string ;
+    dcterms:title "FAIR Test - F1 - Metadata - evaluate identifier global uniqueness"^^xsd:string ;
     rdfs:label "FT_F1_M_IdGloballyUnique"^^xsd:string ;
     vivo:abbreviation "FT_F1_M_IdGloballyUnique"^^xsd:string ;
-    dcterms:description """The 'FAIR Test - F1 - Metadata - evaluate identifier global uniqueness' is a database-level test that requires the presence of globally unique identifiers for at least some of the content within the database being evaluated. FT_F1_M_IdGloballyUnique expects a FAIRsharing URL or DOI as its input and evaluates the database described by the FAIRsharing record for the guaranteed global uniqueness of the linked identifier schemas as defined by the identifier schema record type in FAIRsharing. As described by the GFF, global uniqueness guarantees the unambiguous referencing of the described resource; it is insufficient for it to be unique only locally. This feature is key to the Findability of the database being evaluated. The test will return as follows: Pass: URL/DOI must point to an existing FAIRsharing database record; the record must have an 'implements' to an id_schema record; that id_schema record must have the globally unique field set to 'true'. Indeterminate: URL/DOI is non-existent or malformed. Fail: if any of the conditions in 'pass' fail; specifically, if the URL/DOI is not a database record, OR if there is no 'implements' relationship to an id_schema, OR if any globally unique fields are set to 'false'. 
-"""^^xsd:string ;
+    dcterms:description """F1 requires that metadata be assigned a globally unique, persistent and resolvable identifier. This metric is particularly concerned with the globally uniqueness aspect of GUPRIs; global uniqueness is required to prevent identifier collision across institutions, systems and domains. Otherwise, an identifier shared by multiple resources will confound efforts to describe that resource, or to use the identifier to retrieve it. In this metric, the definition of global uniqueness follows the FAIRsharing guidance on Globally Unique, Persistent and Resolvable Identifier (GUPRI) schemas. The identifier being evaluated is checked for a match (using regular expressions) to an existing id schema within FAIRsharing.
+
+Pass: The id_schema record must have the globally unique field set to 'true'. Indeterminate: URL/DOI is non-existent or malformed. Fail: if the globally unique field is set to 'false'."""^^xsd:string ;
     
     ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000401> ;
     
@@ -29,30 +30,36 @@
     dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
     ftr:status "Active"@en ;
     dcat:landingPage <https://fairsharing.org/7820> ;    
-    dcat:endpointURL <https://api.fairsharing.org/fair_tests/ft_f1_m_idgloballyunique> ;
+    dcat:endpointURL <https://api.fairsharing.org/test_descriptions/ft_f1_m_idgloballyunique/api> ;
     dcat:endpointDescription <https://api.fairsharing.org/test_descriptions/ft_f1_m_idgloballyunique/api> ;
     
     doap:repository <https://github.com/FAIRsharing/FAIRsharing-API> ;
     ftr:supportedBy  <https://tools.ostrails.eu/champion>; 
-    dpv:IsApplicableFor <https://vocabularies.coar-repositories.org/resource_types/c_1843/>;
+    dpv:IsApplicableFor <https://schema.org/CreativeWork>;
     dcterms:creator <https://fairsharing.org/organisations/2281>; 
     
     
     
+    sio:SIO_000233 <https://w3id.org/fair-metrics/general/FM_F1_M_IdentUnique> ;
     
     
     
-    dcterms:publisher  <https://orcid.org/0000-0002-6468-9260>  ; 
-    dcat:contactPoint  <https://orcid.org/0000-0002-6468-9260>  . 
+    dcterms:publisher  <https://orcid.org/0000-0002-7702-4495>  ; 
+    dcat:contactPoint  <https://orcid.org/0000-0002-7702-4495>  . 
 
 
 <https://fairsharing.org/organisations/2281> a vcard:Organisation ;
     vcard:organisation-name "Oxford e-Research Centre, Department of Engineering Science, University of Oxford, Oxford, UK"^^xsd:string .
 
-<https://orcid.org/0000-0002-6468-9260> a vcard:Individual, foaf:Agent ;
-    vcard:fn "Milo Thurston"^^xsd:string ;
-    vcard:hasEmail <mailto:milo.thurston@oerc.ox.ac.uk> .
+<https://orcid.org/0000-0002-7702-4495> a vcard:Individual, foaf:Agent ;
+    vcard:fn "Allyson Lister"^^xsd:string ;
+    vcard:hasEmail <mailto:allyson.lister@oerc.ox.ac.uk> .
     
+
+<https://w3id.org/fair-metrics/general/FM_F1_M_IdentUnique> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – F1 – Metadata - Identifier is globally unique"^^xsd:string ;
+    dcterms:identifier "https://w3id.org/fair-metrics/general/FM_F1_M_IdentUnique"^^xsd:string .
+
 
 
 
