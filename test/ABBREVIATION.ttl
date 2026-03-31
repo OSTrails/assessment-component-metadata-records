@@ -43,6 +43,8 @@
   
     sio:SIO_000233 <https://github.com/FAIRMetrics/Metrics/blob/master/MaturityIndicators/Gen2/Gen2_MI_I2A.md> ;
     
+  
+    
     
     
     dcterms:publisher  <https://orcid.org/0009-0007-1059-8578>  ; 
@@ -63,6 +65,14 @@
 <https://github.com/FAIRMetrics/Metrics/blob/master/MaturityIndicators/Gen2/Gen2_MI_I2A.md> a dqv:Metric, ftr:Metric, dcat:Resource;
     rdfs:label "FAIR Metric - FAIR Maturity Indicator - Uses FAIR Vocabularies (loose) - Gen2-MI-I2A"^^xsd:string ;
     dcterms:identifier "https://github.com/FAIRMetrics/Metrics/blob/master/MaturityIndicators/Gen2/Gen2_MI_I2A.md"^^xsd:string .
+
+
+
+
+
+
+
+
 
 
 
