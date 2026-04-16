@@ -11,33 +11,28 @@
 @prefix dpv: <https://w3id.org/dpv#> .
 @prefix sio: <http://semanticscience.org/resource/> .
 @prefix adms: <http://www.w3.org/ns/adms#> .
-@prefix schema: <http://schema.org/> .
-
 
 
 
 <https://ostrails.github.io/assessment-component-metadata-records//ABBR.ttl> a dcat:DataService ;
     dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records//ABBR.ttl"^^xsd:string ;
-    rdfs:definedBy "https://ostrails.github.io/assessment-component-metadata-records//ABBR.ttl" ;
-    dcat:landingPage "https://ostrails.github.io/assessment-component-metadata-records//ABBR.ttl"^^xsd:anyURI ;
     dcterms:title "TITLE"^^xsd:string ;
     rdfs:label "ABBR"^^xsd:string ;
     vivo:abbreviation "ABBR"^^xsd:string ;
     dcterms:description """DESC"""^^xsd:string ;
     dcat:keyword "marine coral reef biome"^^xsd:string ;
-    schema:about "Homo sapiens"^^xsd:string ;
     
     
     dcat:version "0.0.1"^^xsd:string ;
     
     dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
     ftr:status "Active"@en ;
+    dcat:landingPage <https://ostrails.github.io/assessment-component-metadata-records//ABBR.ttl> ;    
     
     
     
     
     
-    ftr:supportedBy <https://w3id.org/FAIR-Champion> ;
     
     
     
@@ -51,18 +46,10 @@
 
 
 
-  
-
-
-  
-
-
 <https://orcid.org/0009-0007-1059-8578> a vcard:Individual, foaf:Agent ;
     vcard:fn "Sara Curiel Manzanas"^^xsd:string ;
     vcard:hasEmail <mailto:sara.curiel.manzanas@gmail.com> .
     
-
-  
 
 
 
