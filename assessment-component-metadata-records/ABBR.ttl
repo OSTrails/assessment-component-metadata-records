@@ -39,6 +39,7 @@
     
     
     
+    ftr:supportedBy <https://exampletool.com>; 
     
     
     
@@ -48,8 +49,8 @@
     
     
     
-    dcterms:publisher  <https://orcid.org/0009-0007-1059-8578>  ; 
-    dcat:contactPoint  <https://orcid.org/0009-0007-1059-8578>  . 
+    dcterms:publisher  <https://orcid.org/0009-0007-1059-8578> ,  <https://orcid.org/0009-0007-1059-8578>  ; 
+    dcat:contactPoint  <https://orcid.org/0009-0007-1059-8578> ,  <https://orcid.org/0009-0007-1059-8578>  . 
 
 
 
@@ -59,6 +60,14 @@
     vcard:fn "Sara Curiel Manzanas"^^xsd:string ;
     vcard:hasEmail <mailto:sara.curiel.manzanas@gmail.com> .
     
+
+  
+<https://orcid.org/0009-0007-1059-8578> a vcard:Individual, foaf:Agent ;
+    vcard:fn "Sara Curiel Manzanas"^^xsd:string ;
+    vcard:hasEmail <mailto:sara.curiel.manzanas@upm.es> .
+    
+
+
 
 
 
