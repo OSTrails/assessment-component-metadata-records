@@ -17,6 +17,7 @@
 
 
 
+
 <https://ostrails.github.io/assessment-component-metadata-records//ABBR.ttl> a dcat:DataService ;
     dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records//ABBR.ttl"^^xsd:string ;
     dcterms:title "TITLE"^^xsd:string ;
@@ -47,6 +48,8 @@
     
     dcterms:publisher  <https://orcid.org/0009-0007-1059-8578>  ; 
     dcat:contactPoint  <https://orcid.org/0009-0007-1059-8578>  . 
+
+
 
 
 
