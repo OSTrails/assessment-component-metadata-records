@@ -1,0 +1,68 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ftr: <https://w3id.org/ftr#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+@prefix dpv: <https://w3id.org/dpv#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix schema: <http://schema.org/> .
+
+
+
+
+
+
+<https://ostrails.github.io/assessment-component-metadata-records//ERDERA_Onboard.ttl> a dcat:DataService ;
+    dcterms:identifier "https://fairsharing.org/8166"^^xsd:string ;
+    rdfs:definedBy "https://fairsharing.org/8166"^^xsd:string ;
+    dcat:landingPage "https://fairsharing.org/8166"^^xsd:anyURI ;
+    dcterms:title "ERDERA Virtual Platform Onboarding Benchmark"^^xsd:string ;
+    rdfs:label "ERDERA_Onboard"^^xsd:string ;
+    vivo:abbreviation "ERDERA_Onboard"^^xsd:string ;
+    dcterms:description """The ERDERA Virtual Platform (VP) allows Rare Disease-related resources (e.g. datasets, catalogues, terminologies, registries, biobanks, and analytical services) to join their network of FAIR resources through publishing metadata records compliant with the VP minimum standards. This Benchmark assembles individual Onboarding Metrics to measure the “Level” of onboarding (L1, L2, or L3) to the VP.
+
+Currently, this Benchmark includes the following Metrics: https://fairsharing.org/8034 - L1 Onboarding Metric for ERDERA https://fairsharing.org/8035 - L2 Onboarding Metric for ERDERA These Metrics are applied cumulatively (i.e. L1 must pass for L2 to be accepted)"""^^xsd:string ;
+    dcat:keyword "rare disease"^^xsd:string, "data integration"^^xsd:string, "fair"^^xsd:string, "data quality"^^xsd:string, "quality control"^^xsd:string ;
+    
+    ftr:applicationArea <disease>, <http://aims.fao.org/aos/agrovoc/c_4318>, <http://purl.obolibrary.org/obo/NCIT_C142491>, <http://purl.obolibrary.org/obo/NCIT_C15245>, <http://www.fairsharing.org/ontology/subject/SRAO_0000306> ;
+    ftr:inDimension <https://w3id.org/fair/principles/terms/R1.3> ;
+    dcat:version "1.0.0"^^xsd:string ;
+    
+    dcterms:license <https://creativecommons.org/licenses/by-sa/3.0/at/legalcode> ;
+    ftr:status "Active"@en ;
+     
+    
+    
+    ftr:scoringFunction <https://docs.google.com/spreadsheets/d/16F0HtG88qvXWM5TYza5PegpfQn_b_dr4lEeUTxEgbs8/edit> ;
+    
+    
+    ftr:supportedBy <https://w3id.org/FAIR-Champion> ;
+    dpv:IsApplicableFor <https://schema.org/Dataset>;
+    dcterms:creator <https://fairsharing.org/organisations/>; 
+    
+    
+    
+    
+    
+    
+    dcterms:publisher  <https://orcid.org/>  ; 
+    dcat:contactPoint  <https://orcid.org/>  . 
+
+
+
+
+<https://fairsharing.org/organisations/> a vcard:Organisation ;
+    vcard:organisation-name "No name defined"^^xsd:string .
+
+
+
+
+
+<https://docs.google.com/spreadsheets/d/16F0HtG88qvXWM5TYza5PegpfQn_b_dr4lEeUTxEgbs8/edit> a sio:SIO_000090 .
+
