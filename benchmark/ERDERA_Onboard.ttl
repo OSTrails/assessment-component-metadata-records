@@ -18,9 +18,10 @@
 
 
 
-<https://ostrails.github.io/assessment-component-metadata-records//ERDERA_Onboard.ttl> a dcat:DataService ;
-    dcterms:identifier "https://fairsharing.org/8166"^^xsd:string ;
-    rdfs:definedBy "https://fairsharing.org/8166"^^xsd:string ;
+<https://ostrails.github.io/assessment-component-metadata-records/ERDERA_Onboard.ttl> 
+a dcat:DataService,  ftr:Benchmark ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/ERDERA_Onboard.ttl"^^xsd:string ;
+    rdfs:definedBy "https://ostrails.github.io/assessment-component-metadata-records/ERDERA_Onboard.ttl"^^xsd:string ;
     dcat:landingPage "https://fairsharing.org/8166"^^xsd:anyURI ;
     dcterms:title "ERDERA Virtual Platform Onboarding Benchmark"^^xsd:string ;
     rdfs:label "ERDERA_Onboard"^^xsd:string ;
@@ -44,21 +45,22 @@ Currently, this Benchmark includes the following Metrics: https://fairsharing.or
     
     ftr:supportedBy <https://w3id.org/FAIR-Champion> ;
     dpv:IsApplicableFor <https://schema.org/Dataset>;
-    dcterms:creator <https://fairsharing.org/organisations/>; 
+    dcterms:creator <https://fairsharing.org/organisations/5678>; 
     
     
     
     
-    
-    
-    dcterms:publisher  <https://orcid.org/>  ; 
-    dcat:contactPoint  <https://orcid.org/>  . 
+    dcterms:publisher  <https://orcid.org/0000-0001-6960-357X>  ; 
+    dcat:contactPoint  <https://orcid.org/0000-0001-6960-357X>  . 
 
 
+<https://fairsharing.org/organisations/5678> a vcard:Organisation ;
+    vcard:organisation-name "European Rare Diseases Research Alliance (ERDERA)"^^xsd:string .
 
-
-<https://fairsharing.org/organisations/> a vcard:Organisation ;
-    vcard:organisation-name "No name defined"^^xsd:string .
+<https://orcid.org/https://orcid.org/0000-0001-6960-357X> a vcard:Individual, foaf:Agent ;
+    vcard:fn "Mark D Wilkinson"^^xsd:string ;
+    vcard:hasEmail <mailto:mark.wilkinson@upm.es> .
+    
 
 
 
