@@ -1,0 +1,80 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ftr: <https://w3id.org/ftr#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+@prefix dpv: <https://w3id.org/dpv#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix schema: <http://schema.org/> .
+
+
+
+
+
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1-2_M_Fund_ROR.ttl> a ftr:Metric, dqv:Metric, dcat:Resource ;
+    dcterms:identifier "https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance/fair-metrics-co-creation#fair-metric-r1.2-metadata-ror-id-for-funder"^^xsd:string ;
+    rdfs:definedBy "https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance/fair-metrics-co-creation#fair-metric-r1.2-metadata-ror-id-for-funder"^^xsd:string ;
+    dcat:landingPage "https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance/fair-metrics-co-creation#fair-metric-r1.2-metadata-ror-id-for-funder"^^xsd:anyURI ;
+    dcterms:title "FAIR Metric - R1.2 - Metadata - ROR ID for funder"^^xsd:string ;
+    rdfs:label "FM_R1-2_M_Fund_ROR"^^xsd:string ;
+    vivo:abbreviation "FM_R1-2_M_Fund_ROR"^^xsd:string ;
+    dcterms:description """What is being measured?
+This metric evaluates whether the metadata includes at least one ROR ID for a funder associated with the research object. The assessment checks for structured funding references within both the landing page metadata and the central records held by DOI registration agencies (such as DataCite or Crossref). Specifically, it verifies that fields such as fundingReferences (DataCite) or funder (Crossref) are populated with at least one funder ROR ID.
+
+Why should we measure it?
+Under FAIR Principle R1.2, data must be associated with detailed provenance to support its reuse. Funding information is a critical element of “administrative provenance,” as it links a research output to the specific project and financial context that enabled its creation. This is useful because:
+
+Contextual Integrity: It provides context regarding the broader research programme or mission under which the data was generated.
+Compliance and Auditing: It provides a machine-actionable way for institutions and funding bodies to monitor open data mandates and track the return on investment for specific grants.
+Discovery: Many researchers and aggregators search for data based on the sponsoring organisation.
+
+Unlike the similar metric at https://fairsharing.org/7496, the ROR ID is mandatory, and tests implementing this metric should fail if no ROR ID for a funder is found. Conversely, https://fairsharing.org/7496 will pass as long as there is any funder information; ROR IDs are optional."""^^xsd:string ;
+    dcat:keyword "FAIR"^^xsd:string ;
+    schema:about "Not applicable"^^xsd:string ;
+    ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000401> ;
+    ftr:inDimension <https://w3id.org/fair/principles/terms/R1.2> ;
+    dcat:version "1.0.0"^^xsd:string ;
+    
+    dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
+    ftr:status "Active"@en ;
+     
+    
+    
+    
+    
+    ftr:supportedBy <https://tools.ostrails.eu/champion>; 
+    
+    dpv:IsApplicableFor <https://schema.org/CreativeWork>;
+    dcterms:creator <https://fairsharing.org/organisations/2281>; dcterms:creator <https://fairsharing.org/organisations/291>; 
+    
+    
+    
+    
+    
+    
+    dcterms:publisher  <https://orcid.org/>  ; 
+    dcat:contactPoint  <https://orcid.org/>  . 
+
+
+
+
+<https://fairsharing.org/organisations/2281> a vcard:Organisation ;
+    vcard:organisation-name "Oxford e-Research Centre, Department of Engineering Science, University of Oxford, Oxford, UK"^^xsd:string .
+
+  
+<https://fairsharing.org/organisations/291> a vcard:Organisation ;
+    vcard:organisation-name "Bodleian Library, University of Oxford, Oxford, UK"^^xsd:string .
+
+
+
+
+
+
+
