@@ -11,9 +11,17 @@
 @prefix dpv: <https://w3id.org/dpv#> .
 @prefix sio: <http://semanticscience.org/resource/> .
 @prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix schema: <http://schema.org/> .
+
+
+
+
+
 
 <https://ostrails.github.io/assessment-component-metadata-records/test/FTARKTF1GUPRI.ttl> a ftr:Test, dcat:DataService ;
     dcterms:identifier "https://fairsharing.org/7455"^^xsd:string ;
+    rdfs:definedBy "https://fairsharing.org/7455"^^xsd:string ;
+    dcat:landingPage "https://fairsharing.org/7455"^^xsd:anyURI ;
     dcterms:title "FAIR Test - ARK T-F1 - Globally unique, persistent and resolvable identifiers for database content"^^xsd:string ;
     rdfs:label "FTARKTF1GUPRI"^^xsd:string ;
     vivo:abbreviation "FTARKTF1GUPRI"^^xsd:string ;
@@ -21,7 +29,8 @@
 The test will return as follows:
 Pass: URL/DOI must point to an existing FAIRsharing database record; the record must have an 'implements' to an id_schema record; that id_schema record must have the globally unique, persistent and resolvable fields all set to 'true'.
 Indeterminate: URL/DOI is non-existent or malformed.
-Fail: if any of the conditions in 'pass' fail; specifically, if the URL/DOI is not a database record, OR if there is no 'implements' relationship to an id_schema, OR if any of globally unique, persistent and resolvable fields are set to 'false'."""^^xsd:string ;
+Fail: if any of the conditions in 'pass' fail; specifically, if the URL/DOI is not a database record, OR if there is no 'implements' relationship to an id_schema, OR if any of globally unique, persistent and resolvable fields are set to 'false'. """^^xsd:string ;
+    
     
     ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000401> ;
     
@@ -29,12 +38,13 @@ Fail: if any of the conditions in 'pass' fail; specifically, if the URL/DOI is n
     
     dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
     ftr:status "Active"@en ;
-    dcat:landingPage <https://fairsharing.org/7455> ;
-    dcat:endpointURL <https://api.fairsharing.org/fair_tests/ft_ark_f1gupri> ;
-    dcat:endpointDescription <https://api.fairsharing.org/test_descriptions/ft_ark_f1gupri/api> ;
+     
+    dcat:endpointURL <https://fair-tests.fairsharing.org/test/ft_ark_f1gupri> ;
+    dcat:endpointDescription <https://fair-tests.fairsharing.org/test_descriptions/ft_ark_f1gupri/api> ;
     
-    doap:repository <https://github.com/FAIRsharing/FAIRsharing-API> ;
-    ftr:supportedBy  <https://tools.ostrails.eu/champion>; 
+    doap:repository <https://github.com/FAIRsharing/FAIR-Tests> ;
+    ftr:supportedBy <https://tools.ostrails.eu/champion>; 
+    
     dpv:IsApplicableFor <https://vocabularies.coar-repositories.org/resource_types/c_1843/>;
     dcterms:creator <https://fairsharing.org/organisations/2281>; 
     
@@ -46,6 +56,8 @@ Fail: if any of the conditions in 'pass' fail; specifically, if the URL/DOI is n
     
     dcterms:publisher  <https://orcid.org/0000-0002-7702-4495>  ; 
     dcat:contactPoint  <https://orcid.org/0000-0002-7702-4495>  . 
+
+
 
 
 <https://fairsharing.org/organisations/2281> a vcard:Organisation ;
