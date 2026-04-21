@@ -11,9 +11,17 @@
 @prefix dpv: <https://w3id.org/dpv#> .
 @prefix sio: <http://semanticscience.org/resource/> .
 @prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix schema: <http://schema.org/> .
+
+
+
+
+
 
 <https://ostrails.github.io/assessment-component-metadata-records/test/FTARKTF1.ttl> a ftr:Test, dcat:DataService ;
     dcterms:identifier "https://fairsharing.org/7163"^^xsd:string ;
+    rdfs:definedBy "https://fairsharing.org/7163"^^xsd:string ;
+    dcat:landingPage "https://fairsharing.org/7163"^^xsd:anyURI ;
     dcterms:title "FAIR Test - ARK T-F1 - Persistent identifiers for database content"^^xsd:string ;
     rdfs:label "FTARKTF1"^^xsd:string ;
     vivo:abbreviation "FTARKTF1"^^xsd:string ;
@@ -23,18 +31,20 @@ Pass: URL/DOI must point to an existing FAIRsharing database record; the record 
 Indeterminate: URL/DOI is non-existent or malformed.
 Fail: if any of the conditions in 'pass' fail; specifically, if the URL/DOI is not a database record, OR if there is no 'implements' relationship to an id_schema, OR if the persistent field is set to 'false'. """^^xsd:string ;
     
+    
     ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000401> ;
     
     dcat:version "0.2.0"^^xsd:string ;
     
     dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
     ftr:status "Active"@en ;
-    dcat:landingPage <https://fairsharing.org/7163> ;
-    dcat:endpointURL <https://api.fairsharing.org/fair_tests/ft_ark_f1> ;
-    dcat:endpointDescription <https://api.fairsharing.org/test_descriptions/ft_ark_f1/api> ;
+     
+    dcat:endpointURL <https://fair-tests.fairsharing.org/test/ft_ark_f1> ;
+    dcat:endpointDescription <https://fair-tests.fairsharing.org/test_descriptions/ft_ark_f1/api> ;
     
-    doap:repository <https://github.com/FAIRsharing/FAIRsharing-API> ;
-    ftr:supportedBy  <https://tools.ostrails.eu/champion>; 
+    doap:repository <https://github.com/FAIRsharing/FAIR-Tests/blob/main/test/ft_ark_f1_test.rb> ;
+    ftr:supportedBy <https://tools.ostrails.eu/champion>; 
+    
     dpv:IsApplicableFor <https://vocabularies.coar-repositories.org/resource_types/c_1843/>;
     dcterms:creator <https://fairsharing.org/organisations/2281>; 
     
@@ -46,6 +56,8 @@ Fail: if any of the conditions in 'pass' fail; specifically, if the URL/DOI is n
     
     dcterms:publisher  <https://orcid.org/0000-0002-7702-4495>  ; 
     dcat:contactPoint  <https://orcid.org/0000-0002-7702-4495>  . 
+
+
 
 
 <https://fairsharing.org/organisations/2281> a vcard:Organisation ;
