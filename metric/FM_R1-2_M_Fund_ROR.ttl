@@ -50,6 +50,7 @@ Unlike the similar metric at https://fairsharing.org/7496, the ROR ID is mandato
     
     
     ftr:supportedBy <https://tools.ostrails.eu/champion>; 
+    
     dpv:IsApplicableFor <https://schema.org/CreativeWork>;
     dcterms:creator <https://fairsharing.org/organisations/2281>; dcterms:creator <https://fairsharing.org/organisations/291>; 
     
@@ -70,7 +71,6 @@ Unlike the similar metric at https://fairsharing.org/7496, the ROR ID is mandato
   
 <https://fairsharing.org/organisations/291> a vcard:Organisation ;
     vcard:organisation-name "Bodleian Library, University of Oxford, Oxford, UK"^^xsd:string .
-
 
 
 
