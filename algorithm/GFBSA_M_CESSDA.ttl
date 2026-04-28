@@ -35,7 +35,7 @@
     dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
     ftr:status "Active"@en ;
      
-    
+    dcat:endpointURL <https://tools.ostrails.eu/champion/algorithms/d/1rUAwqgOqZiQqCh2rZpLvlJ24xMYD3jHKeHhv6_c4C-A> ;
     dcat:endpointDescription <https://github.com/cessda/cessda.fair-tests/blob/main/README.md> ;
     
     doap:repository <https://github.com/cessda/cessda.fair-tests.git> ;
