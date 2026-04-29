@@ -18,10 +18,10 @@
 
 
 
-<https://ostrails.github.io/benchmark/ERDERA_Onboard.ttl> 
+<https://ostrails.github.io/assessment-component-metadata-records/benchmark/ERDERA_Onboard.ttl> 
 a dcat:DataService,  ftr:Benchmark ;
-    dcterms:identifier "https://ostrails.github.io/benchmark/ERDERA_Onboard.ttl"^^xsd:string ;
-    rdfs:definedBy "https://ostrails.github.io/benchmark/ERDERA_Onboard.ttl"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/benchmark/ERDERA_Onboard.ttl"^^xsd:string ;
+    rdfs:definedBy "https://ostrails.github.io/assessment-component-metadata-records/benchmark/ERDERA_Onboard.ttl"^^xsd:string ;
     dcat:landingPage "https://fairsharing.org/8166"^^xsd:anyURI ;
     dcterms:title "ERDERA Virtual Platform Onboarding Benchmark"^^xsd:string ;
     rdfs:label "ERDERA_Onboard"^^xsd:string ;
