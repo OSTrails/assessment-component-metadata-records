@@ -1,0 +1,89 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ftr: <https://w3id.org/ftr#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+@prefix dpv: <https://w3id.org/dpv#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix schema: <http://schema.org/> .
+
+
+
+
+
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F1_M_MetadataIdUnique.ttl> a ftr:Metric, dqv:Metric, dcat:Resource ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F1_M_MetadataIdUnique.ttl"^^xsd:string ;
+    rdfs:definedBy "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F1_M_MetadataIdUnique.ttl" ;
+    dcat:landingPage "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F1_M_MetadataIdUnique.ttl"^^xsd:anyURI ;
+    dcterms:title "FAIR Metric – F1 – Metadata - Metadata contains identifier that is guaranteed globally unique"^^xsd:string ;
+    rdfs:label "FM_F1_M_MetadataIdUnique"^^xsd:string ;
+    vivo:abbreviation "FM_F1_M_MetadataIdUnique"^^xsd:string ;
+    dcterms:description """### What is being measured?
+
+This metric evaluates whether the metadata retrieved from the provided URI satisfies the EOSC-PID aligned FAIRsharing definition of global uniqueness. Please note that it checks the metadata retrieved from the URI for identifier(s) meeting this requirement; it does NOT assess the provided URI directly. Resolution of the provided URI should follow [FAIR assessment id resolution best practices](https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance/identifier-resolution) as defined by FAIRsharing.
+
+### Why should we measure it?
+
+F1 requires that metadata be assigned a globally unique, persistent and resolvable identifier. This metric is particularly concerned with the globally uniqueness aspect of GUPRIs; global uniqueness is required to prevent identifier collision across institutions, systems and domains. Otherwise, an identifier shared by multiple resources will confound efforts to describe that resource, or to use the identifier to retrieve it. In this metric, the definition of global uniqueness follows the [FAIRsharing guidance on Globally Unique, Persistent and Resolvable Identifier (GUPRI) schemas](https://fairsharing.gitbook.io/fairsharing/record-sections-and-fields/general-information/globally-unique-persistent-and-resolvable-identifier-schemas). This guidance requires that the identifier schema must use a controlled syntax/namespaces to avoid clashes; such syntax/namespaces must be governed by clearly defined Authorities. If there is any way the identifier could be created as part of another identifier system (e.g. if it is a structured series of alphanumeric characters such as P12345 (UniProt Accession Number) that could theoretically be used for other identifiers) then it is not globally unique. To fulfil this requirement in practice, it generally (but not always) requires a URL prefix of some kind. This metric evaluates whether at least one of the identifier(s) within the metadata being assessed is issued under a schema that meets the FAIRsharing definition of global uniqueness. The evaluation assesses whether the identifier schema operates within a governed namespace that prevents external collision and ensures unambiguous interpretation beyond the local database context.
+
+### Comments
+
+For an in-depth understanding of the issues around identifiers, please see http://dx.plos.org/10.1371/journal.pbio.2001414."""^^xsd:string ;
+    dcat:keyword "FAIR"^^xsd:string ;
+    schema:about "Not applicable"^^xsd:string ;
+    ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000401> ;
+    ftr:inDimension <https://w3id.org/fair/principles/terms/F1> ;
+    dcat:version "1.0.0"^^xsd:string ;
+    
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    ftr:status "Active"@en ;
+     
+    
+    
+    
+    
+    ftr:supportedBy <https://tools.ostrails.eu/champion>; 
+    
+    dpv:IsApplicableFor <https://schema.org/CreativeWork>;
+    dcterms:creator <https://fairsharing.org/organisations/2281>; dcterms:creator <https://fairsharing.org/organisations/291>; 
+    
+    ftr:hasBenchmark <https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance/fair-benchmark-institutional-repository-datasets> ;
+    
+    
+    
+    
+    
+    dcterms:publisher  <https://orcid.org/0000-0002-7702-4495>  ; 
+    dcat:contactPoint  <https://orcid.org/0000-0002-7702-4495>  . 
+
+
+
+
+<https://fairsharing.org/organisations/2281> a vcard:Organisation ;
+    vcard:organisation-name "Oxford e-Research Centre, Department of Engineering Science, University of Oxford, Oxford, UK"^^xsd:string .
+
+  
+<https://fairsharing.org/organisations/291> a vcard:Organisation ;
+    vcard:organisation-name "Bodleian Library, University of Oxford, Oxford, UK"^^xsd:string .
+
+<https://orcid.org/0000-0002-7702-4495> a vcard:Individual, foaf:Agent ;
+    vcard:fn "Allyson Lister"^^xsd:string ;
+    vcard:hasEmail <mailto:allyson.lister@oerc.ox.ac.uk> .
+    
+
+
+
+
+<https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance/fair-benchmark-institutional-repository-datasets> a ftr:Benchmark, dcat:Resource ;
+    rdfs:label "FAIR Benchmark - Institutional Repository Datasets"^^xsd:string ;
+    dcterms:identifier "https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance/fair-benchmark-institutional-repository-datasets"^^xsd:string .
+
+
+
