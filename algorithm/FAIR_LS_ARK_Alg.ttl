@@ -11,36 +11,48 @@
 @prefix dpv: <https://w3id.org/dpv#> .
 @prefix sio: <http://semanticscience.org/resource/> .
 @prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix schema: <http://schema.org/> .
+
+
+
+
+
 
 <https://ostrails.github.io/assessment-component-metadata-records/algorithm/FAIR_LS_ARK_Alg.ttl> a ftr:Algorithm, dcat:DataService ;
-    dcterms:identifier "https://fairsharing.org/7456"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/algorithm/FAIR_LS_ARK_Alg.ttl"^^xsd:string ;
+    rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/algorithm/FAIR_LS_ARK_Alg.ttl"^^xsd:anyURI ;
+    dcat:landingPage "https://fairsharing.org/7456"^^xsd:anyURI ;
     dcterms:title "FAIR Assessment of Life Science Repositories and Knowledgebases"^^xsd:string ;
     rdfs:label "FAIR_LS_ARK_Alg"^^xsd:string ;
     vivo:abbreviation "FAIR_LS_ARK_Alg"^^xsd:string ;
     dcterms:description """The FAIR LS ARK Benchmark, combined with the FAIR LS ARK Alg Scoring algorithm, is intended to assess any life science database registered in FAIRsharing for FAIRness. Such a score will be created from database-level metadata as stored within FAIRsharing. In order for your database to be assessed, you only need to have it registered in FAIRsharing."""^^xsd:string ;
     dcat:keyword "FAIR"^^xsd:string, "Benchmarking"^^xsd:string, "algorithm"^^xsd:string ;
+    
     ftr:applicationArea <http://aims.fao.org/aos/agrovoc/c_4318> ;
     
     dcat:version "0.1.0"^^xsd:string ;
     
     dcterms:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
     ftr:status "Active"@en ;
-    dcat:landingPage <https://fairsharing.org/7456> ;
+     
     dcat:endpointURL <https://docs.google.com/spreadsheets/d/1BroHwggqSs9p33uA-Z7CLz_XJx903IuBu6c8uoInht> ;
     
     
     doap:repository <https://github.com/FAIRsharing/FAIRsharing-API> ;
     
+    ftr:supportedBy <https://w3id.org/FAIR-Champion> ;
     
     dcterms:creator <https://fairsharing.org/organisations/2281>; 
     
     
-    ftr:scoringFunction <https://docs.google.com/spreadsheets/d/1BroHwggqSs9p33uA-Z7CLz_XJx903IuBu6c8uoInhtk/>;
+    
     
     
     
     dcterms:publisher  <https://orcid.org/0000-0002-7702-4495>  ; 
     dcat:contactPoint  <https://orcid.org/0000-0002-7702-4495>  . 
+
+
 
 
 <https://fairsharing.org/organisations/2281> a vcard:Organisation ;
