@@ -19,8 +19,8 @@
 
 
 <https://ostrails.github.io/assessment-component-metadata-records/test/FTARKTF1.ttl> a ftr:Test, dcat:DataService ;
-    dcterms:identifier "https://fairsharing.org/7163"^^xsd:string ;
-    rdfs:definedBy "https://fairsharing.org/7163"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/test/FTARKTF1.ttl"^^xsd:string ;
+    rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/test/FTARKTF1.ttl"^^xsd:anyURI ;
     dcat:landingPage "https://fairsharing.org/7163"^^xsd:anyURI ;
     dcterms:title "FAIR Test - ARK T-F1 - Persistent identifiers for database content"^^xsd:string ;
     rdfs:label "FTARKTF1"^^xsd:string ;
