@@ -19,8 +19,8 @@
 
 
 <https://ostrails.github.io/assessment-component-metadata-records/test/FT_F1_M_IdentPersistent.ttl> a ftr:Test, dcat:DataService ;
-    dcterms:identifier "https://fairsharing.org/7821"^^xsd:string ;
-    rdfs:definedBy "https://fairsharing.org/7821"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/test/FT_F1_M_IdentPersistent.ttl"^^xsd:string ;
+    rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/test/FT_F1_M_IdentPersistent.ttl"^^xsd:anyURI ;
     dcat:landingPage "https://fairsharing.org/7821"^^xsd:anyURI ;
     dcterms:title "FAIR Test – F1 – Metadata - Identifier is persistent "^^xsd:string ;
     rdfs:label "FT_F1_M_IdentPersistent"^^xsd:string ;
