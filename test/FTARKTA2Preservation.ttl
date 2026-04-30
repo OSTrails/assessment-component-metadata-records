@@ -19,8 +19,8 @@
 
 
 <https://ostrails.github.io/assessment-component-metadata-records/test/FTARKTA2Preservation.ttl> a ftr:Test, dcat:DataService ;
-    dcterms:identifier "https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance#fairsharing-developed-tests"^^xsd:string ;
-    rdfs:definedBy "https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance#fairsharing-developed-tests"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/test/FTARKTA2Preservation.ttl"^^xsd:string ;
+    rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/test/FTARKTA2Preservation.ttl"^^xsd:anyURI ;
     dcat:landingPage "https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance#fairsharing-developed-tests"^^xsd:anyURI ;
     dcterms:title "FAIR Test - ARK T-A2 - Database has a preservation policy"^^xsd:string ;
     rdfs:label "FTARKTA2Preservation"^^xsd:string ;
