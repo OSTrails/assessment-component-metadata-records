@@ -19,8 +19,8 @@
 
 
 <https://ostrails.github.io/assessment-component-metadata-records/test/FT_I1_M_DbKnowledgeSyntactic.ttl> a ftr:Test, dcat:DataService ;
-    dcterms:identifier "https://fairsharing.org/7836"^^xsd:string ;
-    rdfs:definedBy "https://fairsharing.org/7836"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/test/FT_I1_M_DbKnowledgeSyntactic.ttl"^^xsd:string ;
+    rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/test/FT_I1_M_DbKnowledgeSyntactic.ttl"^^xsd:anyURI ;
     dcat:landingPage "https://fairsharing.org/7836"^^xsd:anyURI ;
     dcterms:title "FAIR Test - I1 - Metadata - Database-level knowledge representation languages (syntactic)"^^xsd:string ;
     rdfs:label "FT_I1_M_DbKnowledgeSyntactic"^^xsd:string ;
