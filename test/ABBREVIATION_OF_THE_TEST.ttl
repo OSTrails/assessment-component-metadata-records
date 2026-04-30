@@ -19,8 +19,8 @@
 
 
 <https://ostrails.github.io/assessment-component-metadata-records/test/ABBREVIATION_OF_THE_TEST.ttl> a ftr:Test, dcat:DataService ;
-    dcterms:identifier "https://landingpage-example.com"^^xsd:string ;
-    rdfs:definedBy "https://landingpage-example.com"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/test/ABBREVIATION_OF_THE_TEST.ttl"^^xsd:string ;
+    rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/test/ABBREVIATION_OF_THE_TEST.ttl"^^xsd:anyURI ;
     dcat:landingPage "https://landingpage-example.com"^^xsd:anyURI ;
     dcterms:title "TITLE OF THE TEST"^^xsd:string ;
     rdfs:label "ABBREVIATION_OF_THE_TEST"^^xsd:string ;
