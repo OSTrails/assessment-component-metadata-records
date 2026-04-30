@@ -14,6 +14,8 @@
 
 <https://github.com/OSTrails/assessment-component-metadata-records/tree/main/test/CessdaPidTest.ttl> a ftr:Test ;
     dcterms:identifier "https://github.com/OSTrails/assessment-component-metadata-records/tree/main/test/CessdaPidTest.ttl"^^xsd:string ;
+    rdfs:isDefinedBy "https://github.com/OSTrails/assessment-component-metadata-records/tree/main/test/CessdaPidTest.ttl"^^xsd:anyURI ;
+    dcat:landingPage <https://github.com/cessda/cessda.fair.tests.git>^^xsd:anyURI ;
     dcterms:title "CESSDA PID Test"^^xsd:string ;
     rdfs:label "CessdaPidTest"^^xsd:string ;
     vivo:abbreviation "CessdaPidTest"^^xsd:string ;
@@ -27,7 +29,6 @@
     adms:versionNotes "CessdaPidTest"^^xsd:string ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     ftr:status "Active"@en ;
-    dcat:landingPage <https://github.com/cessda/cessda.fair.tests.git> ;
     dcat:endpointURL <https://github.com/cessda/cessda.fair.tests.git> ;
     dcat:endpointDescription <https://github.com/cessda/cessda.fair.tests/blob/main/README.md> ;
     doap:repository <https://github.com/cessda/cessda.fair.tests.git> ;
