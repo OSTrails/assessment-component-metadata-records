@@ -19,8 +19,8 @@
 
 
 <https://ostrails.github.io/assessment-component-metadata-records/test/FT_F2_M_Discoveryfields.ttl> a ftr:Test, dcat:DataService ;
-    dcterms:identifier "https://fairsharing.org/7828"^^xsd:string ;
-    rdfs:definedBy "https://fairsharing.org/7828"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/test/FT_F2_M_Discoveryfields.ttl"^^xsd:string ;
+    rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/test/FT_F2_M_Discoveryfields.ttl"^^xsd:anyURI ;
     dcat:landingPage "https://fairsharing.org/7828"^^xsd:anyURI ;
     dcterms:title "FAIR Test - F2 - Metadata - Discovery-Oriented Metadata Fields"^^xsd:string ;
     rdfs:label "FT_F2_M_Discoveryfields"^^xsd:string ;
