@@ -20,7 +20,7 @@
 
 <https://ostrails.github.io/assessment-component-metadata-records/test/ABBREVIATION_OF_TEST_WITH_NO_LANDING_PAGE.ttl> a ftr:Test, dcat:DataService ;
     dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/test/ABBREVIATION_OF_TEST_WITH_NO_LANDING_PAGE.ttl"^^xsd:string ;
-    rdfs:definedBy "https://ostrails.github.io/assessment-component-metadata-records/test/ABBREVIATION_OF_TEST_WITH_NO_LANDING_PAGE.ttl" ;
+    rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/test/ABBREVIATION_OF_TEST_WITH_NO_LANDING_PAGE.ttl"^^xsd:anyURI ;
     dcat:landingPage "https://ostrails.github.io/assessment-component-metadata-records/test/ABBREVIATION_OF_TEST_WITH_NO_LANDING_PAGE.ttl"^^xsd:anyURI ;
     dcterms:title "TITLE OF THE TEST"^^xsd:string ;
     rdfs:label "ABBREVIATION_OF_TEST_WITH_NO_LANDING_PAGE"^^xsd:string ;
