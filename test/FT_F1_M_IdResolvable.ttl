@@ -21,7 +21,7 @@
 <https://ostrails.github.io/assessment-component-metadata-records/test/FT_F1_M_IdResolvable.ttl> a ftr:Test, dcat:DataService ;
     dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/test/FT_F1_M_IdResolvable.ttl"^^xsd:string ;
     rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/test/FT_F1_M_IdResolvable.ttl"^^xsd:anyURI ;
-    dcat:landingPage "https://fairsharing.org/7822"^^xsd:anyURI ;
+    dcat:landingPage "https://ostrails.github.io/assessment-component-metadata-records/test/FT_F1_M_IdResolvable.ttl"^^xsd:anyURI ;
     dcterms:title "FAIR Test – F1 – Metadata - Identifier is resolvable"^^xsd:string ;
     rdfs:label "FT_F1_M_IdResolvable"^^xsd:string ;
     vivo:abbreviation "FT_F1_M_IdResolvable"^^xsd:string ;
@@ -48,6 +48,7 @@ Pass: The id_schema record must have the resolvability field set to 'true'. Inde
     
     
     
+    sio:SIO_000233 <https://w3id.org/fair-metrics/general/FM_F1_M_IdentResolvable> ;
     
     
     
@@ -64,6 +65,11 @@ Pass: The id_schema record must have the resolvability field set to 'true'. Inde
     vcard:fn "Milo Thurston"^^xsd:string ;
     vcard:hasEmail <mailto:milo.thurston@oerc.ox.ac.uk> .
     
+
+<https://w3id.org/fair-metrics/general/FM_F1_M_IdentResolvable> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – F1 – Metadata - Identifier is resolvable"^^xsd:string ;
+    dcterms:identifier "https://w3id.org/fair-metrics/general/FM_F1_M_IdentResolvable"^^xsd:string .
+
 
 
 
