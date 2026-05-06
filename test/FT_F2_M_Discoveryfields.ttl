@@ -21,7 +21,7 @@
 <https://ostrails.github.io/assessment-component-metadata-records/test/FT_F2_M_Discoveryfields.ttl> a ftr:Test, dcat:DataService ;
     dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/test/FT_F2_M_Discoveryfields.ttl"^^xsd:string ;
     rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/test/FT_F2_M_Discoveryfields.ttl"^^xsd:anyURI ;
-    dcat:landingPage "https://fairsharing.org/7828"^^xsd:anyURI ;
+    dcat:landingPage "https://ostrails.github.io/assessment-component-metadata-records/test/FT_F2_M_Discoveryfields.ttl"^^xsd:anyURI ;
     dcterms:title "FAIR Test - F2 - Metadata - Discovery-Oriented Metadata Fields"^^xsd:string ;
     rdfs:label "FT_F2_M_Discoveryfields"^^xsd:string ;
     vivo:abbreviation "FT_F2_M_Discoveryfields"^^xsd:string ;
@@ -47,6 +47,7 @@
     
     
     
+    sio:SIO_000233 <https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance/fair-metrics-co-creation#fair-metric-f2-metadata-discovery-oriented-metadata-fields> ;
     
     
     
@@ -63,6 +64,11 @@
     vcard:fn "Milo Thurston"^^xsd:string ;
     vcard:hasEmail <mailto:milo.thurston@oerc.ox.ac.uk> .
     
+
+<https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance/fair-metrics-co-creation#fair-metric-f2-metadata-discovery-oriented-metadata-fields> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – F2 - Metadata – discovery-oriented metadata fields"^^xsd:string ;
+    dcterms:identifier "https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance/fair-metrics-co-creation#fair-metric-f2-metadata-discovery-oriented-metadata-fields"^^xsd:string .
+
 
 
 
