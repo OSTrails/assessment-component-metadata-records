@@ -21,7 +21,7 @@
 <https://ostrails.github.io/assessment-component-metadata-records/test/FTARKTF1GUPRI.ttl> a ftr:Test, dcat:DataService ;
     dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/test/FTARKTF1GUPRI.ttl"^^xsd:string ;
     rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/test/FTARKTF1GUPRI.ttl"^^xsd:anyURI ;
-    dcat:landingPage "https://fairsharing.org/7455"^^xsd:anyURI ;
+    dcat:landingPage "https://ostrails.github.io/assessment-component-metadata-records/test/FTARKTF1GUPRI.ttl"^^xsd:anyURI ;
     dcterms:title "FAIR Test - ARK T-F1 - Globally unique, persistent and resolvable identifiers for database content"^^xsd:string ;
     rdfs:label "FTARKTF1GUPRI"^^xsd:string ;
     vivo:abbreviation "FTARKTF1GUPRI"^^xsd:string ;
