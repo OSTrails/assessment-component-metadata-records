@@ -21,7 +21,7 @@
 <https://ostrails.github.io/assessment-component-metadata-records/test/FT_F1_M_IdPersistent.ttl> a ftr:Test, dcat:DataService ;
     dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/test/FT_F1_M_IdPersistent.ttl"^^xsd:string ;
     rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/test/FT_F1_M_IdPersistent.ttl"^^xsd:anyURI ;
-    dcat:landingPage "https://fairsharing.org/7821"^^xsd:anyURI ;
+    dcat:landingPage "https://ostrails.github.io/assessment-component-metadata-records/test/FT_F1_M_IdPersistent.ttl"^^xsd:anyURI ;
     dcterms:title "FAIR Test – F1 – Metadata - Identifier is persistent "^^xsd:string ;
     rdfs:label "FT_F1_M_IdPersistent"^^xsd:string ;
     vivo:abbreviation "FT_F1_M_IdPersistent"^^xsd:string ;
@@ -64,6 +64,8 @@ Pass: The id_schema record must have the persistence field set to 'true'. Indete
     vcard:fn "Milo Thurston"^^xsd:string ;
     vcard:hasEmail <mailto:milo.thurston@oerc.ox.ac.uk> .
     
+
+
 
 
 
