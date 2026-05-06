@@ -21,7 +21,7 @@
 <https://ostrails.github.io/assessment-component-metadata-records/test/FT_I1_M_DbKnowledgeSemantic.ttl> a ftr:Test, dcat:DataService ;
     dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/test/FT_I1_M_DbKnowledgeSemantic.ttl"^^xsd:string ;
     rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/test/FT_I1_M_DbKnowledgeSemantic.ttl"^^xsd:anyURI ;
-    dcat:landingPage "https://fairsharing.org/7837"^^xsd:anyURI ;
+    dcat:landingPage "https://ostrails.github.io/assessment-component-metadata-records/test/FT_I1_M_DbKnowledgeSemantic.ttl"^^xsd:anyURI ;
     dcterms:title "FAIR Test - I1 - Metadata - Database-level knowledge representation languages (semantic)"^^xsd:string ;
     rdfs:label "FT_I1_M_DbKnowledgeSemantic"^^xsd:string ;
     vivo:abbreviation "FT_I1_M_DbKnowledgeSemantic"^^xsd:string ;
@@ -46,6 +46,7 @@
     
     
     
+    sio:SIO_000233 <https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance/fair-benchmark-institutional-repository-datasets#fair-metric-i1-metadata-database-level-knowledge-representation-languages-semantic> ;
     
     
     
@@ -62,6 +63,11 @@
     vcard:fn "Milo Thurston"^^xsd:string ;
     vcard:hasEmail <mailto:milo.thurston@oerc.ox.ac.uk> .
     
+
+<https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance/fair-benchmark-institutional-repository-datasets#fair-metric-i1-metadata-database-level-knowledge-representation-languages-semantic> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – I1 – Metadata - Database-level knowledge representation languages (semantic)"^^xsd:string ;
+    dcterms:identifier "https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance/fair-benchmark-institutional-repository-datasets#fair-metric-i1-metadata-database-level-knowledge-representation-languages-semantic"^^xsd:string .
+
 
 
 
