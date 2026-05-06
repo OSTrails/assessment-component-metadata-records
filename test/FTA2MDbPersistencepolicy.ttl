@@ -21,7 +21,7 @@
 <https://ostrails.github.io/assessment-component-metadata-records/test/FTA2MDbPersistencepolicy.ttl> a ftr:Test, dcat:DataService ;
     dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/test/FTA2MDbPersistencepolicy.ttl"^^xsd:string ;
     rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/test/FTA2MDbPersistencepolicy.ttl"^^xsd:anyURI ;
-    dcat:landingPage "https://fairsharing.org/FAIRsharing.lEZbPK"^^xsd:anyURI ;
+    dcat:landingPage "https://ostrails.github.io/assessment-component-metadata-records/test/FTA2MDbPersistencepolicy.ttl"^^xsd:anyURI ;
     dcterms:title "FAIR Metric – A2 – Metadata - Database persistence policy"^^xsd:string ;
     rdfs:label "FTA2MDbPersistencepolicy"^^xsd:string ;
     vivo:abbreviation "FTA2MDbPersistencepolicy"^^xsd:string ;
@@ -47,6 +47,7 @@
     
     
     
+    sio:SIO_000233 <https://github.com/FAIRMetrics/Metrics/blob/master/MaturityIndicators/Gen2/Gen2_MI_A2.md> ;
     
     
     
@@ -63,6 +64,11 @@
     vcard:fn "Milo Thurston"^^xsd:string ;
     vcard:hasEmail <mailto:milo.thurston@oerc.ox.ac.uk> .
     
+
+<https://github.com/FAIRMetrics/Metrics/blob/master/MaturityIndicators/Gen2/Gen2_MI_A2.md> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric - FAIR Maturity Indicator - Metadata persistence - Gen2-MI-A2"^^xsd:string ;
+    dcterms:identifier "https://github.com/FAIRMetrics/Metrics/blob/master/MaturityIndicators/Gen2/Gen2_MI_A2.md"^^xsd:string .
+
 
 
 
