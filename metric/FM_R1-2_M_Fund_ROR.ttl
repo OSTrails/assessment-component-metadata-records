@@ -21,7 +21,7 @@
 <https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1-2_M_Fund_ROR.ttl> a ftr:Metric, dqv:Metric, dcat:Resource ;
     dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1-2_M_Fund_ROR.ttl"^^xsd:string ;
     rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1-2_M_Fund_ROR.ttl"^^xsd:anyURI ;
-    dcat:landingPage "https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance/fair-metrics-co-creation#fair-metric-r1.2-metadata-ror-id-for-funder"^^xsd:anyURI ;
+    dcat:landingPage "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1-2_M_Fund_ROR.ttl"^^xsd:anyURI ;
     dcterms:title "FAIR Metric - R1.2 - Metadata - ROR ID for funder"^^xsd:string ;
     rdfs:label "FM_R1-2_M_Fund_ROR"^^xsd:string ;
     vivo:abbreviation "FM_R1-2_M_Fund_ROR"^^xsd:string ;
