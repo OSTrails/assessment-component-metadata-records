@@ -44,7 +44,7 @@ It expects a FAIRsharing URL or DOI as its input and evaluates that FAIRsharing 
     ftr:supportedBy <https://tools.ostrails.eu/champion>; 
     
     dpv:IsApplicableFor <https://vocabularies.coar-repositories.org/resource_types/c_1843/>;
-    dcterms:creator <https://fairsharing.org/organisations/None>; 
+    dcterms:creator <https://fairsharing.org/organisations/2281>; 
     
     ftr:hasBenchmark <https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance/fair-assistance-for-repositories-and-knowledgebases> ;
     
@@ -58,7 +58,7 @@ It expects a FAIRsharing URL or DOI as its input and evaluates that FAIRsharing 
 
 
 
-<https://fairsharing.org/organisations/None> a vcard:Organisation ;
+<https://fairsharing.org/organisations/2281> a vcard:Organisation ;
     vcard:organisation-name "Oxford e-Research Centre, Department of Engineering Science, University of Oxford, Oxford, UK"^^xsd:string .
 
 
