@@ -42,7 +42,7 @@
     
     ftr:supportedBy <https://w3id.org/FAIR-Champion> ;
     dpv:IsApplicableFor <https://schema.org/DigitalDocument>;
-    dcterms:creator <https://fairsharing.org/organisations/>; 
+    dcterms:creator <None>; 
     
     
     
@@ -55,8 +55,8 @@
 
 
 
-<https://fairsharing.org/organisations/> a vcard:Organisation ;
-    vcard:organisation-name "No name defined"^^xsd:string .
+<None> a vcard:Organisation ;
+    vcard:organisation-name "Wilkinson Laboratory, Centro de Biotecnologia y Genomica de Plantas, UPM-INIA, Madrid, Spain"^^xsd:string .
 
 
 
