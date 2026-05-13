@@ -20,7 +20,7 @@
 
 <https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F1_M_MetadataIdPersistent.ttl> a ftr:Metric, dqv:Metric, dcat:Resource ;
     dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F1_M_MetadataIdPersistent.ttl"^^xsd:string ;
-    rdfs:definedBy "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F1_M_MetadataIdPersistent.ttl" ;
+    rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F1_M_MetadataIdPersistent.ttl"^^xsd:anyURI ;
     dcat:landingPage "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F1_M_MetadataIdPersistent.ttl"^^xsd:anyURI ;
     dcterms:title "FAIR Metric – F1 – Metadata - Metadata contains identifier that is guaranteed persistent"^^xsd:string ;
     rdfs:label "FM_F1_M_MetadataIdPersistent"^^xsd:string ;
