@@ -42,7 +42,7 @@
     
     ftr:supportedBy <https://w3id.org/FAIR-Champion> ;
     dpv:IsApplicableFor <https://schema.org/DigitalDocument>;
-    dcterms:creator <None>; 
+    dcterms:creator <https://fairsharing.org/organisations/2281>; 
     
     
     
@@ -55,8 +55,8 @@
 
 
 
-<None> a vcard:Organisation ;
-    vcard:organisation-name "Wilkinson Laboratory, Centro de Biotecnologia y Genomica de Plantas, UPM-INIA, Madrid, Spain"^^xsd:string .
+<https://fairsharing.org/organisations/2281> a vcard:Organisation ;
+    vcard:organisation-name "Oxford e-Research Centre, Department of Engineering Science, University of Oxford, Oxford, UK"^^xsd:string .
 
 
 
