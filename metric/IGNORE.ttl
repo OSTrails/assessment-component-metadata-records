@@ -42,7 +42,7 @@
     
     ftr:supportedBy <https://w3id.org/FAIR-Champion> ;
     dpv:IsApplicableFor <https://schema.org/DigitalDocument>;
-    dcterms:creator <https://ror.org/04mfzb702>; 
+    dcterms:creator <https://fairsharing.org/organisations/2281>; 
     
     
     
@@ -55,8 +55,8 @@
 
 
 
-<https://ror.org/04mfzb702> a vcard:Organisation ;
-    vcard:organisation-name "Center for Plant Biotechnology and Genomics UPM-INIA/CSIC"^^xsd:string .
+<https://fairsharing.org/organisations/2281> a vcard:Organisation ;
+    vcard:organisation-name "Oxford e-Research Centre, Department of Engineering Science, University of Oxford, Oxford, UK"^^xsd:string .
 
 
 
