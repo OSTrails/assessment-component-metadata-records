@@ -1,0 +1,81 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ftr: <https://w3id.org/ftr#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+@prefix dpv: <https://w3id.org/dpv#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix schema: <http://schema.org/> .
+
+
+
+
+
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_A1-1_M_HTTPSProt.ttl> a ftr:Metric, dqv:Metric, dcat:Resource ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_A1-1_M_HTTPSProt.ttl"^^xsd:string ;
+    rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_A1-1_M_HTTPSProt.ttl"^^xsd:anyURI ;
+    dcat:landingPage "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_A1-1_M_HTTPSProt.ttl"^^xsd:anyURI ;
+    dcterms:title "FAIR Metric – A1.1 – Metadata - HTTP(S) retrieval protocol"^^xsd:string ;
+    rdfs:label "FM_A1-1_M_HTTPSProt"^^xsd:string ;
+    vivo:abbreviation "FM_A1-1_M_HTTPSProt"^^xsd:string ;
+    dcterms:description """What is being measured?
+This metric evaluates whether the protocol used to retrieve metadata referenced by the provided identifier is either HTTP or HTTPS and therefore openly specified, free to implement, and universally implementable.
+
+Why should we measure it?
+Principle A1.1 requires that metadata be retrievable by an open, free, and universally implementable protocol. The intent is to ensure that access to metadata is not gated by proprietary technologies, non-standardized interfaces, or restrictive licensing that prevents automated integration and universal access. Protocols such as HTTP(S) are the gold standard for this requirement because they are openly specified web standards, free for any developer to implement, and universally supported across virtually all modern software environments and programming languages. Protocols that are closed source or that have royalties associated with them could prevent users from being able to obtain the resource. By mandating these standards, we ensure that metadata remains accessible to the widest possible range of humans, harvesters and research discovery services.
+
+This metric evaluates whether the metadata access protocol satisfies the requirements for open, free, and universal implementation. The evaluation checks for the use of the HTTP or HTTPS protocols."""^^xsd:string ;
+    dcat:keyword "FAIR"^^xsd:string ;
+    schema:about "Not applicable"^^xsd:string ;
+    ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000401> ;
+    ftr:inDimension <https://w3id.org/fair/principles/terms/A1.1> ;
+    dcat:version "1.0.0"^^xsd:string ;
+    
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    ftr:status "Active"@en ;
+     
+    
+    
+    
+    
+    ftr:supportedBy <https://tools.ostrails.eu/champion>; 
+    
+    dpv:IsApplicableFor <https://schema.org/CreativeWork>;
+    dcterms:creator <https://fairsharing.org/organisations/2281>; dcterms:creator <https://fairsharing.org/organisations/291>; 
+    
+    ftr:hasBenchmark <https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance/fair-benchmark-institutional-repository-datasets> ;
+    
+    
+    
+    
+    
+    dcterms:publisher  <https://orcid.org/>  ; 
+    dcat:contactPoint  <https://orcid.org/>  . 
+
+
+
+
+<https://fairsharing.org/organisations/2281> a vcard:Organisation ;
+    vcard:organisation-name "Oxford e-Research Centre, Department of Engineering Science, University of Oxford, Oxford, UK"^^xsd:string .
+
+  
+<https://fairsharing.org/organisations/291> a vcard:Organisation ;
+    vcard:organisation-name "Bodleian Library, University of Oxford, Oxford, UK"^^xsd:string .
+
+
+
+
+
+<https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance/fair-benchmark-institutional-repository-datasets> a ftr:Benchmark, dcat:Resource ;
+    rdfs:label "FAIR Benchmark - Institutional Repository Datasets"^^xsd:string ;
+    dcterms:identifier "https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance/fair-benchmark-institutional-repository-datasets"^^xsd:string .
+
+
+
