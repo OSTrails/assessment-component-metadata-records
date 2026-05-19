@@ -1,0 +1,79 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ftr: <https://w3id.org/ftr#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+@prefix dpv: <https://w3id.org/dpv#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix schema: <http://schema.org/> .
+
+
+
+
+
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I2_M_ISOlang.ttl> a ftr:Metric, dqv:Metric, dcat:Resource ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I2_M_ISOlang.ttl"^^xsd:string ;
+    rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I2_M_ISOlang.ttl"^^xsd:anyURI ;
+    dcat:landingPage "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I2_M_ISOlang.ttl"^^xsd:anyURI ;
+    dcterms:title "FAIR Metric – I2 – Metadata – ISO language is linked data"^^xsd:string ;
+    rdfs:label "FM_I2_M_ISOlang"^^xsd:string ;
+    vivo:abbreviation "FM_I2_M_ISOlang"^^xsd:string ;
+    dcterms:description """What is being measured?
+This metric evaluates whether there is at least one ISO 639-2 / 639:2023 language code term used in the metadata that resolves to content in a linked data format (see support links).
+
+Why should we measure it?
+I2 requires that metadata use vocabularies that follow FAIR principles. The purpose of this principle is to ensure that descriptive terms are drawn from such vocabularies, enabling consistent interpretation across systems and communities. Under this semantic interpretation, the evaluation checks whether there is at least one ISO 639-2 / 639:2023 language code term used in the metadata that resolves to content expressed in a linked data format. The resolved term (for example, http://id.loc.gov/vocabulary/iso639-2/eng) must return structured content in a recognised linked data representation, with concepts and relationships defined. A resource satisfies this metric if at least one metadata element references an ISO 639-2 / 639:2023 or language code term that resolves to content in a linked data format (the definition of semantic formats follows FAIRsharing guidance)."""^^xsd:string ;
+    dcat:keyword "FAIR"^^xsd:string ;
+    schema:about "Not applicable"^^xsd:string ;
+    ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000401> ;
+    ftr:inDimension <https://w3id.org/fair/principles/terms/I2> ;
+    dcat:version "1.0.0"^^xsd:string ;
+    
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    ftr:status "Active"@en ;
+     
+    
+    
+    
+    
+    ftr:supportedBy <https://tools.ostrails.eu/champion>; 
+    
+    dpv:IsApplicableFor <https://schema.org/CreativeWork>;
+    dcterms:creator <https://fairsharing.org/organisations/2281>; dcterms:creator <https://fairsharing.org/organisations/291>; 
+    
+    ftr:hasBenchmark <https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance/fair-benchmark-institutional-repository-datasets> ;
+    
+    
+    
+    
+    
+    dcterms:publisher  <https://orcid.org/>  ; 
+    dcat:contactPoint  <https://orcid.org/>  . 
+
+
+
+
+<https://fairsharing.org/organisations/2281> a vcard:Organisation ;
+    vcard:organisation-name "Oxford e-Research Centre, Department of Engineering Science, University of Oxford, Oxford, UK"^^xsd:string .
+
+  
+<https://fairsharing.org/organisations/291> a vcard:Organisation ;
+    vcard:organisation-name "Bodleian Library, University of Oxford, Oxford, UK"^^xsd:string .
+
+
+
+
+
+<https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance/fair-benchmark-institutional-repository-datasets> a ftr:Benchmark, dcat:Resource ;
+    rdfs:label "FAIR Benchmark - Institutional Repository Datasets"^^xsd:string ;
+    dcterms:identifier "https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance/fair-benchmark-institutional-repository-datasets"^^xsd:string .
+
+
+
