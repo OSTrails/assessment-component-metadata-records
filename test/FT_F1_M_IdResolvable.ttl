@@ -29,7 +29,7 @@
 
 Pass: The id_schema record must have the resolvability field set to 'true'. Indeterminate: URL/DOI is non-existent or malformed. Fail: if the resolvability field is set to 'false'."""^^xsd:string ;
     
-    
+    schema:about "Not applicable"^^xsd:string ;
     ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000401> ;
     
     dcat:version "0.1.0"^^xsd:string ;
