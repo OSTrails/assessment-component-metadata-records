@@ -51,8 +51,8 @@ Pass: The id_schema record must have the globally unique field set to 'true'. In
     
     
     
-    dcterms:publisher  <https://orcid.org/>  ; 
-    dcat:contactPoint  <https://orcid.org/>  . 
+    dcterms:publisher  <https://orcid.org/0000-0002-6468-9260>  ; 
+    dcat:contactPoint  <https://orcid.org/0000-0002-6468-9260>  . 
 
 
 
@@ -60,6 +60,10 @@ Pass: The id_schema record must have the globally unique field set to 'true'. In
 <https://fairsharing.org/organisations/Oxford e-Research Centre, Department of Engineering Science, University of Oxford, Oxford, UK> a vcard:Organisation ;
     vcard:organisation-name ""^^xsd:string .
 
+<https://orcid.org/0000-0002-6468-9260> a vcard:Individual, foaf:Agent ;
+    vcard:fn "Milo Thurston"^^xsd:string ;
+    vcard:hasEmail <mailto:milo.thurston@oerc.ox.ac.uk> .
+    
 
 
 
