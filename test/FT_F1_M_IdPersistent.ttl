@@ -29,7 +29,7 @@
 
 Pass: The id_schema record must have the persistence field set to 'true'. Indeterminate: URL/DOI is non-existent or malformed. Fail: if the persistence field is set to 'false'."""^^xsd:string ;
     
-    
+    schema:about "Not applicable"^^xsd:string ;
     ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000401> ;
     
     dcat:version "0.1.0"^^xsd:string ;
@@ -44,27 +44,31 @@ Pass: The id_schema record must have the persistence field set to 'true'. Indete
     ftr:supportedBy <https://tools.ostrails.eu/champion>; 
     
     dpv:IsApplicableFor <https://schema.org/CreativeWork>;
-    dcterms:creator <https://fairsharing.org/organisations/2281>; 
+    dcterms:creator <https://fairsharing.org/organisations/Oxford e-Research Centre, Department of Engineering Science, University of Oxford, Oxford, UK>; 
     
     
     
+    sio:SIO_000233 <https://w3id.org/fair-metrics/general/FM_F1_M_IdentPersistent> ;
     
     
     
-    dcterms:publisher  <https://orcid.org/0000-0002-6468-9260>  ; 
-    dcat:contactPoint  <https://orcid.org/0000-0002-6468-9260>  . 
+    dcterms:publisher  <https://orcid.org/000-0002-6468-9260>  ; 
+    dcat:contactPoint  <https://orcid.org/000-0002-6468-9260>  . 
 
 
 
 
-<https://fairsharing.org/organisations/2281> a vcard:Organisation ;
-    vcard:organisation-name "Oxford e-Research Centre, Department of Engineering Science, University of Oxford, Oxford, UK"^^xsd:string .
+<https://fairsharing.org/organisations/Oxford e-Research Centre, Department of Engineering Science, University of Oxford, Oxford, UK> a vcard:Organisation ;
+    vcard:organisation-name ""^^xsd:string .
 
-<https://orcid.org/0000-0002-6468-9260> a vcard:Individual, foaf:Agent ;
+<https://orcid.org/000-0002-6468-9260> a vcard:Individual, foaf:Agent ;
     vcard:fn "Milo Thurston"^^xsd:string ;
     vcard:hasEmail <mailto:milo.thurston@oerc.ox.ac.uk> .
     
 
+<https://w3id.org/fair-metrics/general/FM_F1_M_IdentPersistent> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – F1 – Metadata - Identifier is persistent"^^xsd:string ;
+    dcterms:identifier "https://w3id.org/fair-metrics/general/FM_F1_M_IdentPersistent"^^xsd:string .
 
 
 
