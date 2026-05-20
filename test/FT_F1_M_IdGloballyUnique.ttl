@@ -48,6 +48,7 @@ Pass: The id_schema record must have the globally unique field set to 'true'. In
     
     
     
+    sio:SIO_000233 <https://w3id.org/fair-metrics/general/FM_F1_M_IdentUnique> ;
     
     
     
@@ -65,6 +66,9 @@ Pass: The id_schema record must have the globally unique field set to 'true'. In
     vcard:hasEmail <mailto:milo.thurston@oerc.ox.ac.uk> .
     
 
+<https://w3id.org/fair-metrics/general/FM_F1_M_IdentUnique> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – F1 – Metadata - Identifier is globally unique"^^xsd:string ;
+    dcterms:identifier "https://w3id.org/fair-metrics/general/FM_F1_M_IdentUnique"^^xsd:string .
 
 
 
