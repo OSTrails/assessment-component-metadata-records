@@ -57,8 +57,8 @@ Note that, in order for this metric to function, tests must know the FAIRsharing
     
     
     
-    dcterms:publisher  <https://orcid.org/>  ; 
-    dcat:contactPoint  <https://orcid.org/>  . 
+    dcterms:publisher  "FAIRsharing Team"  ; 
+    dcat:contactPoint  <mailto:contact@fairsharing.org>  .
 
 
 
