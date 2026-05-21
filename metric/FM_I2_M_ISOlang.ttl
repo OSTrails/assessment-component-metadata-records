@@ -54,8 +54,8 @@ I2 requires that metadata use vocabularies that follow FAIR principles. The purp
     
     
     
-    dcterms:publisher  <https://orcid.org/>  ; 
-    dcat:contactPoint  <https://orcid.org/>  . 
+    dcterms:publisher  "FAIRsharing Team"  ; 
+    dcat:contactPoint  <mailto:contact@fairsharing.org>  .
 
 
 
