@@ -21,7 +21,7 @@
 <https://ostrails.github.io/assessment-component-metadata-records/test/FT_Gen2-MI-I2A_M_DMOCV.ttl> a ftr:Test, dcat:DataService ;
     dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/test/FT_Gen2-MI-I2A_M_DMOCV.ttl"^^xsd:string ;
     rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/test/FT_Gen2-MI-I2A_M_DMOCV.ttl"^^xsd:anyURI ;
-    dcat:landingPage "https://ostrails.github.io/assessment-component-metadata-records/test/FT_Gen2-MI-I2A_M_DMOCV.ttl"^^xsd:anyURI ;
+    dcat:landingPage "https://github.com/cessda/cessda.fair-tests/blob/main/Test_Logic.md"^^xsd:anyURI ;
     dcterms:title "FAIR Test - Metadata Uses DDI Mode Of Collection Vocabulary"^^xsd:string ;
     rdfs:label "FT_Gen2-MI-I2A_M_DMOCV"^^xsd:string ;
     vivo:abbreviation "FT_Gen2-MI-I2A_M_DMOCV"^^xsd:string ;
