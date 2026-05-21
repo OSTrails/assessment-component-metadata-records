@@ -53,8 +53,8 @@
     
     ftr:hasPositiveValidation <https://doi.org/10.25504/FAIRsharing.wy4egf>; 
     ftr:hasNegativeValidation <https://doi.org/10.25504/FAIRsharing.7mm5g5>,  <https://doi.org/10.25504/FAIRsharing.fd6003>; 
-    dcterms:publisher  <https://orcid.org/>  ; 
-    dcat:contactPoint  <https://orcid.org/>  . 
+    dcterms:publisher  "FAIRsharing Team"  ; 
+    dcat:contactPoint  <mailto:contact@fairsharing.org>  .
 
 
 
