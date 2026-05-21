@@ -28,7 +28,7 @@
     dcterms:description """Confirms that a DDI 2.5 metadata record uses an approved persistent identifier scheme. The test examines IDNo elements with agency attributes in the citation's title statement section (/codeBook/stdyDscr/citation/titlStmt/IDNo) of DDI 2.5 metadata.
 """^^xsd:string ;
     dcat:keyword "PID"^^xsd:string ;
-    
+    schema:about "Not applicable"^^xsd:string ;
     ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000401> ;
     
     dcat:version "1.0.3"^^xsd:string ;
@@ -54,16 +54,16 @@
     
     
     
-    dcterms:publisher  <https://orcid.org/0000-0002-4402-9644>  ; 
-    dcat:contactPoint  <https://orcid.org/0000-0002-4402-9644>  . 
+    dcterms:publisher  <https://orcid.org/000-0002-4402-9644>  ; 
+    dcat:contactPoint  <https://orcid.org/000-0002-4402-9644>  . 
 
 
 
 
 <https://ror.org/02wg9xc72> a vcard:Organisation ;
-    vcard:organisation-name "Consortium of European Social Science Data Archives"^^xsd:string .
+    vcard:organisation-name ""^^xsd:string .
 
-<https://orcid.org/0000-0002-4402-9644> a vcard:Individual, foaf:Agent ;
+<https://orcid.org/000-0002-4402-9644> a vcard:Individual, foaf:Agent ;
     vcard:fn "John Shepherdson"^^xsd:string ;
     vcard:hasEmail <mailto:john.shepherdson@cessda.eu> .
     
