@@ -21,7 +21,7 @@
 <https://ostrails.github.io/assessment-component-metadata-records/test/FT-F2B_M_GM_CESSDA.ttl> a ftr:Test, dcat:DataService ;
     dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/test/FT-F2B_M_GM_CESSDA.ttl"^^xsd:string ;
     rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/test/FT-F2B_M_GM_CESSDA.ttl"^^xsd:anyURI ;
-    dcat:landingPage "https://ostrails.github.io/assessment-component-metadata-records/test/FT-F2B_M_GM_CESSDA.ttl"^^xsd:anyURI ;
+    dcat:landingPage "https://github.com/cessda/cessda.fair-tests/blob/main/Test_Logic.md"^^xsd:anyURI ;
     dcterms:title "FAIR Test – record contains metadata that is grounded in a standard vocabulary"^^xsd:string ;
     rdfs:label "FT-F2B_M_GM_CESSDA"^^xsd:string ;
     vivo:abbreviation "FT-F2B_M_GM_CESSDA"^^xsd:string ;
