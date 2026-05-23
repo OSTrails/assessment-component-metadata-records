@@ -42,31 +42,31 @@
     ftr:supportedBy <https://tools.ostrails.eu/champion>; 
     
     dpv:IsApplicableFor <https://vocabularies.coar-repositories.org/resource_types/c_1843/>;
-    dcterms:creator <https://fairsharing.org/organisations/2281>; 
+    dcterms:creator <https://fairsharing.org/organisations/Oxford e-Research Centre, Department of Engineering Science, University of Oxford, Oxford, UK>; 
     
     
     
-    sio:SIO_000233 <https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance/fair-benchmark-institutional-repository-datasets#fair-metric-i1-metadata-database-level-knowledge-representation-languages-semantic> ;
+    sio:SIO_000233 <https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I1_M_DbFormalLangSemantic.ttl> ;
     
     
     
-    dcterms:publisher  <https://orcid.org/0000-0002-6468-9260>  ; 
-    dcat:contactPoint  <https://orcid.org/0000-0002-6468-9260>  . 
+    dcterms:publisher  <https://orcid.org/000-0002-6468-9260>  ; 
+    dcat:contactPoint  <https://orcid.org/000-0002-6468-9260>  . 
 
 
 
 
-<https://fairsharing.org/organisations/2281> a vcard:Organisation ;
-    vcard:organisation-name "Oxford e-Research Centre, Department of Engineering Science, University of Oxford, Oxford, UK"^^xsd:string .
+<https://fairsharing.org/organisations/Oxford e-Research Centre, Department of Engineering Science, University of Oxford, Oxford, UK> a vcard:Organisation ;
+    vcard:organisation-name ""^^xsd:string .
 
-<https://orcid.org/0000-0002-6468-9260> a vcard:Individual, foaf:Agent ;
+<https://orcid.org/000-0002-6468-9260> a vcard:Individual, foaf:Agent ;
     vcard:fn "Milo Thurston"^^xsd:string ;
     vcard:hasEmail <mailto:milo.thurston@oerc.ox.ac.uk> .
     
 
-<https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance/fair-benchmark-institutional-repository-datasets#fair-metric-i1-metadata-database-level-knowledge-representation-languages-semantic> a dqv:Metric, ftr:Metric, dcat:Resource;
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I1_M_DbFormalLangSemantic.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
     rdfs:label "FAIR Metric – I1 – Metadata - Database-level knowledge representation languages (semantic)"^^xsd:string ;
-    dcterms:identifier "https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance/fair-benchmark-institutional-repository-datasets#fair-metric-i1-metadata-database-level-knowledge-representation-languages-semantic"^^xsd:string .
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I1_M_DbFormalLangSemantic.ttl"^^xsd:string .
 
 
 
