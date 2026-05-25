@@ -1,0 +1,79 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ftr: <https://w3id.org/ftr#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+@prefix dpv: <https://w3id.org/dpv#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix schema: <http://schema.org/> .
+
+
+
+
+
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F2_M_DiscoveryTags.ttl> a ftr:Metric, dqv:Metric, dcat:Resource ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F2_M_DiscoveryTags.ttl"^^xsd:string ;
+    rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F2_M_DiscoveryTags.ttl"^^xsd:anyURI ;
+    dcat:landingPage "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F2_M_DiscoveryTags.ttl"^^xsd:anyURI ;
+    dcterms:title "FAIR Metric – F2 - Metadata – tagging to aid discovery"^^xsd:string ;
+    rdfs:label "FM_F2_M_DiscoveryTags"^^xsd:string ;
+    vivo:abbreviation "FM_F2_M_DiscoveryTags"^^xsd:string ;
+    dcterms:description """What is being measured?
+This metric evaluates the metadata for the presence of at least one keyword or tag of any kind (free-text or controlled). With regards to Findability (as opposed to e.g., Interoperability), the presence of any type of tag (irrespective of whether that tag is part of a controlled vocabulary) is the key feature for this metric. The metric expects the identifier to point to structured metadata (e.g., schema.org, DataCite, or DC) and verifies that the keyword/subject property is not empty. The metric passes if at least one tag is identified and fails if the keyword attribute is missing or null.
+
+Why should we measure it?
+Keywords and tags are essential for enabling filtered discovery and faceted search. While a title or abstract provides narrative context, tags provide discrete hooks for search engines and repository interfaces to categorize the data. In a generalist institutional repository, where datasets span many disciplines, these tags often serve as the primary mechanism for users to narrow down search results to relevant topics. Measuring this ensures that researchers are providing the basic “labels” required for their data to be categorized."""^^xsd:string ;
+    dcat:keyword "FAIR"^^xsd:string ;
+    schema:about "Not applicable"^^xsd:string ;
+    ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000401> ;
+    ftr:inDimension <https://w3id.org/fair/principles/terms/F2> ;
+    dcat:version "1.0.0"^^xsd:string ;
+    
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    ftr:status "Active"@en ;
+     
+    
+    
+    
+    
+    ftr:supportedBy <https://tools.ostrails.eu/champion>; 
+    
+    dpv:IsApplicableFor <https://schema.org/CreativeWork>;
+    dcterms:creator <https://fairsharing.org/organisations/2281>; dcterms:creator <https://fairsharing.org/organisations/291>; 
+    
+    ftr:hasBenchmark <https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance/fair-benchmark-institutional-repository-datasets> ;
+    
+    
+    
+    
+    
+    dcterms:publisher  <https://orcid.org/>  ; 
+    dcat:contactPoint  <https://orcid.org/>  . 
+
+
+
+
+<https://fairsharing.org/organisations/2281> a vcard:Organisation ;
+    vcard:organisation-name "Oxford e-Research Centre, Department of Engineering Science, University of Oxford, Oxford, UK"^^xsd:string .
+
+  
+<https://fairsharing.org/organisations/291> a vcard:Organisation ;
+    vcard:organisation-name "Bodleian Library, University of Oxford, Oxford, UK"^^xsd:string .
+
+
+
+
+
+<https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance/fair-benchmark-institutional-repository-datasets> a ftr:Benchmark, dcat:Resource ;
+    rdfs:label "FAIR Benchmark - Institutional Repository Datasets"^^xsd:string ;
+    dcterms:identifier "https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance/fair-benchmark-institutional-repository-datasets"^^xsd:string .
+
+
+
