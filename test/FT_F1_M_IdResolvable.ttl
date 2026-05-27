@@ -44,7 +44,7 @@ Pass: The id_schema record must have the resolvability field set to 'true'. Inde
     ftr:supportedBy <https://tools.ostrails.eu/champion>; 
     
     dpv:IsApplicableFor <https://schema.org/CreativeWork>;
-    dcterms:creator <https://fairsharing.org/organisations/Oxford e-Research Centre, Department of Engineering Science, University of Oxford, Oxford, UK>; 
+    dcterms:creator _:OxfordERC; 
     
     
     
@@ -58,7 +58,7 @@ Pass: The id_schema record must have the resolvability field set to 'true'. Inde
 
 
 
-<https://fairsharing.org/organisations/Oxford e-Research Centre, Department of Engineering Science, University of Oxford, Oxford, UK> a vcard:Organisation ;
+_:OxfordERC a vcard:Organisation ;
     vcard:organisation-name ""^^xsd:string .
 
 <https://orcid.org/000-0002-6468-9260> a vcard:Individual, foaf:Agent ;

@@ -43,7 +43,7 @@
     ftr:supportedBy <https://tools.ostrails.eu/champion>; 
     
     dpv:IsApplicableFor <https://vocabularies.coar-repositories.org/resource_types/c_1843/>;
-    dcterms:creator <https://fairsharing.org/organisations/Oxford e-Research Centre, Department of Engineering Science, University of Oxford, Oxford, UK>; 
+    dcterms:creator _:OxfordERC; 
     
     
     
@@ -57,7 +57,7 @@
 
 
 
-<https://fairsharing.org/organisations/Oxford e-Research Centre, Department of Engineering Science, University of Oxford, Oxford, UK> a vcard:Organisation ;
+_:OxfordERC a vcard:Organisation ;
     vcard:organisation-name ""^^xsd:string .
 
 <https://orcid.org/000-0002-6468-9260> a vcard:Individual, foaf:Agent ;
