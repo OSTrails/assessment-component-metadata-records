@@ -1,0 +1,76 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ftr: <https://w3id.org/ftr#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+@prefix dpv: <https://w3id.org/dpv#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix schema: <http://schema.org/> .
+
+
+
+
+
+
+<https://ostrails.github.io/assessment-component-metadata-records/test/FT_R1_3_M_UseStuctGenericFormat.ttl> a ftr:Test, dcat:DataService ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/test/FT_R1_3_M_UseStuctGenericFormat.ttl"^^xsd:string ;
+    rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/test/FT_R1_3_M_UseStuctGenericFormat.ttl"^^xsd:anyURI ;
+    dcat:landingPage "https://ostrails.github.io/assessment-component-metadata-records/test/FT_R1_3_M_UseStuctGenericFormat.ttl"^^xsd:anyURI ;
+    dcterms:title "FAIR Test - R1.3 - Metadata – use of recognised and structured generic metadata format"^^xsd:string ;
+    rdfs:label "FT_R1_3_M_UseStuctGenericFormat"^^xsd:string ;
+    vivo:abbreviation "FT_R1_3_M_UseStuctGenericFormat"^^xsd:string ;
+    dcterms:description """FAIR Test - R1.3 - Metadata – use of recognised and structured generic metadata format evaluates whether the dataset metadata is structured according to predefined, widely adopted metadata schemas appropriate to institutional repositories and other generalist contexts, such as schema.org (JSON-LD) or DataCite. It checks the record’s landing page for embedded or linked structured data that can be successfully parsed against the declared community schema. Finding JSON+LD or XML formats will result in a pass; otherwise, the test will fail."""^^xsd:string ;
+    
+    
+    ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000401> ;
+    
+    dcat:version "0.1.0"^^xsd:string ;
+    
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    ftr:status "Active"@en ;
+     
+    dcat:endpointURL <https://fair-tests.fairsharing.org/test/ft_r1_3_m_recognised_structured_metadata> ;
+    dcat:endpointDescription <https://fair-tests.fairsharing.org/test_descriptions/ft_r1_3_m_recognised_structured_metadata/api> ;
+    
+    doap:repository <https://github.com/FAIRsharing/FAIR-Tests> ;
+    ftr:supportedBy <https://tools.ostrails.eu/champion>; 
+    
+    dpv:IsApplicableFor <https://vocabularies.coar-repositories.org/resource_types/c_1843/>;
+    dcterms:creator <https://fairsharing.org/organisations/2281>; 
+    
+    
+    
+    sio:SIO_000233 <https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.3_M_UseStuctGenericFormat.ttl> ;
+    
+    
+    
+    dcterms:publisher  <https://orcid.org/0000-0002-6468-9260>  ; 
+    dcat:contactPoint  <https://orcid.org/0000-0002-6468-9260>  . 
+
+
+
+
+<https://fairsharing.org/organisations/2281> a vcard:Organisation ;
+    vcard:organisation-name "Oxford e-Research Centre, Department of Engineering Science, University of Oxford, Oxford, UK"^^xsd:string .
+
+<https://orcid.org/0000-0002-6468-9260> a vcard:Individual, foaf:Agent ;
+    vcard:fn "Milo Thurston"^^xsd:string ;
+    vcard:hasEmail <mailto:milo.thurston@oerc.ox.ac.uk> .
+    
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.3_M_UseStuctGenericFormat.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – R1.3 - Metadata – use of recognised and structured generic metadata format"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.3_M_UseStuctGenericFormat.ttl"^^xsd:string .
+
+
+
+
+
+
+
