@@ -42,7 +42,7 @@
     ftr:supportedBy <https://tools.ostrails.eu/champion>; 
     
     dpv:IsApplicableFor <https://vocabularies.coar-repositories.org/resource_types/c_1843/>;
-    dcterms:creator _:OxfordERC; 
+    dcterms:creator <https://fairsharing.org/organisations/2281>; 
     
     
     
@@ -56,8 +56,8 @@
 
 
 
-_:OxfordERC a vcard:Organisation ;
-    vcard:organisation-name ""^^xsd:string .
+<https://fairsharing.org/organisations/2281> a vcard:Organisation ;
+    vcard:organisation-name "Oxford e-Research Centre, Department of Engineering Science, University of Oxford, Oxford, UK"^^xsd:string .
 
 <https://orcid.org/000-0002-6468-9260> a vcard:Individual, foaf:Agent ;
     vcard:fn "Milo Thurston"^^xsd:string ;
@@ -67,6 +67,8 @@ _:OxfordERC a vcard:Organisation ;
 <https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I1_M_DbFormalLangSyntax.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
     rdfs:label "FAIR Metric – I1 – Metadata - Database-level knowledge representation languages (syntactic)"^^xsd:string ;
     dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I1_M_DbFormalLangSyntax.ttl"^^xsd:string .
+
+
 
 
 

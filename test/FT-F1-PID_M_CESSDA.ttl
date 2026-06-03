@@ -61,7 +61,7 @@
 
 
 <https://ror.org/02wg9xc72> a vcard:Organisation ;
-    vcard:organisation-name ""^^xsd:string .
+    vcard:organisation-name "Consortium of European Social Science Data Archives"^^xsd:string .
 
 <https://orcid.org/000-0002-4402-9644> a vcard:Individual, foaf:Agent ;
     vcard:fn "John Shepherdson"^^xsd:string ;
@@ -75,6 +75,8 @@
 <https://github.com/cessda/cessda.fair-tests/blob/main/Test_Logic.md> a dqv:Metric, ftr:Metric, dcat:Resource;
     rdfs:label "FAIR Metric– F1-PID – Metadata - Identifiers use ARK, DOI, HANDLE or URN PID schemas"^^xsd:string ;
     dcterms:identifier "https://github.com/cessda/cessda.fair-tests/blob/main/Test_Logic.md"^^xsd:string .
+
+
 
 
 

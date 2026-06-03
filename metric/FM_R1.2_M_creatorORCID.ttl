@@ -54,8 +54,8 @@ Where this information is present, at least one declaration is sufficient to pas
     
     
     
-    dcterms:publisher  <https://orcid.org/>  ; 
-    dcat:contactPoint  <https://orcid.org/>  . 
+    dcterms:publisher  "FAIRsharing Team"  ; 
+    dcat:contactPoint  <mailto:contact@fairsharing.org>  .  
 
 
 

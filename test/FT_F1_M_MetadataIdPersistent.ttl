@@ -62,10 +62,6 @@
 <https://orcid.org/0000-0002-6468-9260> a vcard:Individual, foaf:Agent ;
     vcard:fn "Milo Thurston"^^xsd:string ;
     vcard:hasEmail <mailto:milo.thurston@oerc.ox.ac.uk> .
-    
-
-
-
 
 
 

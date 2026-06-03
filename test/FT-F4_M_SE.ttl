@@ -46,6 +46,7 @@
     
     
     
+    sio:SIO_000233 <https://doi.org/10.25504/FAIRsharing.0c0d21> ;
     
     
     
@@ -62,6 +63,11 @@
     vcard:fn "John Shepherdson"^^xsd:string ;
     vcard:hasEmail <mailto:john.shepherdson@cessda.eu> .
     
+
+<https://doi.org/10.25504/FAIRsharing.0c0d21> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "No name defined"^^xsd:string ;
+    dcterms:identifier "https://doi.org/10.25504/FAIRsharing.0c0d21"^^xsd:string .
+
 
 
 

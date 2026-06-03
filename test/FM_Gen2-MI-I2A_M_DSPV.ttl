@@ -46,6 +46,10 @@
     
     
     
+    sio:SIO_000233 <https://github.com/FAIRMetrics/Metrics/blob/master/MaturityIndicators/Gen2/Gen2_MI_F1B.md> ;
+    
+  
+    sio:SIO_000233 <https://doi.org/10.25504/FAIRsharing.59ad4f> ;
     
     
     
@@ -61,6 +65,28 @@
 <https://orcid.org/000-0002-4402-9644> a vcard:Individual, foaf:Agent ;
     vcard:fn "John Shepherdson"^^xsd:string ;
     vcard:hasEmail <mailto:john.shepherdson@cessda.eu> .
+    
+
+<https://github.com/FAIRMetrics/Metrics/blob/master/MaturityIndicators/Gen2/Gen2_MI_F1B.md> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "No name defined"^^xsd:string ;
+    dcterms:identifier "https://github.com/FAIRMetrics/Metrics/blob/master/MaturityIndicators/Gen2/Gen2_MI_F1B.md"^^xsd:string .
+
+<https://doi.org/10.25504/FAIRsharing.59ad4f> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "No name defined"^^xsd:string ;
+    dcterms:identifier "https://doi.org/10.25504/FAIRsharing.59ad4f"^^xsd:string .
+
+
+
+
+
+
+
+
+
+
+
+
+
     
 
 

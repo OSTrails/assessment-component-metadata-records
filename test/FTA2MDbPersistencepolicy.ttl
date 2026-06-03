@@ -43,7 +43,7 @@
     ftr:supportedBy <https://tools.ostrails.eu/champion>; 
     
     dpv:IsApplicableFor <https://schema.org/CreativeWork>;
-    dcterms:creator _:OxfordERC; 
+    dcterms:creator <https://fairsharing.org/organisations/2281>; 
     
     
     
@@ -57,8 +57,8 @@
 
 
 
-_:OxfordERC a vcard:Organisation ;
-    vcard:organisation-name ""^^xsd:string .
+<https://fairsharing.org/organisations/2281> a vcard:Organisation ;
+    vcard:organisation-name "Oxford e-Research Centre, Department of Engineering Science, University of Oxford, Oxford, UK"^^xsd:string .
 
 <https://orcid.org/000-0002-6468-9260> a vcard:Individual, foaf:Agent ;
     vcard:fn "Milo Thurston"^^xsd:string ;
@@ -68,6 +68,8 @@ _:OxfordERC a vcard:Organisation ;
 <https://w3id.org/fair-metrics/general/FM_A2_M_DbMetaLong> a dqv:Metric, ftr:Metric, dcat:Resource;
     rdfs:label "FAIR Metric – A2 – Metadata - Database persistence policy"^^xsd:string ;
     dcterms:identifier "https://w3id.org/fair-metrics/general/FM_A2_M_DbMetaLong"^^xsd:string .
+
+
 
 
 

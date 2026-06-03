@@ -56,8 +56,8 @@ This metric evaluates whether the metadata access protocol satisfies the require
     
     
     
-    dcterms:publisher  <https://orcid.org/>  ; 
-    dcat:contactPoint  <https://orcid.org/>  . 
+    dcterms:publisher  "FAIRsharing Team"  ; 
+    dcat:contactPoint  <mailto:contact@fairsharing.org>  . 
 
 
 

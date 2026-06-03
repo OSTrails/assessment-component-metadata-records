@@ -56,8 +56,8 @@ A repository record will pass this metric if at least one explicitly defined ver
     
     
     
-    dcterms:publisher  <https://orcid.org/>  ; 
-    dcat:contactPoint  <https://orcid.org/>  . 
+    dcterms:publisher  "FAIRsharing Team"  ; 
+    dcat:contactPoint  <mailto:contact@fairsharing.org>  . 
 
 
 

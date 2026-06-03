@@ -54,8 +54,8 @@ FAIR Principle R1.3 requires metadata to follow domain-relevant community standa
     
     
     
-    dcterms:publisher  <https://orcid.org/>  ; 
-    dcat:contactPoint  <https://orcid.org/>  . 
+    dcterms:publisher  "FAIRsharing Team"  ; 
+    dcat:contactPoint  <mailto:contact@fairsharing.org>  . 
 
 
 

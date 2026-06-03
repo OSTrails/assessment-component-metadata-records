@@ -54,8 +54,8 @@ Keywords and tags are essential for enabling filtered discovery and faceted sear
     
     
     
-    dcterms:publisher  <https://orcid.org/>  ; 
-    dcat:contactPoint  <https://orcid.org/>  . 
+    dcterms:publisher  "FAIRsharing Team"  ; 
+    dcat:contactPoint  <mailto:contact@fairsharing.org>  . 
 
 
 

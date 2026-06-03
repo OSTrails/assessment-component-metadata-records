@@ -46,34 +46,36 @@
     
     
     
-    sio:SIO_000233 <https://fairsharing.org/> ;
+    sio:SIO_000233 <https://github.com/cessda/cessda.fair-tests/blob/main/Test_Logic.md> ;
     
   
     sio:SIO_000233 <https://purl.org/fair-metrics/FM_R1.3> ;
     
     
     
-    dcterms:publisher  <https://orcid.org/0000-0002-4402-9644>  ; 
-    dcat:contactPoint  <https://orcid.org/0000-0002-4402-9644>  . 
+    dcterms:publisher  <https://orcid.org/000-0002-4402-9644>  ; 
+    dcat:contactPoint  <https://orcid.org/000-0002-4402-9644>  . 
 
 
 
 
 <https://ror.org/02wg9xc72> a vcard:Organisation ;
-    vcard:organisation-name "Consortium of European Social Science Data Archives"^^xsd:string .
+    vcard:organisation-name ""^^xsd:string .
 
-<https://orcid.org/0000-0002-4402-9644> a vcard:Individual, foaf:Agent ;
+<https://orcid.org/000-0002-4402-9644> a vcard:Individual, foaf:Agent ;
     vcard:fn "John Shepherdson"^^xsd:string ;
     vcard:hasEmail <mailto:john.shepherdson@cessda.eu> .
     
 
-<https://fairsharing.org/> a dqv:Metric, ftr:Metric, dcat:Resource;
+<https://github.com/cessda/cessda.fair-tests/blob/main/Test_Logic.md> a dqv:Metric, ftr:Metric, dcat:Resource;
     rdfs:label "FAIR Metric - Metadata Uses CESSDA ELSST Keywords"^^xsd:string ;
-    dcterms:identifier "https://fairsharing.org/"^^xsd:string .
+    dcterms:identifier "https://github.com/cessda/cessda.fair-tests/blob/main/Test_Logic.md"^^xsd:string .
 
 <https://purl.org/fair-metrics/FM_R1.3> a dqv:Metric, ftr:Metric, dcat:Resource;
     rdfs:label "FAIR Metrics -  Meets Community Standards"^^xsd:string ;
     dcterms:identifier "https://purl.org/fair-metrics/FM_R1.3"^^xsd:string .
+
+
 
 
 
