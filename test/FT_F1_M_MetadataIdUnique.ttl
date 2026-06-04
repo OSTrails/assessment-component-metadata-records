@@ -47,6 +47,7 @@
     
     
     
+    sio:SIO_000233 <https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F1_M_MetadataIdUnique.ttl> ;
     
     
     
@@ -63,6 +64,13 @@
     vcard:fn "Milo Thurston"^^xsd:string ;
     vcard:hasEmail <mailto:milo.thurston@oerc.ox.ac.uk> .
     
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F1_M_MetadataIdUnique.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – F1 – Metadata - Metadata contains identifier that is guaranteed globally unique"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F1_M_MetadataIdUnique.ttl"^^xsd:string .
+
+
+
 
 
 
