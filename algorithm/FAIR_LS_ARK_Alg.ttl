@@ -66,5 +66,11 @@
 
 
 
+<https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance#fair-assessment-of-life-science-repositories-and-knowledgebases-benchmark> a ftr:Benchmark, dcat:Resource ;
+    rdfs:label "FAIR Assessment of Life Science Repositories and Knowledgebases Benchmark"^^xsd:string ;
+    dcterms:identifier "https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance#fair-assessment-of-life-science-repositories-and-knowledgebases-benchmark"^^xsd:string .
+
+
+
 
 
