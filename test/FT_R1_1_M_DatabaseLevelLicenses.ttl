@@ -1,0 +1,80 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ftr: <https://w3id.org/ftr#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+@prefix dpv: <https://w3id.org/dpv#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix schema: <http://schema.org/> .
+
+
+
+
+
+
+<https://ostrails.github.io/assessment-component-metadata-records/test/FT_R1_1_M_DatabaseLevelLicenses.ttl> a ftr:Test, dcat:DataService ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/test/FT_R1_1_M_DatabaseLevelLicenses.ttl"^^xsd:string ;
+    rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/test/FT_R1_1_M_DatabaseLevelLicenses.ttl"^^xsd:anyURI ;
+    dcat:landingPage "https://ostrails.github.io/assessment-component-metadata-records/test/FT_R1_1_M_DatabaseLevelLicenses.ttl"^^xsd:anyURI ;
+    dcterms:title "FAIR Test - R1.1 - Metadata - Database-level licenses"^^xsd:string ;
+    rdfs:label "FT_R1_1_M_DatabaseLevelLicenses"^^xsd:string ;
+    vivo:abbreviation "FT_R1_1_M_DatabaseLevelLicenses"^^xsd:string ;
+    dcterms:description """R1.1 requires that metadata be released with a clear and accessible data usage licence. The purpose of this principle is to ensure that reuse conditions are explicitly stated and legally unambiguous. This test evaluates whether there is at least one licence declared at the database level in the FAIRsharing registry record associated with the identifier under evaluation.
+
+"""^^xsd:string ;
+    
+    
+    ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000401> ;
+    
+    dcat:version "1.0.0"^^xsd:string ;
+    
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    ftr:status "Active"@en ;
+     
+    dcat:endpointURL <https://fair-tests.fairsharing.org/test/ft_r1_1_m_database_level_licenses> ;
+    dcat:endpointDescription <https://fair-tests.fairsharing.org/test_descriptions/ft_r1_1_m_database_level_licenses/api> ;
+    
+    doap:repository <https://github.com/FAIRsharing/FAIR-Tests> ;
+    ftr:supportedBy <https://tools.ostrails.eu/champion>; 
+    
+    dpv:IsApplicableFor <https://vocabularies.coar-repositories.org/resource_types/c_1843/>;
+    dcterms:creator <https://fairsharing.org/organisations/2281>; 
+    
+    
+    
+    sio:SIO_000233 <https://w3id.org/fair-metrics/general/FM_R1-1_M_DbStdLic> ;
+    
+    
+    
+    dcterms:publisher  <https://orcid.org/0000-0001-9572-0972>  ; 
+    dcat:contactPoint  <https://orcid.org/0000-0001-9572-0972>  . 
+
+
+
+
+<https://fairsharing.org/organisations/2281> a vcard:Organisation ;
+    vcard:organisation-name "Oxford e-Research Centre, Department of Engineering Science, University of Oxford, Oxford, UK"^^xsd:string .
+
+<https://orcid.org/0000-0001-9572-0972> a vcard:Individual, foaf:Agent ;
+    vcard:fn "Ramon Granell"^^xsd:string ;
+    vcard:hasEmail <mailto:ramon.granell@oerc.ox.ac.uk> .
+    
+
+<https://w3id.org/fair-metrics/general/FM_R1-1_M_DbStdLic> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric - R1.1 - Metadata - Database-level licenses"^^xsd:string ;
+    dcterms:identifier "https://w3id.org/fair-metrics/general/FM_R1-1_M_DbStdLic"^^xsd:string .
+
+
+
+
+
+
+
+
+
