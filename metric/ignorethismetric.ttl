@@ -1,0 +1,72 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ftr: <https://w3id.org/ftr#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+@prefix dpv: <https://w3id.org/dpv#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix schema: <http://schema.org/> .
+
+
+
+
+
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/ignorethismetric.ttl> a ftr:Metric, dqv:Metric, dcat:Resource ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/ignorethismetric.ttl"^^xsd:string ;
+    rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/metric/ignorethismetric.ttl"^^xsd:anyURI ;
+    dcat:landingPage "https://ostrails.github.io/assessment-component-metadata-records/metric/ignorethismetric.ttl"^^xsd:anyURI ;
+    dcterms:title "this is a prueba"^^xsd:string ;
+    rdfs:label "ignorethismetric"^^xsd:string ;
+    vivo:abbreviation "ignorethismetric"^^xsd:string ;
+    dcterms:description """this is a prueba"""^^xsd:string ;
+    
+    schema:about "Human metapneumovirus"^^xsd:string ;
+    ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000401> ;
+    ftr:inDimension <https://doi.org/10.25504/FAIRsharing.b7f1ab>, <https://doi.org/10.25504/FAIRsharing.99299d> ;
+    dcat:version "1.1.1"^^xsd:string ;
+    
+    dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
+    ftr:status "Active"@en ;
+     
+    
+    
+    
+    
+    
+    ftr:supportedBy <https://w3id.org/FAIR-Champion> ;
+    dpv:IsApplicableFor <https://schema.org/Dataset>;
+    dcterms:creator <https://ror.org/04mfzb702>; 
+    
+    
+    
+    
+    
+    
+    dcterms:publisher  <https://orcid.org/0009-0007-1059-8578>  ; 
+    dcat:contactPoint  <https://orcid.org/0009-0007-1059-8578>  . 
+
+
+
+
+<https://ror.org/04mfzb702> a vcard:Organisation ;
+    vcard:organisation-name "Center for Plant Biotechnology and Genomics UPM-INIA/CSIC"^^xsd:string .
+
+<https://orcid.org/0009-0007-1059-8578> a vcard:Individual, foaf:Agent ;
+    vcard:fn "Sara Curiel Manzanas"^^xsd:string ;
+    vcard:hasEmail <mailto:saracurielmanzanas@upm.es> .
+    
+
+
+
+
+
+
+
+
