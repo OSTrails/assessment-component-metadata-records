@@ -48,7 +48,7 @@
     
     
     
-    sio:SIO_000233 <https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance/fair-benchmark-institutional-repository-datasets#fair-metric-i3-metadata-qualified-references-to-related-research-objects> ;
+    sio:SIO_000233 <https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I3_M_RRO.ttl> ;
     
     
     
@@ -66,9 +66,9 @@
     vcard:hasEmail <mailto:ramon.granell@oerc.ox.ac.uk> .
     
 
-<https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance/fair-benchmark-institutional-repository-datasets#fair-metric-i3-metadata-qualified-references-to-related-research-objects> a dqv:Metric, ftr:Metric, dcat:Resource;
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I3_M_RRO.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
     rdfs:label "FAIR Metric – I3 – Metadata – Qualified References to Related Research Objects"^^xsd:string ;
-    dcterms:identifier "https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance/fair-benchmark-institutional-repository-datasets#fair-metric-i3-metadata-qualified-references-to-related-research-objects"^^xsd:string .
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I3_M_RRO.ttl"^^xsd:string .
 
 
 
