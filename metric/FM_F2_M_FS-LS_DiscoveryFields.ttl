@@ -1,0 +1,83 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ftr: <https://w3id.org/ftr#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+@prefix dpv: <https://w3id.org/dpv#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix schema: <http://schema.org/> .
+
+
+
+
+
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F2_M_FS-LS_DiscoveryFields.ttl> a ftr:Metric, dqv:Metric, dcat:Resource ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F2_M_FS-LS_DiscoveryFields.ttl"^^xsd:string ;
+    rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F2_M_FS-LS_DiscoveryFields.ttl"^^xsd:anyURI ;
+    dcat:landingPage "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F2_M_FS-LS_DiscoveryFields.ttl"^^xsd:anyURI ;
+    dcterms:title "FAIR Metric - F2 - FAIRsharing metadata fields for life sciences resource discovery"^^xsd:string ;
+    rdfs:label "FM_F2_M_FS-LS_DiscoveryFields"^^xsd:string ;
+    vivo:abbreviation "FM_F2_M_FS-LS_DiscoveryFields"^^xsd:string ;
+    dcterms:description """**What is being measured?**
+
+This metric assesses whether the FAIRsharing record contains values for the following fields: resource name, description, country, at least one subject, and at least one object type. At least one subject assigned to the record must belong to the **Life Sciences** hierarchy of the FAIRsharing Subject Resource Application Ontology (SRAO).
+
+**Why should we measure it?**
+
+These metadata fields provide the minimum descriptive information required for users and systems to discover and understand the scope of the resource described by the FAIRsharing record being evaluated. They support the findability of the resource itself by enabling potential users to identify what it contains, where it is based, and the research domains and resource types it covers. Requiring a Life Sciences subject classification additionally ensures that resources can be discovered within the appropriate disciplinary context."""^^xsd:string ;
+    dcat:keyword "FAIR"^^xsd:string ;
+    schema:about "Not applicable"^^xsd:string ;
+    ftr:applicationArea <http://aims.fao.org/aos/agrovoc/c_4318> ;
+    ftr:inDimension <https://w3id.org/fair/principles/terms/F2> ;
+    dcat:version "1.0.0"^^xsd:string ;
+    
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    ftr:status "Active"@en ;
+     
+    
+    
+    
+    
+    ftr:supportedBy <https://tools.ostrails.eu/champion>; 
+    
+    dpv:IsApplicableFor <https://vocabularies.coar-repositories.org/resource_types/c_1843/>;
+    dcterms:creator <https://fairsharing.org/organisations/2281>; 
+    
+    ftr:hasBenchmark <https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance#fair-assessment-of-life-science-repositories-and-knowledgebases-benchmark> ;
+    
+    
+    
+    
+    
+    dcterms:publisher  <https://orcid.org/0000-0002-7702-4495>  ; 
+    dcat:contactPoint  <https://orcid.org/0000-0002-7702-4495>  . 
+
+
+
+
+<https://fairsharing.org/organisations/2281> a vcard:Organisation ;
+    vcard:organisation-name "Oxford e-Research Centre, Department of Engineering Science, University of Oxford, Oxford, UK"^^xsd:string .
+
+<https://orcid.org/0000-0002-7702-4495> a vcard:Individual, foaf:Agent ;
+    vcard:fn "Allyson Lister"^^xsd:string ;
+    vcard:hasEmail <mailto:contact@fairsharing.org> .
+    
+
+
+
+
+<https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance#fair-assessment-of-life-science-repositories-and-knowledgebases-benchmark> a ftr:Benchmark, dcat:Resource ;
+    rdfs:label "FAIR Benchmark - Assistance for Life Science Repositories and Knowledgebases"^^xsd:string ;
+    dcterms:identifier "https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance#fair-assessment-of-life-science-repositories-and-knowledgebases-benchmark"^^xsd:string .
+
+
+
+
+
