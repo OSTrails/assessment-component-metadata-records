@@ -29,8 +29,8 @@
 
 """^^xsd:string ;
     
-    
-    ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000401> ;
+    schema:about "All"^^xsd:string ;
+    ftr:applicationArea <http://aims.fao.org/aos/agrovoc/c_4318> ;
     
     dcat:version "1.0.0"^^xsd:string ;
     
