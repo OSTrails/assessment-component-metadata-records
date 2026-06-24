@@ -22,18 +22,18 @@
     dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I3_M_FS_MachineDownload.ttl"^^xsd:string ;
     rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I3_M_FS_MachineDownload.ttl"^^xsd:anyURI ;
     dcat:landingPage "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I3_M_FS_MachineDownload.ttl"^^xsd:anyURI ;
-    dcterms:title "FAIR Metric - I3 - allows content download by humans"^^xsd:string ;
+    dcterms:title "FAIR Metric - I3 - allows content download by machines"^^xsd:string ;
     rdfs:label "FM_I3_M_FS_MachineDownload"^^xsd:string ;
     vivo:abbreviation "FM_I3_M_FS_MachineDownload"^^xsd:string ;
     dcterms:description """**What is being measured?**
 
-This metric assesses whether the FAIRsharing database record contains at least one Data Process whose label contains "Download" or "Export", whose type is Read or Read/Write, and whose access method is User Interface.
+This metric assesses whether the FAIRsharing record contains at least one Data Process whose label contains "Download" or "Export", whose type is Read or Read/Write, and whose access method is not User Interface.
 
 Tests implementing this metric should expect as input the FAIRsharing DOI or URL for the FAIRsharing record under evaluation.
 
 **Why should we measure it?**
 
-This metric uses the structured metadata provided by FAIRsharing records to determine whether the resource under evaluation allows content to be downloaded through human-accessible interfaces. Human-mediated download mechanisms are important FAIR-enabling characteristics because they support the exchange of information between resources and users. This supports FAIR Principle I3 by enabling information resources to be transferred and reused beyond the resource in which they are hosted."""^^xsd:string ;
+This metric uses the structured metadata provided by FAIRsharing records to determine whether the resource under evaluation allows content to be downloaded through computational interfaces. Machine-mediated download mechanisms are important FAIR-enabling characteristics because they support the automated exchange of information between resources and external systems. This supports FAIR Principle I3 by enabling information resources to be transferred, integrated, and reused across computational environments."""^^xsd:string ;
     dcat:keyword "FAIR"^^xsd:string ;
     schema:about "Not applicable"^^xsd:string ;
     ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000401> ;
