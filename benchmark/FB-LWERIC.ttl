@@ -1,0 +1,185 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ftr: <https://w3id.org/ftr#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+@prefix dpv: <https://w3id.org/dpv#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix schema: <http://schema.org/> .
+
+
+
+
+
+
+<https://ostrails.github.io/assessment-component-metadata-records/benchmark/FB-LWERIC.ttl> a ftr:Benchmark, dcat:Resource ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/benchmark/FB-LWERIC.ttl"^^xsd:string ;
+    rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/benchmark/FB-LWERIC.ttl"^^xsd:anyURI ;
+    dcat:landingPage "https://ostrails.github.io/assessment-component-metadata-records/benchmark/FB-LWERIC.ttl"^^xsd:anyURI ;
+    dcterms:title "FAIR Benchmark - LifeWatch ERIC Metadata Catalogue"^^xsd:string ;
+    rdfs:label "FB-LWERIC"^^xsd:string ;
+    vivo:abbreviation "FB-LWERIC"^^xsd:string ;
+    dcterms:description """This benchmark defines the criteria for assessing the FAIRness of metadata records published in the LifeWatch ERIC Metadata Catalogue. It has been developed within the framework of the OSTrails project, as part of Use Case 4, and represents an ongoing effort to define and refine FAIR assessment criteria for LifeWatch ERIC resources."""^^xsd:string ;
+    dcat:keyword "Taxonomic classification"^^xsd:string, "climate"^^xsd:string, "ecosystem"^^xsd:string, "marine metagenome"^^xsd:string ;
+    schema:about "All"^^xsd:string ;
+    ftr:applicationArea <http://aims.fao.org/aos/agrovoc/c_331559>, <http://edamontology.org/topic_0637>, <http://edamontology.org/topic_3050>, <http://edamontology.org/topic_3071>, <http://edamontology.org/topic_3174>, <http://edamontology.org/topic_3387>, <http://edamontology.org/topic_3573>, <http://purl.obolibrary.org/obo/NCIT_C16633> ;
+    
+    dcat:version "1.0.0"^^xsd:string ;
+    
+    
+    ftr:status "Active"@en ;
+     
+    
+    
+    
+    
+    
+    ftr:supportedBy <https://w3id.org/FAIR-Champion> ;
+    dpv:IsApplicableFor <https://schema.org/Dataset>;
+    dcterms:creator <https://ror.org/04c04g438>; 
+    
+    
+    
+    
+    
+    
+    dcterms:publisher  <https://orcid.org/0000-0002-5935-6074> ,  <https://orcid.org/0000-0003-3330-2163>  ; 
+    dcat:contactPoint  <https://orcid.org/0000-0002-5935-6074> ,  <https://orcid.org/0000-0003-3330-2163>  . 
+
+
+
+
+<https://ror.org/04c04g438> a vcard:Organisation ;
+    vcard:organisation-name "LifeWatch ERIC"^^xsd:string .
+
+<https://orcid.org/0000-0002-5935-6074> a vcard:Individual, foaf:Agent ;
+    vcard:fn "Lucia Vaira"^^xsd:string ;
+    vcard:hasEmail <mailto:lucia.vaira@lifewatch.eu> .
+    
+
+  
+<https://orcid.org/0000-0003-3330-2163> a vcard:Individual, foaf:Agent ;
+    vcard:fn "Eftychia Tzafesta"^^xsd:string ;
+    vcard:hasEmail <mailto:eftychia.tzafesta@lifewatch.eu> .
+    
+
+<https://w3id.org/fair-metrics/general/FM_F1_M_IdentPersistent> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – F1 – Metadata - Identifier is persistent"^^xsd:string ;
+    dcterms:identifier "https://w3id.org/fair-metrics/general/FM_F1_M_IdentPersistent"^^xsd:string .
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F2_M_DiscoveryFields.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – F2 - Metadata – discovery-oriented metadata fields"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F2_M_DiscoveryFields.ttl"^^xsd:string .
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F2_M_DiscoveryTags.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – F2 - Metadata – tagging to aid discovery"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F2_M_DiscoveryTags.ttl"^^xsd:string .
+
+<https://w3id.org/fair-metrics/general/FM_F3_M_MetaIdent> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – F3 – Metadata - includes its own identifier"^^xsd:string ;
+    dcterms:identifier "https://w3id.org/fair-metrics/general/FM_F3_M_MetaIdent"^^xsd:string .
+
+<https://w3id.org/fair-metrics/general/FM_F3_M_DataIdent> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – F3 – Metadata - include the identifier of the data it describes"^^xsd:string ;
+    dcterms:identifier "https://w3id.org/fair-metrics/general/FM_F3_M_DataIdent"^^xsd:string .
+
+<https://w3id.org/fair-metrics/general/FM_F4_M_MetaIndexed> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – F4 – Metadata - indexed in a searchable resource"^^xsd:string ;
+    dcterms:identifier "https://w3id.org/fair-metrics/general/FM_F4_M_MetaIndexed"^^xsd:string .
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_A1-1_M_HTTPSProt.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – A1.1 – Metadata - HTTP(S) retrieval protocol"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_A1-1_M_HTTPSProt.ttl"^^xsd:string .
+
+<https://w3id.org/fair-metrics/general/FM_A1-2_M_Auth> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – A1.2 – Metadata - retrieval protocol supports auth"^^xsd:string ;
+    dcterms:identifier "https://w3id.org/fair-metrics/general/FM_A1-2_M_Auth"^^xsd:string .
+
+<https://w3id.org/fair-metrics/general/FM_A2_M_DbMetaLong> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – A2 – Metadata - Database persistence policy"^^xsd:string ;
+    dcterms:identifier "https://w3id.org/fair-metrics/general/FM_A2_M_DbMetaLong"^^xsd:string .
+
+<https://w3id.org/fair-metrics/general/FM_I1_M_FormLangSyntax> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – I1 – Metadata - Uses Knowledge representation language (syntactic)"^^xsd:string ;
+    dcterms:identifier "https://w3id.org/fair-metrics/general/FM_I1_M_FormLangSyntax"^^xsd:string .
+
+<https://w3id.org/fair-metrics/general/FM_I2_M_FAIRVocabSyntax> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – I2 – Metadata - uses FAIR vocabularies (syntactic)"^^xsd:string ;
+    dcterms:identifier "https://w3id.org/fair-metrics/general/FM_I2_M_FAIRVocabSyntax"^^xsd:string .
+
+<https://w3id.org/fair-metrics/general/FM_I3_M_QualRef> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – I3 – Metadata - Contains Qualified Outward Links"^^xsd:string ;
+    dcterms:identifier "https://w3id.org/fair-metrics/general/FM_I3_M_QualRef"^^xsd:string .
+
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.2_M_creatorORCID.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric - R1.2 - Metadata - Creator ORCIDs"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.2_M_creatorORCID.ttl"^^xsd:string .
+
+<https://w3id.org/fair-metrics/esrf/FM_R1-2_M_Affil_ESRF> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric - R1.2 - Metadata - Author affiliation is defined in metadata"^^xsd:string ;
+    dcterms:identifier "https://w3id.org/fair-metrics/esrf/FM_R1-2_M_Affil_ESRF"^^xsd:string .
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.2_M_LinkedPubs.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric - R1.2 - Metadata - Linked Publications"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.2_M_LinkedPubs.ttl"^^xsd:string .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
