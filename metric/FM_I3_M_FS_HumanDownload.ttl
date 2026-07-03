@@ -40,7 +40,7 @@ This metric uses the structured metadata provided by FAIRsharing records to dete
     ftr:inDimension <https://w3id.org/fair/principles/terms/I3> ;
     dcat:version "1.0.0"^^xsd:string ;
     
-    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    
     ftr:status "Active"@en ;
      
     
