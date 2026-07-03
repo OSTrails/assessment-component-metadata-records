@@ -69,50 +69,6 @@
     vcard:hasEmail <mailto:eftychia.tzafesta@lifewatch.eu> .
     
 
-<https://w3id.org/fair-metrics/general/FM_F1_M_IdentPersistent> a dqv:Metric, ftr:Metric, dcat:Resource;
-    rdfs:label "FAIR Metric – F1 – Metadata - Identifier is persistent"^^xsd:string ;
-    dcterms:identifier "https://w3id.org/fair-metrics/general/FM_F1_M_IdentPersistent"^^xsd:string .
-
-<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F2_M_DiscoveryFields.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
-    rdfs:label "FAIR Metric – F2 - Metadata – discovery-oriented metadata fields"^^xsd:string ;
-    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F2_M_DiscoveryFields.ttl"^^xsd:string .
-
-<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F2_M_DiscoveryTags.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
-    rdfs:label "FAIR Metric – F2 - Metadata – tagging to aid discovery"^^xsd:string ;
-    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F2_M_DiscoveryTags.ttl"^^xsd:string .
-
-<https://w3id.org/fair-metrics/general/FM_F3_M_MetaIdent> a dqv:Metric, ftr:Metric, dcat:Resource;
-    rdfs:label "FAIR Metric – F3 – Metadata - includes its own identifier"^^xsd:string ;
-    dcterms:identifier "https://w3id.org/fair-metrics/general/FM_F3_M_MetaIdent"^^xsd:string .
-
-<https://w3id.org/fair-metrics/general/FM_F3_M_DataIdent> a dqv:Metric, ftr:Metric, dcat:Resource;
-    rdfs:label "FAIR Metric – F3 – Metadata - include the identifier of the data it describes"^^xsd:string ;
-    dcterms:identifier "https://w3id.org/fair-metrics/general/FM_F3_M_DataIdent"^^xsd:string .
-
-<https://w3id.org/fair-metrics/general/FM_F4_M_MetaIndexed> a dqv:Metric, ftr:Metric, dcat:Resource;
-    rdfs:label "FAIR Metric – F4 – Metadata - indexed in a searchable resource"^^xsd:string ;
-    dcterms:identifier "https://w3id.org/fair-metrics/general/FM_F4_M_MetaIndexed"^^xsd:string .
-
-<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_A1-1_M_HTTPSProt.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
-    rdfs:label "FAIR Metric – A1.1 – Metadata - HTTP(S) retrieval protocol"^^xsd:string ;
-    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_A1-1_M_HTTPSProt.ttl"^^xsd:string .
-
-<https://w3id.org/fair-metrics/general/FM_A1-2_M_Auth> a dqv:Metric, ftr:Metric, dcat:Resource;
-    rdfs:label "FAIR Metric – A1.2 – Metadata - retrieval protocol supports auth"^^xsd:string ;
-    dcterms:identifier "https://w3id.org/fair-metrics/general/FM_A1-2_M_Auth"^^xsd:string .
-
-<https://w3id.org/fair-metrics/general/FM_A2_M_DbMetaLong> a dqv:Metric, ftr:Metric, dcat:Resource;
-    rdfs:label "FAIR Metric – A2 – Metadata - Database persistence policy"^^xsd:string ;
-    dcterms:identifier "https://w3id.org/fair-metrics/general/FM_A2_M_DbMetaLong"^^xsd:string .
-
-<https://w3id.org/fair-metrics/general/FM_I1_M_FormLangSyntax> a dqv:Metric, ftr:Metric, dcat:Resource;
-    rdfs:label "FAIR Metric – I1 – Metadata - Uses Knowledge representation language (syntactic)"^^xsd:string ;
-    dcterms:identifier "https://w3id.org/fair-metrics/general/FM_I1_M_FormLangSyntax"^^xsd:string .
-
-<https://w3id.org/fair-metrics/general/FM_I2_M_FAIRVocabSyntax> a dqv:Metric, ftr:Metric, dcat:Resource;
-    rdfs:label "FAIR Metric – I2 – Metadata - uses FAIR vocabularies (syntactic)"^^xsd:string ;
-    dcterms:identifier "https://w3id.org/fair-metrics/general/FM_I2_M_FAIRVocabSyntax"^^xsd:string .
-
 <https://w3id.org/fair-metrics/general/FM_I3_M_QualRef> a dqv:Metric, ftr:Metric, dcat:Resource;
     rdfs:label "FAIR Metric – I3 – Metadata - Contains Qualified Outward Links"^^xsd:string ;
     dcterms:identifier "https://w3id.org/fair-metrics/general/FM_I3_M_QualRef"^^xsd:string .
@@ -128,39 +84,6 @@
 <https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.2_M_LinkedPubs.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
     rdfs:label "FAIR Metric - R1.2 - Metadata - Linked Publications"^^xsd:string ;
     dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.2_M_LinkedPubs.ttl"^^xsd:string .
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
