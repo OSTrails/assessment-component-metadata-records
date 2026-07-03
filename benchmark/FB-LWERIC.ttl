@@ -117,7 +117,6 @@
     rdfs:label "FAIR Metric – I3 – Metadata - Contains Qualified Outward Links"^^xsd:string ;
     dcterms:identifier "https://w3id.org/fair-metrics/general/FM_I3_M_QualRef"^^xsd:string .
 
-
 <https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.2_M_creatorORCID.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
     rdfs:label "FAIR Metric - R1.2 - Metadata - Creator ORCIDs"^^xsd:string ;
     dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.2_M_creatorORCID.ttl"^^xsd:string .
@@ -129,9 +128,6 @@
 <https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.2_M_LinkedPubs.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
     rdfs:label "FAIR Metric - R1.2 - Metadata - Linked Publications"^^xsd:string ;
     dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.2_M_LinkedPubs.ttl"^^xsd:string .
-
-
-
 
 
 
