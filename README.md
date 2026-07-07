@@ -12,7 +12,7 @@ This repository serves as a submission endpoint for the **[FAIR Wizard authoring
 - **[Test](https://github.com/OSTrails/assessment-component-metadata-records/tree/main/test/)**
 - **[Metric](https://github.com/OSTrails/assessment-component-metadata-records/tree/main/metric/)**
 - **[Benchmark](https://github.com/OSTrails/assessment-component-metadata-records/tree/main/benchmark/)**
-- **[Algorithm](https://github.com/OSTrails/assessment-component-metadata-records/tree/main/algorithm/)**
+- **[Algorithm](https://github.com/OSTrails/assessment-component-metadata-records/tree/main/algorithm/)** - Not in use for receiving documents anymore!
 
 Once metadata are completed through the FAIR Wizard, the resulting DCAT-based record can be automatically pushed into this repository for submission and indexing.
 
