@@ -1,0 +1,78 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ftr: <https://w3id.org/ftr#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+@prefix dpv: <https://w3id.org/dpv#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix schema: <http://schema.org/> .
+
+
+
+
+
+
+<https://ostrails.github.io/assessment-component-metadata-records/test/FT_A2_M_FS_dbPreservation.ttl> a ftr:Test, dcat:DataService ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/test/FT_A2_M_FS_dbPreservation.ttl"^^xsd:string ;
+    rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/test/FT_A2_M_FS_dbPreservation.ttl"^^xsd:anyURI ;
+    dcat:landingPage "https://ostrails.github.io/assessment-component-metadata-records/test/FT_A2_M_FS_dbPreservation.ttl"^^xsd:anyURI ;
+    dcterms:title "FAIR Test - A2 - database declares preservation policy"^^xsd:string ;
+    rdfs:label "FT_A2_M_FS_dbPreservation"^^xsd:string ;
+    vivo:abbreviation "FT_A2_M_FS_dbPreservation"^^xsd:string ;
+    dcterms:description """This test uses the structured metadata provided by FAIRsharing database records to determine whether the database provides information describing its commitments to preservation. Preservation information is an important FAIR-enabling characteristic for understanding how a database intends to preserve its records over time. This supports FAIR Principle A2 by making preservation commitments discoverable through FAIRsharing. The presence of a Preservation Policy URL does not imply that the underlying policy is adequate, implemented, or effective; it only demonstrates that preservation information has been provided. This metric assesses whether the FAIRsharing database record contains a non-empty Preservation Policy URL. This test should expect as input the FAIRsharing DOI or URL for the FAIRsharing record under evaluation. The evaluation retrieves the FAIRsharing record for the database and checks for the presence of a value in the "Data Preservation Policy" field, as defined in the FAIRsharing database conditions documentation. The presence of a declared preservation policy in the FAIRsharing record is interpreted as evidence that the database has articulated commitments to long-term metadata availability. If a preservation policy is listed in the FAIRsharing record, the resource passes this metric; if not, it fails."""^^xsd:string ;
+    
+    
+    ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000401> ;
+    
+    dcat:version "1.0.0"^^xsd:string ;
+    
+    
+    ftr:status "Active"@en ;
+     
+    dcat:endpointURL <https://fair-tests.fairsharing.org/test/ft_a2_m_fs_dbpreservation> ;
+    dcat:endpointDescription <https://fair-tests.fairsharing.org/test_descriptions/ft_a2_m_fs_dbpreservation/api> ;
+    
+    doap:repository <https://github.com/FAIRsharing/FAIR-Tests> ;
+    ftr:supportedBy <https://tools.ostrails.eu/champion>; 
+    
+    dpv:IsApplicableFor <https://vocabularies.coar-repositories.org/resource_types/c_1843/>;
+    dcterms:creator <https://fairsharing.org/organisations/2281>; 
+    
+    
+    
+    sio:SIO_000233 <https://ostrails.github.io/assessment-component-metadata-records/metric/FM_A2_M_FS_dbPreservation.ttl> ;
+    
+    
+    
+    dcterms:publisher  <https://orcid.org/0000-0001-9572-0972>  ; 
+    dcat:contactPoint  <https://orcid.org/0000-0001-9572-0972>  . 
+
+
+
+
+<https://fairsharing.org/organisations/2281> a vcard:Organisation ;
+    vcard:organisation-name "Oxford e-Research Centre, Department of Engineering Science, University of Oxford, Oxford, UK"^^xsd:string .
+
+<https://orcid.org/0000-0001-9572-0972> a vcard:Individual, foaf:Agent ;
+    vcard:fn "Ramon Granell"^^xsd:string ;
+    vcard:hasEmail <mailto:ramon.granell@oerc.ox.ac.uk> .
+    
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_A2_M_FS_dbPreservation.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric - A2 - database declares preservation policy"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_A2_M_FS_dbPreservation.ttl"^^xsd:string .
+
+
+
+
+
+
+
+
+
