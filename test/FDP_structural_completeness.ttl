@@ -1,0 +1,78 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ftr: <https://w3id.org/ftr#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+@prefix dpv: <https://w3id.org/dpv#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix schema: <http://schema.org/> .
+
+
+
+
+
+
+<https://ostrails.github.io/assessment-component-metadata-records/test/FDP_structural_completeness.ttl> a ftr:Test, dcat:DataService ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/test/FDP_structural_completeness.ttl"^^xsd:string ;
+    rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/test/FDP_structural_completeness.ttl"^^xsd:anyURI ;
+    dcat:landingPage "https://ostrails.github.io/assessment-component-metadata-records/test/FDP_structural_completeness.ttl"^^xsd:anyURI ;
+    dcterms:title "FDP Test - Structural Completeness"^^xsd:string ;
+    rdfs:label "FDP_structural_completeness"^^xsd:string ;
+    vivo:abbreviation "FDP_structural_completeness"^^xsd:string ;
+    dcterms:description """This test checks FDPs in an FDP Index for a structural completeness of their metadata structured as a DCAT-2 profile (FDP-&gt; Catalog-&gt;Dataset-&gt;Distribution-&gt; Data Service)"""^^xsd:string ;
+    
+    
+    
+    
+    dcat:version "0.1.2"^^xsd:string ;
+    
+    
+    ftr:status "Active"@en ;
+     
+    
+    
+    
+    doap:repository <http://github.com/vodor001/FDPcrawleR> ;
+    
+    ftr:supportedBy <https://w3id.org/FAIR-Champion> ;
+    dpv:IsApplicableFor <https://vocabularies.coar-repositories.org/resource_types/c_1843/>;
+    dcterms:creator <https://fairsharing.org/organisations/>; 
+    
+    
+    
+    sio:SIO_000233 <https://w3id.org/fair-metrics/erdera/FM_R1-3_M_VP_L1> ;
+    
+    
+    
+    dcterms:publisher  <https://orcid.org/0000-0003-3518-2572>  ; 
+    dcat:contactPoint  <https://orcid.org/0000-0003-3518-2572>  . 
+
+
+
+
+<https://fairsharing.org/organisations/> a vcard:Organisation ;
+    vcard:organisation-name "No name defined"^^xsd:string .
+
+<https://orcid.org/0000-0003-3518-2572> a vcard:Individual, foaf:Agent ;
+    vcard:fn "Kristina Vodorezova"^^xsd:string ;
+    vcard:hasEmail <mailto:k.vodorezova@amsterdamumc.nl> .
+    
+
+<https://w3id.org/fair-metrics/erdera/FM_R1-3_M_VP_L1> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric - R1.3 - Metadata - Minimal VP Metadata for ERDERA Virtual Platform Level 2 Compliance"^^xsd:string ;
+    dcterms:identifier "https://w3id.org/fair-metrics/erdera/FM_R1-3_M_VP_L1"^^xsd:string .
+
+
+
+
+
+
+
+
+
