@@ -1,0 +1,109 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ftr: <https://w3id.org/ftr#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+@prefix dpv: <https://w3id.org/dpv#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix schema: <http://schema.org/> .
+
+
+
+
+
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1-3_M_PtDataContVoc.ttl> a ftr:Metric, dqv:Metric, dcat:Resource ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1-3_M_PtDataContVoc.ttl"^^xsd:string ;
+    rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1-3_M_PtDataContVoc.ttl"^^xsd:anyURI ;
+    dcat:landingPage "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1-3_M_PtDataContVoc.ttl"^^xsd:anyURI ;
+    dcterms:title "PT Dataverse controlled vocabularies"^^xsd:string ;
+    rdfs:label "FM_R1-3_M_PtDataContVoc"^^xsd:string ;
+    vivo:abbreviation "FM_R1-3_M_PtDataContVoc"^^xsd:string ;
+    dcterms:description """The PT Dataverse controlled vocabularies metric evaluates compliance with the minimum domain relevant requirements established by the PT Dataverse community. The FM_R1-3_M_PtDataContVoc metric expects the use of a controlled vocabulary for the keywords metadata field, including the reference to the Term (a key term that describes important aspects of the dataset), Term URI (a URI that points to the web presence of the keyword term), Controlled Vocabulary Name (the controlled vocabulary used for the keyword term) and Controlled Vocabulary URL (the URL where one can access information about the term’s controlled vocabulary).
+
+The evaluation of this principle is relevant to the PT Dataverse community as it contributes to improving the quality of digital object descriptions, ensuring they are both understandable across different research communities and machine‑readable. This, in turn, facilitates data interoperability, integration, and consistent indexing across diverse systems. """^^xsd:string ;
+    
+    schema:about "Not applicable"^^xsd:string ;
+    ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000401>, <http://www.fairsharing.org/ontology/subject/SRAO_0000401> ;
+    ftr:inDimension <https://w3id.org/fair/principles/terms/R1.3>, <https://doi.org/10.25504/FAIRsharing.9ca8a1> ;
+    dcat:version "1.0.0"^^xsd:string ;
+    
+    
+    ftr:status "Active"@en ;
+     
+    
+    
+    
+    
+    ftr:supportedBy <https://tools.ostrails.eu/champion/>; 
+    
+    dpv:IsApplicableFor <https://schema.org/Dataset>;
+    dcterms:creator <https://ror.org/037wpkx04>; dcterms:creator <https://ror.org/00snfqn58>; 
+    sio:SIO_000234 <https://fairsharing.org/10.25504/FAIRsharing.821487/> ;
+    
+    ftr:hasBenchmark <https://ostrails.eu/national-pilot-interview-portugal> ;
+    
+    
+    
+    ftr:hasPositiveValidation <https://doi.org/10.57979/SIFFWZ>; 
+    ftr:hasNegativeValidation <https://doi.org/10.34622/datarepositorium/AALMKJ>,  <https://doi.org/10.34622/datarepositorium/KZEINV>,  <https://doi.org/10.57979/0K9RDJ>; 
+    dcterms:publisher  <https://orcid.org/0000-0002-8588-4196> ,  <https://orcid.org/0000-0002-5732-9996> ,  <https://orcid.org/0000-0001-8192-4368> ,  <https://orcid.org/0000-0002-0597-5777> ,  <https://orcid.org/0000-0002-4302-645X>  ; 
+    dcat:contactPoint  <https://orcid.org/0000-0002-8588-4196> ,  <https://orcid.org/0000-0002-5732-9996> ,  <https://orcid.org/0000-0001-8192-4368> ,  <https://orcid.org/0000-0002-0597-5777> ,  <https://orcid.org/0000-0002-4302-645X>  . 
+
+
+
+
+<https://ror.org/037wpkx04> a vcard:Organisation ;
+    vcard:organisation-name "University of Minho"^^xsd:string .
+
+  
+<https://ror.org/00snfqn58> a vcard:Organisation ;
+    vcard:organisation-name "Fundação para a Ciência e Tecnologia"^^xsd:string .
+
+<https://orcid.org/0000-0002-8588-4196> a vcard:Individual, foaf:Agent ;
+    vcard:fn "Pedro Príncipe"^^xsd:string ;
+    vcard:hasEmail <mailto:pedro.principe@usdb.uminho.pt> .
+    
+
+  
+<https://orcid.org/0000-0002-5732-9996> a vcard:Individual, foaf:Agent ;
+    vcard:fn "Filipa Pereira"^^xsd:string ;
+    vcard:hasEmail <mailto:filipa.pereira@fccn.pt> .
+    
+
+  
+<https://orcid.org/0000-0001-8192-4368> a vcard:Individual, foaf:Agent ;
+    vcard:fn "Pedro Filipe Machado Sobral"^^xsd:string ;
+    vcard:hasEmail <mailto:pedro.sobral@fccn.pt> .
+    
+
+  
+<https://orcid.org/0000-0002-0597-5777> a vcard:Individual, foaf:Agent ;
+    vcard:fn "Anabela Duarte"^^xsd:string ;
+    vcard:hasEmail <mailto:anabela.duarte@usdb.uminho.pt> .
+    
+
+  
+<https://orcid.org/0000-0002-4302-645X> a vcard:Individual, foaf:Agent ;
+    vcard:fn "André Vieira"^^xsd:string ;
+    vcard:hasEmail <mailto:andre.vieira@usdb.uminho.pt> .
+    
+
+
+
+<https://fairsharing.org/10.25504/FAIRsharing.821487/> a ftr:Test, dcat:DataService .    
+
+<https://ostrails.eu/national-pilot-interview-portugal> a ftr:Benchmark, dcat:Resource ;
+    rdfs:label "FAIR Benchmark - FAIR Dataverse Portugal Benchmark"^^xsd:string ;
+    dcterms:identifier "https://ostrails.eu/national-pilot-interview-portugal"^^xsd:string .
+
+
+
+
+
