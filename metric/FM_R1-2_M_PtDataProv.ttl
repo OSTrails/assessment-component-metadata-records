@@ -1,0 +1,111 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ftr: <https://w3id.org/ftr#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+@prefix dpv: <https://w3id.org/dpv#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix schema: <http://schema.org/> .
+
+
+
+
+
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1-2_M_PtDataProv.ttl> a ftr:Metric, dqv:Metric, dcat:Resource ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1-2_M_PtDataProv.ttl"^^xsd:string ;
+    rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1-2_M_PtDataProv.ttl"^^xsd:anyURI ;
+    dcat:landingPage "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1-2_M_PtDataProv.ttl"^^xsd:anyURI ;
+    dcterms:title "PT Dataverse data provenance"^^xsd:string ;
+    rdfs:label "FM_R1-2_M_PtDataProv"^^xsd:string ;
+    vivo:abbreviation "FM_R1-2_M_PtDataProv"^^xsd:string ;
+    dcterms:description """The PT Dataverse data provenance metric evaluates compliance with the minimum metadata requirements established by the PT Dataverse community. FM_R1-2_M_PtDataProv metric expects a repository DOI and evaluates the digital object for the presence of mandatory attributes required for a passing score.
+
+Mandatory metadata are: creator, contributor, contributor role, date of collection, deposit date (draft creation), publication date, grant information.
+
+The evaluation of this principle is relevant to the PT Dataverse community because will ensure the standardised collection of the provenance information about data creation or generation. """^^xsd:string ;
+    dcat:keyword "Resource metadata"^^xsd:string, "Resource metadata"^^xsd:string ;
+    schema:about "Not applicable"^^xsd:string ;
+    ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000401>, <http://www.fairsharing.org/ontology/subject/SRAO_0000401> ;
+    ftr:inDimension <https://w3id.org/fair/principles/terms/R1.2>, <https://doi.org/10.25504/FAIRsharing.9ca8a1> ;
+    dcat:version "1.0.0"^^xsd:string ;
+    
+    
+    ftr:status "Active"@en ;
+     
+    
+    
+    
+    
+    ftr:supportedBy <https://tools.ostrails.eu/champion/>; 
+    
+    dpv:IsApplicableFor <https://schema.org/Dataset>;
+    dcterms:creator <https://ror.org/037wpkx04>; dcterms:creator <https://ror.org/00snfqn58>; 
+    sio:SIO_000234 <https://fairsharing.org/10.25504/FAIRsharing.821487/> ;
+    
+    ftr:hasBenchmark <https://ostrails.eu/national-pilot-interview-portugal> ;
+    
+    
+    
+    ftr:hasPositiveValidation <https://doi.org/10.57979/08PIRG>,  <https://doi.org/10.34622/datarepositorium/KDIXY6>; 
+    ftr:hasNegativeValidation <https://doi.org/10.57979/I3YY8C>,  <https://doi.org/10.34622/datarepositorium/KZEINV>; 
+    dcterms:publisher  <https://orcid.org/0000-0002-8588-4196> ,  <https://orcid.org/0000-0002-5732-9996> ,  <https://orcid.org/0000-0001-8192-4368> ,  <https://orcid.org/0000-0002-0597-5777> ,  <https://orcid.org/0000-0002-4302-645X>  ; 
+    dcat:contactPoint  <https://orcid.org/0000-0002-8588-4196> ,  <https://orcid.org/0000-0002-5732-9996> ,  <https://orcid.org/0000-0001-8192-4368> ,  <https://orcid.org/0000-0002-0597-5777> ,  <https://orcid.org/0000-0002-4302-645X>  . 
+
+
+
+
+<https://ror.org/037wpkx04> a vcard:Organisation ;
+    vcard:organisation-name "University of Minho"^^xsd:string .
+
+  
+<https://ror.org/00snfqn58> a vcard:Organisation ;
+    vcard:organisation-name "Fundação para a Ciência e Tecnologia"^^xsd:string .
+
+<https://orcid.org/0000-0002-8588-4196> a vcard:Individual, foaf:Agent ;
+    vcard:fn "Pedro Príncipe"^^xsd:string ;
+    vcard:hasEmail <mailto:pedro.principe@usdb.uminho.pt> .
+    
+
+  
+<https://orcid.org/0000-0002-5732-9996> a vcard:Individual, foaf:Agent ;
+    vcard:fn "Filipa Pereira"^^xsd:string ;
+    vcard:hasEmail <mailto:filipa.pereira@fccn.pt> .
+    
+
+  
+<https://orcid.org/0000-0001-8192-4368> a vcard:Individual, foaf:Agent ;
+    vcard:fn "Pedro Filipe Machado Sobral"^^xsd:string ;
+    vcard:hasEmail <mailto:pedro.sobral@fccn.pt> .
+    
+
+  
+<https://orcid.org/0000-0002-0597-5777> a vcard:Individual, foaf:Agent ;
+    vcard:fn "Anabela Duarte"^^xsd:string ;
+    vcard:hasEmail <mailto:anabela.duarte@usdb.uminho.pt> .
+    
+
+  
+<https://orcid.org/0000-0002-4302-645X> a vcard:Individual, foaf:Agent ;
+    vcard:fn "André Vieira"^^xsd:string ;
+    vcard:hasEmail <mailto:andre.vieira@usdb.uminho.pt> .
+    
+
+
+
+<https://fairsharing.org/10.25504/FAIRsharing.821487/> a ftr:Test, dcat:DataService .    
+
+<https://ostrails.eu/national-pilot-interview-portugal> a ftr:Benchmark, dcat:Resource ;
+    rdfs:label "FAIR Benchmark - FAIR Dataverse Portugal Benchmark"^^xsd:string ;
+    dcterms:identifier "https://ostrails.eu/national-pilot-interview-portugal"^^xsd:string .
+
+
+
+
+
