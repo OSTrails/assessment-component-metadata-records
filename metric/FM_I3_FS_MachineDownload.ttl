@@ -22,16 +22,16 @@
     dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I3_FS_MachineDownload.ttl"^^xsd:string ;
     rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I3_FS_MachineDownload.ttl"^^xsd:anyURI ;
     dcat:landingPage "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I3_FS_MachineDownload.ttl"^^xsd:anyURI ;
-    dcterms:title "FAIR Metric - I3 - Metadata - Resource allows content download by machines"^^xsd:string ;
+    dcterms:title "FAIR Metric - I3 - Metadata - Resource allows content download by humans"^^xsd:string ;
     rdfs:label "FM_I3_FS_MachineDownload"^^xsd:string ;
     vivo:abbreviation "FM_I3_FS_MachineDownload"^^xsd:string ;
     dcterms:description """**What is being measured?**
 
-This metric evaluates whether the database, standard or policy resource allows content to be downloaded by machines. In FAIRsharing, this corresponds to at least one Data Process whose label contains **Download** or **Export**, whose process type includes **Read** or **Read/Write**, and whose access method is not **User Interface**. Expected input is the DOI or URL of the registry (e.g. FAIRsharing) record under evaluation.
+This metric evaluates whether the database, standard or policy resource allows content to be downloaded by humans. In FAIRsharing, this corresponds to at least one Data Process whose label contains **Download** or **Export**, whose process type includes **Read** or **Read/Write**, and whose access method is **User Interface**. Expected input is the DOI or URL of the registry (e.g. FAIRsharing) record under evaluation.
 
 **Why should we measure it?**
 
-I3 requires that (meta)data include qualified references to other (meta)data. Within the FAIRsharing interpretation of this principle for database-level FAIR evaluation, information exchange capabilities complement traditional qualified relationships by describing how information may be exchanged between databases, users and external systems. This metric uses the structured metadata provided within FAIRsharing records to determine whether the resource allows content to be downloaded through computational interfaces. Machine-mediated download mechanisms are important FAIR-enabling characteristics because they support the automated exchange of information between resources and external systems, contributing to the broader ecosystem of relationships and interoperability represented by FAIR Principle I3."""^^xsd:string ;
+I3 requires that (meta)data include qualified references to other (meta)data. Within the FAIRsharing interpretation of this principle for database-level FAIR evaluation, information exchange capabilities complement traditional qualified relationships by describing how information may be exchanged between databases, users and external systems. This metric uses the structured metadata provided within FAIRsharing records to determine whether the resource allows content to be downloaded through human-accessible interfaces. Human-mediated download mechanisms are important FAIR-enabling characteristics because they support the exchange of information between resources and users, contributing to the broader ecosystem of relationships and interoperability represented by FAIR Principle I3."""^^xsd:string ;
     dcat:keyword "FAIR"^^xsd:string ;
     schema:about "Not applicable"^^xsd:string ;
     ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000401> ;
