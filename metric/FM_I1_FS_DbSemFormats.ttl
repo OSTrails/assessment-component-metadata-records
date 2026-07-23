@@ -1,0 +1,94 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ftr: <https://w3id.org/ftr#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+@prefix dpv: <https://w3id.org/dpv#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix schema: <http://schema.org/> .
+
+
+
+
+
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I1_FS_DbSemFormats.ttl> a ftr:Metric, dqv:Metric, dcat:Resource ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I1_FS_DbSemFormats.ttl"^^xsd:string ;
+    rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I1_FS_DbSemFormats.ttl"^^xsd:anyURI ;
+    dcat:landingPage "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I1_FS_DbSemFormats.ttl"^^xsd:anyURI ;
+    dcterms:title "FAIR Metric - I1 - Metadata - Database adopts semantic knowledge representation languages (registry evaluation)"^^xsd:string ;
+    rdfs:label "FM_I1_FS_DbSemFormats"^^xsd:string ;
+    vivo:abbreviation "FM_I1_FS_DbSemFormats"^^xsd:string ;
+    dcterms:description """**What is being measured?**
+
+This metric evaluates whether the database adopts semantic knowledge representation languages [as defined by FAIRsharing](https://fairsharing.gitbook.io/fairsharing/fair-assistance/fair-support-and-definitions/syntactic-vs-semantic-knowledge-representation-languages). In FAIRsharing, this corresponds to the FAIRsharing record being linked to at least one model/format record classified as a semantic knowledge representation language. Expected input is the DOI or URL of the registry (e.g. FAIRsharing) record under evaluation.
+
+**Why should we measure it?**
+
+I1 requires that (meta)data use a formal, accessible, shared and broadly applicable language for knowledge representation. This metric uses the relationships provided within FAIRsharing records to determine whether the database adopts formats that provide semantic representations of information [as defined by FAIRsharing](https://fairsharing.gitbook.io/fairsharing/fair-assistance/fair-support-and-definitions/syntactic-vs-semantic-knowledge-representation-languages). Semantic knowledge representation languages are important FAIR-enabling characteristics because they support explicit meaning, machine interpretation and machine reasoning across systems.
+
+This metric has similarities with **FAIR Metric – I1 – Metadata - Database-level knowledge representation languages (semantic)**, which also evaluates the adoption of semantic knowledge representation languages. Whereas that metric begins with a research object identifier and uses FAIRsharing as a source of evidence about the hosting database, this metric begins with a registry record identifier as part of a registry evaluation of the database itself."""^^xsd:string ;
+    dcat:keyword "FAIR"^^xsd:string ;
+    schema:about "Not applicable"^^xsd:string ;
+    ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000401> ;
+    ftr:inDimension <https://w3id.org/fair/principles/terms/I1> ;
+    dcat:version "1.0.0"^^xsd:string ;
+    
+    
+    ftr:status "Active"@en ;
+     
+    
+    
+    
+    
+    ftr:supportedBy <https://tools.ostrails.eu/champion>; 
+    
+    dpv:IsApplicableFor <https://vocabularies.coar-repositories.org/resource_types/c_1843/>;
+    dcterms:creator <https://fairsharing.org/organisations/2281>; 
+    
+    ftr:hasBenchmark <https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance/fair-assistance-for-repositories-and-knowledgebases> ;
+    
+  
+    ftr:hasBenchmark <https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance#fair-assessment-of-life-science-repositories-and-knowledgebases-benchmark> ;
+    
+    
+    
+    
+    
+    dcterms:publisher  <https://orcid.org/0000-0002-7702-4495>  ; 
+    dcat:contactPoint  <https://orcid.org/0000-0002-7702-4495>  . 
+
+
+
+
+<https://fairsharing.org/organisations/2281> a vcard:Organisation ;
+    vcard:organisation-name "Oxford e-Research Centre, Department of Engineering Science, University of Oxford, Oxford, UK"^^xsd:string .
+
+<https://orcid.org/0000-0002-7702-4495> a vcard:Individual, foaf:Agent ;
+    vcard:fn "Allyson Lister"^^xsd:string ;
+    vcard:hasEmail <mailto:contact@fairsharing.org> .
+    
+
+
+
+
+
+<https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance/fair-assistance-for-repositories-and-knowledgebases> a ftr:Benchmark, dcat:Resource ;
+    rdfs:label "FAIR Benchmark - Assistance for Repositories and Knowledgebases"^^xsd:string ;
+    dcterms:identifier "https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance/fair-assistance-for-repositories-and-knowledgebases"^^xsd:string .
+
+
+<https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance#fair-assessment-of-life-science-repositories-and-knowledgebases-benchmark> a ftr:Benchmark, dcat:Resource ;
+    rdfs:label "FAIR Benchmark - Assistance for Life Science Repositories and Knowledgebases"^^xsd:string ;
+    dcterms:identifier "https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance#fair-assessment-of-life-science-repositories-and-knowledgebases-benchmark"^^xsd:string .
+
+
+
+
+
