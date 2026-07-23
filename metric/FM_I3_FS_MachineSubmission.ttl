@@ -1,0 +1,92 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ftr: <https://w3id.org/ftr#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+@prefix dpv: <https://w3id.org/dpv#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix schema: <http://schema.org/> .
+
+
+
+
+
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I3_FS_MachineSubmission.ttl> a ftr:Metric, dqv:Metric, dcat:Resource ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I3_FS_MachineSubmission.ttl"^^xsd:string ;
+    rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I3_FS_MachineSubmission.ttl"^^xsd:anyURI ;
+    dcat:landingPage "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I3_FS_MachineSubmission.ttl"^^xsd:anyURI ;
+    dcterms:title "FAIR Metric - I3 - Metadata - Resource allows content submission by machines"^^xsd:string ;
+    rdfs:label "FM_I3_FS_MachineSubmission"^^xsd:string ;
+    vivo:abbreviation "FM_I3_FS_MachineSubmission"^^xsd:string ;
+    dcterms:description """**What is being measured?**
+
+This metric evaluates whether the database, standard or policy resource allows content to be submitted by machines. In FAIRsharing, this corresponds to at least one Data Process whose process type includes **Write** or **Read/Write** and whose access method is not **User Interface**. Expected input is the DOI or URL of the registry (e.g. FAIRsharing) record under evaluation.
+
+**Why should we measure it?**
+
+I3 requires that (meta)data include qualified references to other (meta)data. Within the FAIRsharing interpretation of this principle for database-level FAIR evaluation, information exchange capabilities complement traditional qualified relationships by describing how information may be exchanged between databases, users and external systems. This metric uses the structured metadata provided within FAIRsharing records to determine whether machines can submit content through computational interfaces. Machine-mediated content submission is important FAIR-enabling characteristic because it supports the automated exchange of information between resources and external systems, contributing to the broader ecosystem of relationships and interoperability represented by FAIR Principle I3."""^^xsd:string ;
+    dcat:keyword "FAIR"^^xsd:string ;
+    schema:about "Not applicable"^^xsd:string ;
+    ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000401> ;
+    ftr:inDimension <https://w3id.org/fair/principles/terms/I3> ;
+    dcat:version "1.0.0"^^xsd:string ;
+    
+    
+    ftr:status "Active"@en ;
+     
+    
+    
+    
+    
+    ftr:supportedBy <https://tools.ostrails.eu/champion>; 
+    
+    dpv:IsApplicableFor <https://vocabularies.coar-repositories.org/resource_types/c_1843/>;
+    dcterms:creator <https://fairsharing.org/organisations/2281>; 
+    
+    ftr:hasBenchmark <https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance/fair-assistance-for-repositories-and-knowledgebases> ;
+    
+  
+    ftr:hasBenchmark <https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance#fair-assessment-of-life-science-repositories-and-knowledgebases-benchmark> ;
+    
+    
+    
+    
+    
+    dcterms:publisher  <https://orcid.org/0000-0002-7702-4495>  ; 
+    dcat:contactPoint  <https://orcid.org/0000-0002-7702-4495>  . 
+
+
+
+
+<https://fairsharing.org/organisations/2281> a vcard:Organisation ;
+    vcard:organisation-name "Oxford e-Research Centre, Department of Engineering Science, University of Oxford, Oxford, UK"^^xsd:string .
+
+<https://orcid.org/0000-0002-7702-4495> a vcard:Individual, foaf:Agent ;
+    vcard:fn "Allyson Lister"^^xsd:string ;
+    vcard:hasEmail <mailto:contact@fairsharing.org> .
+    
+
+
+
+
+
+<https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance/fair-assistance-for-repositories-and-knowledgebases> a ftr:Benchmark, dcat:Resource ;
+    rdfs:label "FAIR Benchmark - Assistance for Repositories and Knowledgebases"^^xsd:string ;
+    dcterms:identifier "https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance/fair-assistance-for-repositories-and-knowledgebases"^^xsd:string .
+
+
+<https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance#fair-assessment-of-life-science-repositories-and-knowledgebases-benchmark> a ftr:Benchmark, dcat:Resource ;
+    rdfs:label "FAIR Benchmark - Assistance for Life Science Repositories and Knowledgebases"^^xsd:string ;
+    dcterms:identifier "https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance#fair-assessment-of-life-science-repositories-and-knowledgebases-benchmark"^^xsd:string .
+
+
+
+
+
