@@ -1,0 +1,92 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ftr: <https://w3id.org/ftr#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+@prefix dpv: <https://w3id.org/dpv#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix schema: <http://schema.org/> .
+
+
+
+
+
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.1_FS_UsageLicence.ttl> a ftr:Metric, dqv:Metric, dcat:Resource ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.1_FS_UsageLicence.ttl"^^xsd:string ;
+    rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.1_FS_UsageLicence.ttl"^^xsd:anyURI ;
+    dcat:landingPage "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.1_FS_UsageLicence.ttl"^^xsd:anyURI ;
+    dcterms:title "FAIR Metric - R1.1 - Metadata - Resource declares a usage licence"^^xsd:string ;
+    rdfs:label "FM_R1.1_FS_UsageLicence"^^xsd:string ;
+    vivo:abbreviation "FM_R1.1_FS_UsageLicence"^^xsd:string ;
+    dcterms:description """**What is being measured?**
+
+This metric evaluates whether the database, standard or policy resource declares a usage licence. In FAIRsharing, this corresponds to the presence of one or more usage licences associated with the resource. Expected input is the DOI or URL of the registry (e.g. FAIRsharing) record under evaluation.
+
+**Why should we measure it?**
+
+R1.1 requires that (meta)data are released with a clear and accessible usage licence. This metric uses the structured metadata provided within FAIRsharing records to determine whether the resource declares one or more usage licences. Declaring a usage licence enables users and assessment services to determine the conditions under which the resource may be accessed, used and reused. The presence of one or more usage licences does not imply that the licence is appropriate for a particular use case or that it satisfies any specific openness criteria. It demonstrates only that licence information has been provided."""^^xsd:string ;
+    dcat:keyword "FAIR"^^xsd:string ;
+    schema:about "Not applicable"^^xsd:string ;
+    ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000401> ;
+    ftr:inDimension <https://w3id.org/fair/principles/terms/R1.1> ;
+    dcat:version "1.0.0"^^xsd:string ;
+    
+    
+    ftr:status "Active"@en ;
+     
+    
+    
+    
+    
+    ftr:supportedBy <https://tools.ostrails.eu/champion>; 
+    
+    dpv:IsApplicableFor <https://vocabularies.coar-repositories.org/resource_types/c_1843/>;
+    dcterms:creator <https://fairsharing.org/organisations/2281>; 
+    
+    ftr:hasBenchmark <https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance/fair-assistance-for-repositories-and-knowledgebases> ;
+    
+  
+    ftr:hasBenchmark <https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance#fair-assessment-of-life-science-repositories-and-knowledgebases-benchmark> ;
+    
+    
+    
+    
+    
+    dcterms:publisher  <https://orcid.org/0000-0002-7702-4495>  ; 
+    dcat:contactPoint  <https://orcid.org/0000-0002-7702-4495>  . 
+
+
+
+
+<https://fairsharing.org/organisations/2281> a vcard:Organisation ;
+    vcard:organisation-name "Oxford e-Research Centre, Department of Engineering Science, University of Oxford, Oxford, UK"^^xsd:string .
+
+<https://orcid.org/0000-0002-7702-4495> a vcard:Individual, foaf:Agent ;
+    vcard:fn "Allyson Lister"^^xsd:string ;
+    vcard:hasEmail <mailto:contact@fairsharing.org> .
+    
+
+
+
+
+
+<https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance/fair-assistance-for-repositories-and-knowledgebases> a ftr:Benchmark, dcat:Resource ;
+    rdfs:label "FAIR Benchmark - Assistance for Repositories and Knowledgebases"^^xsd:string ;
+    dcterms:identifier "https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance/fair-assistance-for-repositories-and-knowledgebases"^^xsd:string .
+
+
+<https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance#fair-assessment-of-life-science-repositories-and-knowledgebases-benchmark> a ftr:Benchmark, dcat:Resource ;
+    rdfs:label "FAIR Benchmark - Assistance for Life Science Repositories and Knowledgebases"^^xsd:string ;
+    dcterms:identifier "https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance#fair-assessment-of-life-science-repositories-and-knowledgebases-benchmark"^^xsd:string .
+
+
+
+
+
