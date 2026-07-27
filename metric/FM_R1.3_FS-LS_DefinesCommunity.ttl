@@ -34,7 +34,7 @@ This metric evaluates whether the database, standard or policy resource defines 
 R1.3 requires that (meta)data meet domain-relevant community standards. Within the FAIRsharing interpretation of this principle for database-level FAIR evaluation, the focus is on the extent to which resources adopt, support and expose community standards and practices that enable FAIR use of their content. This metric uses the structured metadata provided within FAIRsharing records to determine whether the resource defines its **Life Science** community. Defining the community through subject and research object type metadata helps users and assessment services understand the scope and context of the resource, supporting its discovery, interpretation and appropriate reuse. Restricting this metric to the **Life Science** hierarchy creates a domain-specific profile while preserving the same underlying FAIRsharing operationalisation."""^^xsd:string ;
     dcat:keyword "FAIR"^^xsd:string ;
     schema:about "Not applicable"^^xsd:string ;
-    ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000401> ;
+    ftr:applicationArea <http://aims.fao.org/aos/agrovoc/c_4318> ;
     ftr:inDimension <https://w3id.org/fair/principles/terms/R1.3> ;
     dcat:version "1.0.0"^^xsd:string ;
     
