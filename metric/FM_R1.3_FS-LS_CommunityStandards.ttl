@@ -22,7 +22,7 @@
     dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.3_FS-LS_CommunityStandards.ttl"^^xsd:string ;
     rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.3_FS-LS_CommunityStandards.ttl"^^xsd:anyURI ;
     dcat:landingPage "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.3_FS-LS_CommunityStandards.ttl"^^xsd:anyURI ;
-    dcterms:title "FAIR Metric - R1.3 - Metadata - Resource defines its Life Science community"^^xsd:string ;
+    dcterms:title "FAIR Metric - R1.3 - Metadata - Resource adopts community-relevant terminologies or models/formats (Life Science)"^^xsd:string ;
     rdfs:label "FM_R1.3_FS-LS_CommunityStandards"^^xsd:string ;
     vivo:abbreviation "FM_R1.3_FS-LS_CommunityStandards"^^xsd:string ;
     dcterms:description """**What is being measured?**
