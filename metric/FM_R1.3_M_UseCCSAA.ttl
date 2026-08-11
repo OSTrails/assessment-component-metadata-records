@@ -1,0 +1,76 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ftr: <https://w3id.org/ftr#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+@prefix dpv: <https://w3id.org/dpv#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix schema: <http://schema.org/> .
+
+
+
+
+
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.3_M_UseCCSAA.ttl> a ftr:Metric, dqv:Metric, dcat:Resource ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.3_M_UseCCSAA.ttl"^^xsd:string ;
+    rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.3_M_UseCCSAA.ttl"^^xsd:anyURI ;
+    dcat:landingPage "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.3_M_UseCCSAA.ttl"^^xsd:anyURI ;
+    dcterms:title "FAIR Metric – R1.3 - Metadata – use of Croatian classification of scientific and artistic areas, fields and branches "^^xsd:string ;
+    rdfs:label "FM_R1.3_M_UseCCSAA"^^xsd:string ;
+    vivo:abbreviation "FM_R1.3_M_UseCCSAA"^^xsd:string ;
+    dcterms:description """This dimension evaluates whether the digital object referenced by the identifier includes at least one resolvable subject term from the Croatian Classification of Scientific and Artistic Areas, Fields and Branches.
+
+FAIR Principle R1.3 requires metadata to follow domain-relevant community standards. The use of the Croatian Classification of Scientific and Artistic Areas, Fields and Branches is particularly relevant for institutional repositories in Croatia, as it supports interoperability with national research information systems. Consistent use of this classification enables standardized categorization of research outputs and facilitates data integration and exchange across systems within the Croatian research infrastructure."""^^xsd:string ;
+    
+    schema:about "Not applicable"^^xsd:string, "Not applicable"^^xsd:string ;
+    ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000401>, <http://www.fairsharing.org/ontology/subject/SRAO_0000401> ;
+    ftr:inDimension <https://w3id.org/fair/principles/terms/R>, <https://w3id.org/fair/principles/terms/R1.3> ;
+    dcat:version "1.0.0"^^xsd:string ;
+    
+    
+    ftr:status "Active"@en ;
+     
+    
+    
+    
+    
+    
+    ftr:supportedBy <https://w3id.org/FAIR-Champion> ;
+    dpv:IsApplicableFor <https://schema.org/Dataset>;
+    dcterms:creator <https://fairsharing.org/organisations/5933>; 
+    
+    
+    
+    
+    ftr:hasPositiveValidation <https://data.fulir.irb.hr/object/irb:19>; 
+    
+    dcterms:publisher  <https://orcid.org/0000-0003-1138-4188>  ; 
+    dcat:contactPoint  <https://orcid.org/0000-0003-1138-4188>  . 
+
+
+
+
+<https://fairsharing.org/organisations/5933> a vcard:Organisation ;
+    vcard:organisation-name "IRB"^^xsd:string .
+
+<https://orcid.org/0000-0003-1138-4188> a vcard:Individual, foaf:Agent ;
+    vcard:fn "Bojan Macan"^^xsd:string ;
+    vcard:hasEmail <mailto:bmacan@irb.hr> .
+    
+
+
+
+
+
+
+
+
+
+
