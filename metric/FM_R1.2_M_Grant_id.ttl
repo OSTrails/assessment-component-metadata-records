@@ -1,0 +1,74 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ftr: <https://w3id.org/ftr#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+@prefix dpv: <https://w3id.org/dpv#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix schema: <http://schema.org/> .
+
+
+
+
+
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.2_M_Grant_id.ttl> a ftr:Metric, dqv:Metric, dcat:Resource ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.2_M_Grant_id.ttl"^^xsd:string ;
+    rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.2_M_Grant_id.ttl"^^xsd:anyURI ;
+    dcat:landingPage "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.2_M_Grant_id.ttl"^^xsd:anyURI ;
+    dcterms:title "FAIR Metric – R1.2 – Metadata – Grants identification"^^xsd:string ;
+    rdfs:label "FM_R1.2_M_Grant_id"^^xsd:string ;
+    vivo:abbreviation "FM_R1.2_M_Grant_id"^^xsd:string ;
+    dcterms:description """This metric evaluates whether the dataset metadata contains structured information about a related research project and includes a unique project identifier. The evaluation verifies that the dataset is linked to a project record containing a project ID, grant number, or other identifier that uniquely identifies the project. Recording project information in a structured form enhances provenance, transparency, and interoperability and supports the automated linking of datasets to the research projects from which they originate."""^^xsd:string ;
+    
+    schema:about "Not applicable"^^xsd:string, "Not applicable"^^xsd:string ;
+    ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000401>, <http://www.fairsharing.org/ontology/subject/SRAO_0000401> ;
+    ftr:inDimension <https://w3id.org/fair/principles/terms/R1.2>, <https://w3id.org/fair/principles/terms/R> ;
+    dcat:version "1.0.0"^^xsd:string ;
+    
+    
+    ftr:status "Active"@en ;
+     
+    
+    
+    
+    
+    
+    ftr:supportedBy <https://w3id.org/FAIR-Champion> ;
+    dpv:IsApplicableFor <https://schema.org/Dataset>;
+    dcterms:creator <https://fairsharing.org/organisations/>; 
+    
+    
+    
+    
+    
+    
+    dcterms:publisher  <https://orcid.org/0000-0003-1138-4188>  ; 
+    dcat:contactPoint  <https://orcid.org/0000-0003-1138-4188>  . 
+
+
+
+
+<https://fairsharing.org/organisations/> a vcard:Organisation ;
+    vcard:organisation-name "IRB"^^xsd:string .
+
+<https://orcid.org/0000-0003-1138-4188> a vcard:Individual, foaf:Agent ;
+    vcard:fn "Bojan Macan"^^xsd:string ;
+    vcard:hasEmail <mailto:bmacan@irb.hr> .
+    
+
+
+
+
+
+
+
+
+
+
