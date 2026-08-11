@@ -1,0 +1,231 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ftr: <https://w3id.org/ftr#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+@prefix dpv: <https://w3id.org/dpv#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix schema: <http://schema.org/> .
+
+
+
+
+
+
+<https://ostrails.github.io/assessment-component-metadata-records/benchmark/FB-DABAR.ttl> a ftr:Benchmark, dcat:Resource ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/benchmark/FB-DABAR.ttl"^^xsd:string ;
+    rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/benchmark/FB-DABAR.ttl"^^xsd:anyURI ;
+    dcat:landingPage "https://ostrails.github.io/assessment-component-metadata-records/benchmark/FB-DABAR.ttl"^^xsd:anyURI ;
+    dcterms:title "FAIR Benchmark - DABAR FAIR Assessment"^^xsd:string ;
+    rdfs:label "FB-DABAR"^^xsd:string ;
+    vivo:abbreviation "FB-DABAR"^^xsd:string ;
+    dcterms:description """The DABAR FAIR Assessment Benchmark provides a structured framework for evaluating the FAIRness of dataset metadata deposited in DABAR institutional repositories. It translates the FAIR Principles into transparent, community-specific criteria covering findability, accessibility, interoperability and reusability. The benchmark distinguishes features implemented automatically by the repository from those that depend on information provided by researchers, making responsibilities and opportunities for improvement clearer. It supports consistent, reusable and comparable FAIR assessments across repositories and assessment tools."""^^xsd:string ;
+    
+    schema:about "Not applicable"^^xsd:string, "Not applicable"^^xsd:string ;
+    ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000401>, <http://www.fairsharing.org/ontology/subject/SRAO_0000401> ;
+    
+    dcat:version "1.0.0"^^xsd:string ;
+    
+    
+    ftr:status "Active"@en ;
+     
+    
+    
+    
+    
+    
+    ftr:supportedBy <https://w3id.org/FAIR-Champion> ;
+    dpv:IsApplicableFor <https://schema.org/Dataset>;
+    dcterms:creator <https://fairsharing.org/organisations/5933>; 
+    
+    
+    
+    
+    
+    
+    dcterms:publisher  <https://orcid.org/0000-0003-1138-4188>  ; 
+    dcat:contactPoint  <https://orcid.org/0000-0003-1138-4188>  . 
+
+
+
+
+<https://fairsharing.org/organisations/5933> a vcard:Organisation ;
+    vcard:organisation-name "IRB"^^xsd:string .
+
+<https://orcid.org/0000-0003-1138-4188> a vcard:Individual, foaf:Agent ;
+    vcard:fn "Bojan Macan"^^xsd:string ;
+    vcard:hasEmail <mailto:bmacan@irb.hr> .
+    
+
+<https://w3id.org/fair-metrics/general/FM_F1_M_IdentUnique> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – F1 – Metadata - Identifier is globally unique"^^xsd:string ;
+    dcterms:identifier "https://w3id.org/fair-metrics/general/FM_F1_M_IdentUnique"^^xsd:string .
+
+<https://w3id.org/fair-metrics/general/FM_F1_M_IdentPersistent> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – F1 – Metadata - Identifier is persistent"^^xsd:string ;
+    dcterms:identifier "https://w3id.org/fair-metrics/general/FM_F1_M_IdentPersistent"^^xsd:string .
+
+<https://w3id.org/fair-metrics/general/FM_F1_M_IdentResolvable> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – F1 – Metadata - Identifier is resolvable"^^xsd:string ;
+    dcterms:identifier "https://w3id.org/fair-metrics/general/FM_F1_M_IdentResolvable"^^xsd:string .
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F2_M_DiscoveryTags.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – F2 - Metadata – tagging to aid discovery"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F2_M_DiscoveryTags.ttl"^^xsd:string .
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F2_M_DiscoveryFields.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – F2 - Metadata – discovery-oriented metadata fields"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F2_M_DiscoveryFields.ttl"^^xsd:string .
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F2_M_DiscoveryPublisher.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – F2 - Metadata – has publisher information"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F2_M_DiscoveryPublisher.ttl"^^xsd:string .
+
+<https://w3id.org/fair-metrics/general/FM_F3_M_MetaIdent> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – F3 – Metadata - includes its own identifier"^^xsd:string ;
+    dcterms:identifier "https://w3id.org/fair-metrics/general/FM_F3_M_MetaIdent"^^xsd:string .
+
+<https://w3id.org/fair-metrics/general/FM_F3_M_DataIdent> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – F3 – Metadata - include the identifier of the data it describes"^^xsd:string ;
+    dcterms:identifier "https://w3id.org/fair-metrics/general/FM_F3_M_DataIdent"^^xsd:string .
+
+<https://w3id.org/fair-metrics/general/FM_F4_M_MetaIndexed> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – F4 – Metadata - indexed in a searchable resource"^^xsd:string ;
+    dcterms:identifier "https://w3id.org/fair-metrics/general/FM_F4_M_MetaIndexed"^^xsd:string .
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_A1-1_M_HTTPSProt.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – A1.1 – Metadata - HTTP(S) retrieval protocol"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_A1-1_M_HTTPSProt.ttl"^^xsd:string .
+
+<https://w3id.org/fair-metrics/general/FM_A1-2_M_Auth> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – A1.2 – Metadata - retrieval protocol supports auth"^^xsd:string ;
+    dcterms:identifier "https://w3id.org/fair-metrics/general/FM_A1-2_M_Auth"^^xsd:string .
+
+<https://w3id.org/fair-metrics/general/FM_A2_M_DbMetaLong> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – A2 – Metadata - Database persistence policy"^^xsd:string ;
+    dcterms:identifier "https://w3id.org/fair-metrics/general/FM_A2_M_DbMetaLong"^^xsd:string .
+
+<https://w3id.org/fair-metrics/general/FM_I1_M_FormLangSyntax> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – I1 – Metadata - Uses Knowledge representation language (syntactic)"^^xsd:string ;
+    dcterms:identifier "https://w3id.org/fair-metrics/general/FM_I1_M_FormLangSyntax"^^xsd:string .
+
+<https://w3id.org/fair-metrics/general/FM_I2_M_FAIRVocabSyntax> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – I2 – Metadata - uses FAIR vocabularies (syntactic)"^^xsd:string ;
+    dcterms:identifier "https://w3id.org/fair-metrics/general/FM_I2_M_FAIRVocabSyntax"^^xsd:string .
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I3_M_RRO.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – I3 – Metadata – Qualified References to Related Research Objects"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I3_M_RRO.ttl"^^xsd:string .
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I3_M_VersionedRecords.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – I3 – Metadata – Qualified References to Versioned Records"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I3_M_VersionedRecords.ttl"^^xsd:string .
+
+<https://w3id.org/fair-metrics/general/FM_R1-1_M_StdLic> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – R1.1 – Metadata - discoverable data license in metadata"^^xsd:string ;
+    dcterms:identifier "https://w3id.org/fair-metrics/general/FM_R1-1_M_StdLic"^^xsd:string .
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.2_M_ORCID_MBZ.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – R1.2 – Metadata – ORCID or MBZ identifiers for people"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.2_M_ORCID_MBZ.ttl"^^xsd:string .
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.2_M_Grant_id.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – R1.2 – Metadata – Grants identification"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.2_M_Grant_id.ttl"^^xsd:string .
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.2_M_Inst_id.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – R1.2 – Metadata – Institutional identification"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.2_M_Inst_id.ttl"^^xsd:string .
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.2_M_LinkedPubs.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric - R1.2 - Metadata - Linked Publications"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.2_M_LinkedPubs.ttl"^^xsd:string .
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.3_M_UseISO639.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – R1.3 - Metadata – use of ISO 639 language"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.3_M_UseISO639.ttl"^^xsd:string .
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.3_M_UseCCSAA.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – R1.3 - Metadata – use of Croatian classification of scientific and artistic areas, fields and branches"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.3_M_UseCCSAA.ttl"^^xsd:string .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
