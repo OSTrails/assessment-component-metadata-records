@@ -44,7 +44,7 @@ Where this information is present, at least one declaration is sufficient to pas
     
     ftr:supportedBy <https://w3id.org/FAIR-Champion> ;
     dpv:IsApplicableFor <https://schema.org/Dataset>;
-    dcterms:creator <https://fairsharing.org/organisations/>; 
+    dcterms:creator <https://fairsharing.org/organisations/5933>; 
     
     
     
@@ -57,7 +57,7 @@ Where this information is present, at least one declaration is sufficient to pas
 
 
 
-<https://fairsharing.org/organisations/> a vcard:Organisation ;
+<https://fairsharing.org/organisations/5933> a vcard:Organisation ;
     vcard:organisation-name "IRB"^^xsd:string .
 
 <https://orcid.org/0000-0003-1138-4188> a vcard:Individual, foaf:Agent ;
