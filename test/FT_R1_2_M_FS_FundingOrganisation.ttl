@@ -35,8 +35,8 @@
     
     ftr:status "Active"@en ;
      
-    dcat:endpointURL <https://fair-tests.fairsharing.org/test/ft_r1_2_m_fs_funding_grant> ;
-    dcat:endpointDescription <https://fair-tests.fairsharing.org/test_descriptions/ft_r1_2_m_fs_funding_grant/api> ;
+    dcat:endpointURL <https://fair-tests.fairsharing.org/test/ft_r1_2_m_fs_funding_organisation> ;
+    dcat:endpointDescription <https://fair-tests.fairsharing.org/test_descriptions/ft_r1_2_m_fs_funding_organisation/api> ;
     
     doap:repository <https://github.com/FAIRsharing/FAIR-Tests> ;
     ftr:supportedBy <https://tools.ostrails.eu/champion>; 
