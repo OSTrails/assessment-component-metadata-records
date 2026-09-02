@@ -49,8 +49,8 @@
     
     
     
-    dcterms:publisher  <https://orcid.org/>  ; 
-    dcat:contactPoint  <https://orcid.org/>  . 
+    dcterms:publisher  <https://orcid.org/0009-0007-1059-8578>  ; 
+    dcat:contactPoint  <https://orcid.org/0009-0007-1059-8578>  . 
 
 
 
@@ -58,6 +58,10 @@
 <https://ror.org/04mfzb702> a vcard:Organisation ;
     vcard:organisation-name "Center for Plant Biotechnology and Genomics UPM-INIA/CSIC"^^xsd:string .
 
+<https://orcid.org/0009-0007-1059-8578> a vcard:Individual, foaf:Agent ;
+    vcard:fn "Sara Curiel Manzanas"^^xsd:string ;
+    vcard:hasEmail <mailto:sara.curiel.manzanas@gmail.com> .
+    
 
 <https://w3id.org/fair-metrics/general/FM_I2_M_FAIRVocabSyntax> a dqv:Metric, ftr:Metric, dcat:Resource;
     rdfs:label "FAIR Metric – I2 – Metadata - uses FAIR vocabularies (syntactic)"^^xsd:string ;
