@@ -1,0 +1,78 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ftr: <https://w3id.org/ftr#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+@prefix dpv: <https://w3id.org/dpv#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix schema: <http://schema.org/> .
+
+
+
+
+
+
+<https://ostrails.github.io/assessment-component-metadata-records/test/FT_R1_3_M_FS_LS_CommunityStandards.ttl> a ftr:Test, dcat:DataService ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/test/FT_R1_3_M_FS_LS_CommunityStandards.ttl"^^xsd:string ;
+    rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/test/FT_R1_3_M_FS_LS_CommunityStandards.ttl"^^xsd:anyURI ;
+    dcat:landingPage "https://ostrails.github.io/assessment-component-metadata-records/test/FT_R1_3_M_FS_LS_CommunityStandards.ttl"^^xsd:anyURI ;
+    dcterms:title "FAIR Test - R1.3 - Metadata - Resource adopts community-relevant terminologies or models/formats (Life Science)"^^xsd:string ;
+    rdfs:label "FT_R1_3_M_FS_LS_CommunityStandards"^^xsd:string ;
+    vivo:abbreviation "FT_R1_3_M_FS_LS_CommunityStandards"^^xsd:string ;
+    dcterms:description """This test determines whether the database, standard or policy adopts community-relevant terminologies or models/formats for the Life Science community. To satisfy this test, at least one assigned subject must be within the Life Science hierarchy of the FAIRsharing Subject Resource Application Ontology (SRAO), and at least one related terminology and/or model/format must have a subject that is identical to or a child of at least one assigned subject within the resource record. In FAIRsharing, this corresponds to terminology artefacts and/or model/format records related via any non-deprecates relationship and curated using the Life Science subject criteria outlined above. Expected input is the DOI or URL of the registry (e.g. FAIRsharing) record under evaluation. This test expects as input the FAIRsharing DOI or URL for the FAIRsharing record under evaluation."""^^xsd:string ;
+    
+    
+    ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000401> ;
+    
+    dcat:version "1.0.0"^^xsd:string ;
+    
+    
+    ftr:status "Active"@en ;
+     
+    dcat:endpointURL <https://fair-tests.fairsharing.org/test/ft_r1_3_m_fs_ls_community_standards> ;
+    dcat:endpointDescription <https://fair-tests.fairsharing.org/test_descriptions/ft_r1_3_m_fs_ls_community_standards/api> ;
+    
+    doap:repository <https://github.com/FAIRsharing/FAIR-Tests> ;
+    ftr:supportedBy <https://tools.ostrails.eu/champion>; 
+    
+    dpv:IsApplicableFor <https://vocabularies.coar-repositories.org/resource_types/c_1843/>;
+    dcterms:creator <https://fairsharing.org/organisations/2281>; 
+    
+    
+    
+    sio:SIO_000233 <https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.3_FS-LS_CommunityStandards.ttl> ;
+    
+    
+    
+    dcterms:publisher  <https://orcid.org/0000-0001-9572-0972>  ; 
+    dcat:contactPoint  <https://orcid.org/0000-0001-9572-0972>  . 
+
+
+
+
+<https://fairsharing.org/organisations/2281> a vcard:Organisation ;
+    vcard:organisation-name "Oxford e-Research Centre, Department of Engineering Science, University of Oxford, Oxford, UK"^^xsd:string .
+
+<https://orcid.org/0000-0001-9572-0972> a vcard:Individual, foaf:Agent ;
+    vcard:fn "Ramon Granell"^^xsd:string ;
+    vcard:hasEmail <mailto:ramon.granell@oerc.ox.ac.uk> .
+    
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.3_FS-LS_CommunityStandards.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric - R1.3 - Metadata - Resource adopts community-relevant terminologies or models/formats (Life Science)"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.3_FS-LS_CommunityStandards.ttl"^^xsd:string .
+
+
+
+
+
+
+
+
+
