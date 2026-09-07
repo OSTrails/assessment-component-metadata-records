@@ -33,11 +33,11 @@
     
     dcat:version "1.0.0"^^xsd:string ;
     
-    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    
     ftr:status "Active"@en ;
      
     dcat:endpointURL <https://fair-tests.fairsharing.org/test/ft_r1_3_m_uses_iso639_language> ;
-    dcat:endpointDescription <https://fair-tests.fairsharing.org/test_descriptions/ft_r1_3_m_uses_iso639_language> ;
+    dcat:endpointDescription <https://fair-tests.fairsharing.org/test_descriptions/ft_r1_3_m_uses_iso639_language/api> ;
     
     doap:repository <https://github.com/FAIRsharing/FAIR-Tests> ;
     ftr:supportedBy <https://tools.ostrails.eu/champion>; 
@@ -47,6 +47,7 @@
     
     
     
+    sio:SIO_000233 <https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.3_M_UseISO639.ttl> ;
     
     
     
@@ -63,6 +64,11 @@
     vcard:fn "Milo Thurston"^^xsd:string ;
     vcard:hasEmail <mailto:milo.thurston@oerc.ox.ac.uk> .
     
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.3_M_UseISO639.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – R1.3 - Metadata – use of ISO 639 language"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.3_M_UseISO639.ttl"^^xsd:string .
+
 
 
 
