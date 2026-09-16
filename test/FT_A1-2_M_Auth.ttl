@@ -22,7 +22,7 @@
     dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/test/FT_A1-2_M_Auth.ttl"^^xsd:string ;
     rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/test/FT_A1-2_M_Auth.ttl"^^xsd:anyURI ;
     dcat:landingPage "https://ostrails.github.io/assessment-component-metadata-records/test/FT_A1-2_M_Auth.ttl"^^xsd:anyURI ;
-    dcterms:title "FAIR Test – A1.2 – Metadata - retrieval protocol supports auth"^^xsd:string ;
+    dcterms:title "FAIR Test - A1.1 - Metadata - HTTP(S) retrieval protocol"^^xsd:string ;
     rdfs:label "FT_A1-2_M_Auth"^^xsd:string ;
     vivo:abbreviation "FT_A1-2_M_Auth"^^xsd:string ;
     dcterms:description """A1.2 requires that the protocol used to retrieve research objects clearly describes any necessary authentication and authorisation procedures. This ensures that access conditions are transparent and that restricted content is accessed in a defined and controlled way. Optionally, if a FAIRsharing record for the hosting database is available, the evaluation first checks the declared data access conditions. If the access condition is “open” then no authentication or authorisation is required for any content within that database, and the evaluation is complete. Otherwise, the test currently fails. [https://tests.ostrails.eu/tests/test_FM_A1_2_M_Auth](https://tests.ostrails.eu/tests/test_FM_A1_2_M_Auth) should also be run.
@@ -34,7 +34,7 @@
     
     dcat:version "1.0.0"^^xsd:string ;
     
-    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    
     ftr:status "Active"@en ;
      
     dcat:endpointURL <https://fair-tests.fairsharing.org/test/ft_a1_2_m_retrieval_protocol_supports_auth> ;
