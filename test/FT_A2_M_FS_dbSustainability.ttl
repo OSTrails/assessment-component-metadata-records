@@ -46,7 +46,7 @@
     
     
     
-    sio:SIO_000233 <https://ostrails.github.io/assessment-component-metadata-records/metric/FM_A2_M_FS_dbSustainability.ttl> ;
+    sio:SIO_000233 <https://ostrails.github.io/assessment-component-metadata-records/metric/FM_A2_FS_DbSustainability.ttl> ;
     
     
     
@@ -64,9 +64,9 @@
     vcard:hasEmail <mailto:ramon.granell@oerc.ox.ac.uk> .
     
 
-<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_A2_M_FS_dbSustainability.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
-    rdfs:label "FAIR Metric - A2 - database declares sustainability plan"^^xsd:string ;
-    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_A2_M_FS_dbSustainability.ttl"^^xsd:string .
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_A2_FS_DbSustainability.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric - A2 - Metadata - Database declares sustainability plan (registry evaluation)"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_A2_FS_DbSustainability.ttl"^^xsd:string .
 
 
 
