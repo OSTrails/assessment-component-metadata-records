@@ -36,7 +36,7 @@ Fail: if any of the conditions in 'pass' fail; specifically, if the URL/DOI is n
     
     dcat:version "0.1.0"^^xsd:string ;
     
-    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    
     ftr:status "Active"@en ;
      
     dcat:endpointURL <https://fair-tests.fairsharing.org/test/ft_ark_a2preservation> ;
@@ -71,6 +71,8 @@ Fail: if any of the conditions in 'pass' fail; specifically, if the URL/DOI is n
 <https://github.com/FAIRMetrics/Metrics/blob/master/MaturityIndicators/Gen2/Gen2_MI_A2.md> a dqv:Metric, ftr:Metric, dcat:Resource;
     rdfs:label "FAIR Metric - FAIR Maturity Indicator - Metadata persistence - Gen2-MI-A2"^^xsd:string ;
     dcterms:identifier "https://github.com/FAIRMetrics/Metrics/blob/master/MaturityIndicators/Gen2/Gen2_MI_A2.md"^^xsd:string .
+
+
 
 
 
