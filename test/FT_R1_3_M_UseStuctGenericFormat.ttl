@@ -22,17 +22,17 @@
     dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/test/FT_R1_3_M_UseStuctGenericFormat.ttl"^^xsd:string ;
     rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/test/FT_R1_3_M_UseStuctGenericFormat.ttl"^^xsd:anyURI ;
     dcat:landingPage "https://ostrails.github.io/assessment-component-metadata-records/test/FT_R1_3_M_UseStuctGenericFormat.ttl"^^xsd:anyURI ;
-    dcterms:title "FAIR Test - R1.3 - Metadata – use of recognised and structured generic metadata format"^^xsd:string ;
+    dcterms:title "FAIR Test - R1.3 - Metadata - use of recognised and structured generic metadata format"^^xsd:string ;
     rdfs:label "FT_R1_3_M_UseStuctGenericFormat"^^xsd:string ;
     vivo:abbreviation "FT_R1_3_M_UseStuctGenericFormat"^^xsd:string ;
-    dcterms:description """FAIR Test - R1.3 - Metadata – use of recognised and structured generic metadata format evaluates whether the dataset metadata is structured according to predefined, widely adopted metadata schemas appropriate to institutional repositories and other generalist contexts, such as schema.org (JSON-LD) or DataCite. It checks the record’s landing page for embedded or linked structured data that can be successfully parsed against the declared community schema. Finding JSON+LD or XML formats will result in a pass; otherwise, the test will fail."""^^xsd:string ;
+    dcterms:description """This test evaluates whether the dataset metadata is structured according to predefined, widely adopted metadata schemas appropriate to institutional repositories and other generalist contexts, such as [schema.org](http://schema.org) (JSON-LD) or DataCite. It checks the record’s landing page for embedded or linked structured data that can be successfully parsed against the declared community schema. Finding JSON+LD or XML formats will result in a pass; otherwise, the test will fail. Expected input is a resolvable URL or identifier for the metadata record of the digital research object under evaluation."""^^xsd:string ;
     
     
     ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000401> ;
     
     dcat:version "0.1.0"^^xsd:string ;
     
-    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    
     ftr:status "Active"@en ;
      
     dcat:endpointURL <https://fair-tests.fairsharing.org/test/ft_r1_3_m_recognised_structured_metadata> ;
@@ -67,6 +67,8 @@
 <https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.3_M_UseStuctGenericFormat.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
     rdfs:label "FAIR Metric – R1.3 - Metadata – use of recognised and structured generic metadata format"^^xsd:string ;
     dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.3_M_UseStuctGenericFormat.ttl"^^xsd:string .
+
+
 
 
 
