@@ -48,7 +48,7 @@
     
     
     
-    sio:SIO_000233 <https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.2_M_creatorORCID.ttl> ;
+    sio:SIO_000233 <https://w3id.org/fair-metrics/esrf/FM_R1-2_M_Affil_ESRF> ;
     
     
     
@@ -66,9 +66,9 @@
     vcard:hasEmail <mailto:milo.thurston@oerc.ox.ac.uk> .
     
 
-<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.2_M_creatorORCID.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
-    rdfs:label "FAIR Metric - R1.2 - Metadata - Creator ORCIDs"^^xsd:string ;
-    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.2_M_creatorORCID.ttl"^^xsd:string .
+<https://w3id.org/fair-metrics/esrf/FM_R1-2_M_Affil_ESRF> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric - R1.2 - Metadata - Author affiliation is defined in metadata"^^xsd:string ;
+    dcterms:identifier "https://w3id.org/fair-metrics/esrf/FM_R1-2_M_Affil_ESRF"^^xsd:string .
 
 
 
