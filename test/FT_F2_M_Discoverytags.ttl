@@ -25,15 +25,14 @@
     dcterms:title "FAIR Test - F2 - Metadata - Tagging To Aid Discovery"^^xsd:string ;
     rdfs:label "FT_F2_M_Discoverytags"^^xsd:string ;
     vivo:abbreviation "FT_F2_M_Discoverytags"^^xsd:string ;
-    dcterms:description """FAIR Test - F2 - Metadata - Tagging To Aid Discovery evaluates the metadata for the presence of at least one keyword or tag of any kind (free-text or controlled). With regards to Findability (as opposed to e.g., Interoperability), the presence of any type of tag (irrespective of whether that tag is part of a controlled vocabulary) is the key feature for this metric. The metric expects the identifier to point to structured metadata (e.g., schema.org, DataCite, or DC) and verifies that the keyword/subject property is not empty. The metric passes if at least one tag is identified and fails if the keyword attribute is missing or null.
-"""^^xsd:string ;
+    dcterms:description """FAIR Test - F2 - Metadata - Tagging To Aid Discovery evaluates the metadata for the presence of at least one keyword or tag of any kind (free-text or controlled). With regards to Findability (as opposed to e.g., Interoperability), the presence of any type of tag (irrespective of whether that tag is part of a controlled vocabulary) is the key feature for this metric. The metric expects the identifier to point to structured metadata (e.g., schema.org, DataCite, or DC) and verifies that the keyword/subject property is not empty. The metric passes if at least one tag is identified and fails if the keyword attribute is missing or null. Expected input is a resolvable URL or identifier for the metadata record of the digital research object under evaluation."""^^xsd:string ;
     
     
     ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000401> ;
     
     dcat:version "0.1.0"^^xsd:string ;
     
-    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    
     ftr:status "Active"@en ;
      
     dcat:endpointURL <https://fair-tests.fairsharing.org/test/ft_f2_m_discoverytags> ;
@@ -68,6 +67,8 @@
 <https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F2_M_DiscoveryTags.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
     rdfs:label "FAIR Metric – F2 - Metadata – tagging to aid discovery"^^xsd:string ;
     dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F2_M_DiscoveryTags.ttl"^^xsd:string .
+
+
 
 
 
