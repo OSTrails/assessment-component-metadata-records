@@ -25,7 +25,7 @@
     dcterms:title "FAIR Test - I3 - allows content submission by machines"^^xsd:string ;
     rdfs:label "FT_I3_M_FS_MachineSubmission"^^xsd:string ;
     vivo:abbreviation "FT_I3_M_FS_MachineSubmission"^^xsd:string ;
-    dcterms:description """This test uses the structured metadata provided by FAIRsharing records to determine whether machines can submit content through computational interfaces. Machine-mediated content submission is an important FAIR-enabling characteristic because it supports the automated exchange of information between resources and external systems. This test assesses whether the FAIRsharing record contains at least one Data Process with a type of Write or Read/Write that uses a non-User Interface access method. This test expects as input the FAIRsharing DOI or URL for the FAIRsharing record under evaluation.'"""^^xsd:string ;
+    dcterms:description """This test uses the structured metadata provided by FAIRsharing records to determine whether machines can submit content through computational interfaces. Machine-mediated content submission is an important FAIR-enabling characteristic because it supports the automated exchange of information between resources and external systems. This test assesses whether the FAIRsharing record contains at least one Data Process with a type of Write or Read/Write that uses a non-User Interface access method. This test expects as input the FAIRsharing DOI or URL for the FAIRsharing record under evaluation."""^^xsd:string ;
     
     
     ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000401> ;
@@ -46,7 +46,7 @@
     
     
     
-    sio:SIO_000233 <https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I3_M_FS_MachineSubmission.ttl> ;
+    sio:SIO_000233 <https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I3_FS_MachineSubmission.ttl> ;
     
     
     
@@ -64,9 +64,9 @@
     vcard:hasEmail <mailto:ramon.granell@oerc.ox.ac.uk> .
     
 
-<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I3_M_FS_MachineSubmission.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
-    rdfs:label "FAIR Metric - I3 - allows content submission by machines"^^xsd:string ;
-    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I3_M_FS_MachineSubmission.ttl"^^xsd:string .
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I3_FS_MachineSubmission.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric - I3 - resource allows content submission by machines"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I3_FS_MachineSubmission.ttl"^^xsd:string .
 
 
 
