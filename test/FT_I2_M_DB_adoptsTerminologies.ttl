@@ -46,12 +46,12 @@
     
     
     
-    sio:SIO_000233 <https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I2_M_FS_usesTerminologies.ttl> ;
+    sio:SIO_000233 <https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I2_FS_UsesTerminologies.ttl> ;
     
     
     
-    dcterms:publisher  <https://orcid.org/0000-0001-9572-0972> ,  <https://orcid.org/>  ; 
-    dcat:contactPoint  <https://orcid.org/0000-0001-9572-0972> ,  <https://orcid.org/>  . 
+    dcterms:publisher  <https://orcid.org/0000-0001-9572-0972>  ; 
+    dcat:contactPoint  <https://orcid.org/0000-0001-9572-0972>  . 
 
 
 
@@ -64,11 +64,9 @@
     vcard:hasEmail <mailto:ramon.granell@oerc.ox.ac.uk> .
     
 
-  
-
-<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I2_M_FS_usesTerminologies.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
-    rdfs:label "FAIR Metric - I2 - adopts FAIR-supporting terminologies"^^xsd:string ;
-    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I2_M_FS_usesTerminologies.ttl"^^xsd:string .
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I2_FS_UsesTerminologies.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric - I2 - Metadata - Resource adopts FAIR-supporting terminologies"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I2_FS_UsesTerminologies.ttl"^^xsd:string .
 
 
 
