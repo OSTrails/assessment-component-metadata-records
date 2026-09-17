@@ -22,7 +22,7 @@
     dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FT_F1_M_MetadataIdPersistent.ttl"^^xsd:string ;
     rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/metric/FT_F1_M_MetadataIdPersistent.ttl"^^xsd:anyURI ;
     dcat:landingPage "https://ostrails.github.io/assessment-component-metadata-records/metric/FT_F1_M_MetadataIdPersistent.ttl"^^xsd:anyURI ;
-    dcterms:title "'FAIR Test - F1 - Metadata - Metadata contains identifier that is guaranteed persistent"^^xsd:string ;
+    dcterms:title "FAIR Test - F1 - Metadata - Metadata contains identifier that is guaranteed persistent"^^xsd:string ;
     rdfs:label "FT_F1_M_MetadataIdPersistent"^^xsd:string ;
     vivo:abbreviation "FT_F1_M_MetadataIdPersistent"^^xsd:string ;
     dcterms:description """This test evaluates whether the metadata retrieved from the provided URI contains an identifier that satisfies the FAIRsharing definition of guaranteed persistence, as aligned with the EOSC PID Policy. Note that it assesses the metadata retrieved from the URI rather than the URI itself. During assessment, the provided URI is resolved in accordance with FAIRsharing’s identifier resolution best practices. If the record contains DOI or ARK identifiers it will pass. If any identifier URLs can be determined as persistent via FAIRsharing data the test will also pass. Otherwise, it will fail. The expected input is the URL of the resource to be tested.  
