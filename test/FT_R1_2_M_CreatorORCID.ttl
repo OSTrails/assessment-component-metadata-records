@@ -25,14 +25,14 @@
     dcterms:title "FAIR Test - R1.2 - Metadata - Creator ORCIDs"^^xsd:string ;
     rdfs:label "FT_R1_2_M_CreatorORCID"^^xsd:string ;
     vivo:abbreviation "FT_R1_2_M_CreatorORCID"^^xsd:string ;
-    dcterms:description """FAIR Test - R1.2 - Metadata - Creator ORCIDs evaluates whether the metadata includes at least one qualified reference to ORCID for a contributor with a ‘creator’ role. The presence of ORCIDs linked to individuals, together with the defined ‘creator’ role, constitutes a qualified provenance reference. If the record contains a creator and this creator has an ORCID ID it will pass; otherwise, the test will fail."""^^xsd:string ;
+    dcterms:description """This test evaluates whether the metadata includes at least one qualified reference to ORCID for a contributor with a ‘creator’ role. The presence of ORCIDs linked to individuals, together with the defined ‘creator’ role, constitutes a qualified provenance reference. If the record contains a creator and this creator has an ORCID ID it will pass; otherwise, the test will fail. Expected input is a resolvable URL or identifier for the metadata record of the digital research object under evaluation."""^^xsd:string ;
     
     
     ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000401> ;
     
     dcat:version "0.1.0"^^xsd:string ;
     
-    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    
     ftr:status "Active"@en ;
      
     dcat:endpointURL <https://fair-tests.fairsharing.org/test/ft_r1_2_m_creator_orcid> ;
@@ -67,6 +67,7 @@
 <https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.2_M_creatorORCID.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
     rdfs:label "FAIR Metric - R1.2 - Metadata - Creator ORCIDs"^^xsd:string ;
     dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.2_M_creatorORCID.ttl"^^xsd:string .
+
 
 
 
