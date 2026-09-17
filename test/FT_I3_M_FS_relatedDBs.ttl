@@ -25,7 +25,7 @@
     dcterms:title "FAIR Test - I3 - Metadata - I3 - references related databases"^^xsd:string ;
     rdfs:label "FT_I3_M_FS_relatedDBs"^^xsd:string ;
     vivo:abbreviation "FT_I3_M_FS_relatedDBs"^^xsd:string ;
-    dcterms:description """This test assesses whether the FAIRsharing database record contains at least one shares_data_with or related_to relationship linking it to another FAIRsharing database record. Tests implementing this metric should expect as input the FAIRsharing DOI or URL for the FAIRsharing record under evaluation. To pass, a relationship with shares_data_with or related_to label with other database should exist, else the test will fail. This test expects as input the FAIRsharing DOI or URL for the FAIRsharing record under evaluation."""^^xsd:string ;
+    dcterms:description """This test assesses whether the FAIRsharing database record contains at least one sharesdatawith or relatedto relationship linking it to another FAIRsharing database record. To pass, a relationship with sharesdatawith or relatedto label with other database should exist, else the test will fail. This test expects as input the FAIRsharing DOI or URL for the FAIRsharing record under evaluation."""^^xsd:string ;
     
     
     ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000401> ;
@@ -46,12 +46,12 @@
     
     
     
-    sio:SIO_000233 <https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I3_M_FS_relatedDBs.ttl> ;
+    sio:SIO_000233 <https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I3_FS_RelatedDBs.ttl> ;
     
     
     
-    dcterms:publisher  <https://orcid.org/0000-0001-9572-0972> ,  <https://orcid.org/>  ; 
-    dcat:contactPoint  <https://orcid.org/0000-0001-9572-0972> ,  <https://orcid.org/>  . 
+    dcterms:publisher  <https://orcid.org/0000-0001-9572-0972>  ; 
+    dcat:contactPoint  <https://orcid.org/0000-0001-9572-0972>  . 
 
 
 
@@ -64,11 +64,9 @@
     vcard:hasEmail <mailto:ramon.granell@oerc.ox.ac.uk> .
     
 
-  
-
-<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I3_M_FS_relatedDBs.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
-    rdfs:label "FAIR Metric - I3 - references related databases"^^xsd:string ;
-    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I3_M_FS_relatedDBs.ttl"^^xsd:string .
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I3_FS_RelatedDBs.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric - I3 - Metadata - Database references related databases"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I3_FS_RelatedDBs.ttl"^^xsd:string .
 
 
 
