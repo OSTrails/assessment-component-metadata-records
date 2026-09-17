@@ -25,7 +25,7 @@
     dcterms:title "FAIR Test - F4 - provides user search"^^xsd:string ;
     rdfs:label "FT_F4_M_FS_providesUserSearch"^^xsd:string ;
     vivo:abbreviation "FT_F4_M_FS_providesUserSearch"^^xsd:string ;
-    dcterms:description """This test assesses whether the FAIRsharing record contains at least one Data Process that includes a Search or Browse function (as identified by “Search” or “Browse” within the Name field of a Data Process), uses a User Interface access method, and supports Read or Read/Write operations. The test expects as input the FAIRsharing DOI or URL for the FAIRsharing record under evaluation."""^^xsd:string ;
+    dcterms:description """This test assesses whether the FAIRsharing record contains at least one Data Process that includes a Search or Browse function (as identified by "Search" or "Browse" within the Name field of a Data Process), uses a User Interface access method, and supports Read or Read/Write operations. Expected input is the FAIRsharing DOI or URL for the FAIRsharing record under evaluation."""^^xsd:string ;
     dcat:keyword "biological regulation"^^xsd:string ;
     
     ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000401> ;
@@ -46,7 +46,7 @@
     
     
     
-    sio:SIO_000233 <https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F4_M_FS_providesUserSearch.ttl> ;
+    sio:SIO_000233 <https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F4_FS_ProvidesUserSearch.ttl> ;
     
     
     
@@ -64,9 +64,9 @@
     vcard:hasEmail <mailto:milo.thurston@oerc.ox.ac.uk> .
     
 
-<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F4_M_FS_providesUserSearch.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
-    rdfs:label "FAIR Metric - F4 - provides user search interface"^^xsd:string ;
-    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F4_M_FS_providesUserSearch.ttl"^^xsd:string .
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F4_FS_ProvidesUserSearch.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric - F4 - Metadata - Resource provides user search interface"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F4_FS_ProvidesUserSearch.ttl"^^xsd:string .
 
 
 
