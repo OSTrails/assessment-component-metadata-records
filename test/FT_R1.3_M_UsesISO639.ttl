@@ -22,11 +22,10 @@
     dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/test/FT_R1.3_M_UsesISO639.ttl"^^xsd:string ;
     rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/test/FT_R1.3_M_UsesISO639.ttl"^^xsd:anyURI ;
     dcat:landingPage "https://ostrails.github.io/assessment-component-metadata-records/test/FT_R1.3_M_UsesISO639.ttl"^^xsd:anyURI ;
-    dcterms:title "FAIR Test – R1.3 - Metadata – use of ISO 639 language"^^xsd:string ;
+    dcterms:title "FAIR Test - R1.3 - Metadata - use of ISO 639 language"^^xsd:string ;
     rdfs:label "FT_R1.3_M_UsesISO639"^^xsd:string ;
     vivo:abbreviation "FT_R1.3_M_UsesISO639"^^xsd:string ;
-    dcterms:description """This test evaluates whether the metadata for the digital object includes at least one resolvable language attribute defined by the ISO 639 standard. It evaluates the value held in the language field against the official ISO 639 registry, searching for a valid, standardised code (specifically 639-2 / 639:2023) or a URI pointing to an ISO term.
-"""^^xsd:string ;
+    dcterms:description """This test evaluates whether the metadata for the digital object includes at least one resolvable language attribute defined by the ISO 639 standard. It evaluates the value held in the language field against the official ISO 639 registry, searching for a valid, standardised code (specifically 639-2 / 639:2023) or a URI pointing to an ISO term. Expected input is a resolvable URL or identifier for the metadata record of the digital research object under evaluation."""^^xsd:string ;
     
     
     ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000401> ;
