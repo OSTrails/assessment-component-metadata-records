@@ -39,6 +39,9 @@ A1 requires that (meta)data are retrievable using a standardised communications 
     dcat:version "1.0.0"^^xsd:string ;
     
     
+    
+    
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
     ftr:status "Active"@en ;
      
     
@@ -48,7 +51,14 @@ A1 requires that (meta)data are retrievable using a standardised communications 
     ftr:supportedBy <https://tools.ostrails.eu/champion>; 
     
     dpv:IsApplicableFor <https://vocabularies.coar-repositories.org/resource_types/c_1843/>;
-    dcterms:creator <https://fairsharing.org/organisations/2281>; 
+
+    
+    
+    
+    
+    dcterms:creator <https://fairsharing.org/organisations/2281> ;
+
+
     
     ftr:hasBenchmark <https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance/fair-assistance-for-repositories-and-knowledgebases> ;
     
@@ -85,6 +95,8 @@ A1 requires that (meta)data are retrievable using a standardised communications 
 <https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance#fair-assessment-of-life-science-repositories-and-knowledgebases-benchmark> a ftr:Benchmark, dcat:Resource ;
     rdfs:label "FAIR Benchmark - Assistance for Life Science Repositories and Knowledgebases"^^xsd:string ;
     dcterms:identifier "https://fairsharing.gitbook.io/fairsharing/about-our-records/fair-assistance#fair-assessment-of-life-science-repositories-and-knowledgebases-benchmark"^^xsd:string .
+
+
 
 
 
