@@ -32,7 +32,7 @@
     
     dcat:version "1.0.0"^^xsd:string ;
     
-    
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     ftr:status "Active"@en ;
      
     dcat:endpointURL <https://fair-tests.fairsharing.org/test/ft_r1_3_m_fs_ls_defines_community> ;
