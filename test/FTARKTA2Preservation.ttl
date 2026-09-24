@@ -36,7 +36,7 @@ Fail: if any of the conditions in 'pass' fail; specifically, if the URL/DOI is n
     
     dcat:version "0.1.0"^^xsd:string ;
     
-    
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
     ftr:status "Active"@en ;
      
     dcat:endpointURL <https://fair-tests.fairsharing.org/test/ft_ark_a2preservation> ;
