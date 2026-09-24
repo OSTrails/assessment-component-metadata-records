@@ -32,7 +32,7 @@
     
     dcat:version "0.1.0"^^xsd:string ;
     
-    
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
     ftr:status "Active"@en ;
      
     dcat:endpointURL <https://fair-tests.fairsharing.org/test/ft_i1_m_db_knowledge_syntactic> ;
