@@ -38,7 +38,7 @@ I2 requires that (meta)data use vocabularies that follow FAIR principles. This m
     ftr:inDimension <https://w3id.org/fair/principles/terms/I2> ;
     dcat:version "1.0.0"^^xsd:string ;
     
-    
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
     ftr:status "Active"@en ;
      
     
