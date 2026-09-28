@@ -34,7 +34,7 @@ Where this information is present, at least one declaration is sufficient to pas
     ftr:inDimension <https://w3id.org/fair/principles/terms/R1.2>, <https://w3id.org/fair/principles/terms/R> ;
     dcat:version "1.0.0"^^xsd:string ;
     
-    
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     ftr:status "Active"@en ;
      
     
