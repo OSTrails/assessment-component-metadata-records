@@ -32,7 +32,7 @@
     ftr:inDimension <https://w3id.org/fair/principles/terms/R1.2>, <https://w3id.org/fair/principles/terms/R> ;
     dcat:version "1.0.0"^^xsd:string ;
     
-    
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     ftr:status "Active"@en ;
      
     
