@@ -35,7 +35,7 @@
     
     dcat:version "1.0.0"^^xsd:string ;
     
-    
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     ftr:status "Active"@en ;
      
     dcat:endpointURL <https://fair-tests.fairsharing.org/test/ft_f1_m_metadata_id_persistent> ;
