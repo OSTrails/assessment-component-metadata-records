@@ -38,7 +38,7 @@ F1 requires that (meta)data are assigned globally unique and persistent identifi
     ftr:inDimension <https://w3id.org/fair/principles/terms/F1> ;
     dcat:version "1.0.0"^^xsd:string ;
     
-    dterms:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
     ftr:status "Active"@en ;
      
     
