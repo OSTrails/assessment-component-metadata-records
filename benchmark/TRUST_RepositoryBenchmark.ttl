@@ -1,0 +1,172 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ftr: <https://w3id.org/ftr#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+@prefix dpv: <https://w3id.org/dpv#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix schema: <http://schema.org/> .
+
+
+
+
+
+
+<https://ostrails.github.io/assessment-component-metadata-records/benchmark/TRUST_RepositoryBenchmark.ttl> a ftr:Benchmark, dcat:Resource ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/benchmark/TRUST_RepositoryBenchmark.ttl"^^xsd:string ;
+    rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/benchmark/TRUST_RepositoryBenchmark.ttl"^^xsd:anyURI ;
+    dcat:landingPage "https://fairsharing.gitbook.io/fairsharing/fair-assistance/TRUST-evaluation"^^xsd:anyURI ;
+    dcterms:title "TRUST Benchmark for digital repositories"^^xsd:string ;
+    rdfs:label "TRUST_RepositoryBenchmark"^^xsd:string ;
+    vivo:abbreviation "TRUST_RepositoryBenchmark"^^xsd:string ;
+    dcterms:description """This benchmark provides an initial draft interpretation of the **++T++**ransparency, **++R++**esponsibility, **++U++**ser focus, **++S++**ustainability and **++T++**echnology (TRUST) Principles. These Principles provide a common framework to facilitate discussion and implementation of best practice in digital preservation by all stakeholders."""^^xsd:string ;
+    
+    schema:about "Not applicable"^^xsd:string ;
+    ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000401> ;
+    
+    dcat:version "0.1.0"^^xsd:string ;
+    
+    
+    
+    
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    ftr:status "Active"@en ;
+     
+    
+    
+    ftr:scoringFunction <https://docs.google.com/spreadsheets/d/1As4dI8F2wbUNe5R4f8Y9PICaarpv5hS4wyCrrmHbm9k/edit?usp=sharing> ;
+    
+    
+    ftr:supportedBy <https://w3id.org/FAIR-Champion> ;
+    dpv:IsApplicableFor <https://vocabularies.coar-repositories.org/resource_types/c_1843/>;
+
+    
+    
+    
+    
+    dcterms:creator <https://fairsharing.org/organisations/2281> ;
+
+
+    
+    
+    
+    
+    
+    
+    dcterms:publisher  <https://orcid.org/0000-0002-7702-4495> ,  <https://orcid.org/0009-0000-4679-676X>  ; 
+    dcat:contactPoint  <https://orcid.org/0000-0002-7702-4495> ,  <https://orcid.org/0009-0000-4679-676X>  . 
+
+
+
+
+<https://fairsharing.org/organisations/2281> a vcard:Organisation ;
+    vcard:organisation-name "Oxford e-Research Centre, Department of Engineering Science, University of Oxford, Oxford, UK"^^xsd:string .
+
+<https://orcid.org/0000-0002-7702-4495> a vcard:Individual, foaf:Agent ;
+    vcard:fn "Allyson Lister"^^xsd:string ;
+    vcard:hasEmail <mailto:allyson.lister@oerc.ox.ac.uk> .
+    
+
+  
+<https://orcid.org/0009-0000-4679-676X> a vcard:Individual, foaf:Agent ;
+    vcard:fn "David Tomkins"^^xsd:string ;
+    vcard:hasEmail <mailto:david.tomkins@eng.ox.ac.uk> .
+    
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F2_FS_DiscoveryFields.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric - F2 - Metadata - Registry metadata fields for resource discovery"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F2_FS_DiscoveryFields.ttl"^^xsd:string .
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F4_FS_ProvidesMachineSearch.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric - F4 - Metadata - Resource provides machine search interface"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F4_FS_ProvidesMachineSearch.ttl"^^xsd:string .
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F4_FS_HasFAIRsharingRecord.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric - F4 - Metadata - Resource has a FAIRsharing record"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F4_FS_HasFAIRsharingRecord.ttl"^^xsd:string .
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_A2_FS_DbPreservation.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric - A2 - Metadata - Database declares preservation policy (registry evaluation)"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_A2_FS_DbPreservation.ttl"^^xsd:string .
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_A2_FS_DbSustainability.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric - A2 - Metadata - Database declares sustainability plan (registry evaluation)"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_A2_FS_DbSustainability.ttl"^^xsd:string .
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I3_FS_MachineDownload.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric - I3 - Metadata - Resource allows content download by machines"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I3_FS_MachineDownload.ttl"^^xsd:string .
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.1_FS_UsageLicence.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric - R1.1 - Metadata - Resource declares a usage licence"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.1_FS_UsageLicence.ttl"^^xsd:string .
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.2_FS_FundingOrganisation.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric - R1.2 - Metadata - Resource declares funding organisations"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.2_FS_FundingOrganisation.ttl"^^xsd:string .
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.2_FS_FundingGrant.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric - R1.2 - Metadata - Resource declares grants linked to funding organisations"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.2_FS_FundingGrant.ttl"^^xsd:string .
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.3_FS_CommunityStandards.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric - R1.3 - Metadata - Resource adopts community-relevant terminologies or models/formats"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.3_FS_CommunityStandards.ttl"^^xsd:string .
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.3_FS_AnyStandards.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric - R1.3 - Metadata - Resource adopts one or more community or general standards"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.3_FS_AnyStandards.ttl"^^xsd:string .
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.3_FS_HelpDocumentation.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric - R1.3 - Metadata - Resource provides support through user-facing help documentation"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.3_FS_HelpDocumentation.ttl"^^xsd:string .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<https://docs.google.com/spreadsheets/d/1As4dI8F2wbUNe5R4f8Y9PICaarpv5hS4wyCrrmHbm9k/edit?usp=sharing> a sio:SIO_000090 .
+
+
+
+
+
