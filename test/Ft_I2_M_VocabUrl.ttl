@@ -34,6 +34,9 @@
     
     dcat:version "1.0.0"^^xsd:string ;
     
+    
+    
+    
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     ftr:status "Active"@en ;
      
@@ -44,11 +47,18 @@
     ftr:supportedBy <https://tools.ostrails.eu/champion>; 
     
     dpv:IsApplicableFor <https://vocabularies.coar-repositories.org/resource_types/c_1843/>;
-    dcterms:creator <https://fairsharing.org/organisations/2281>; 
+
     
     
     
-    sio:SIO_000233 <https://w3id.org/fair-metrics/general/FM_I2_M_FAIRVocabSyntax> ;
+    
+    dcterms:creator <https://fairsharing.org/organisations/2281> ;
+
+
+    
+    
+    
+    sio:SIO_000233 <https://w3id.org/fair-metrics/general/FM_I2_M_ResolvabilityOfValues> ;
     
     
     
@@ -66,9 +76,11 @@
     vcard:hasEmail <mailto:milo.thurston@oerc.ox.ac.uk> .
     
 
-<https://w3id.org/fair-metrics/general/FM_I2_M_FAIRVocabSyntax> a dqv:Metric, ftr:Metric, dcat:Resource;
-    rdfs:label "FAIR Metric – I2 – Metadata - uses FAIR vocabularies (syntactic)"^^xsd:string ;
-    dcterms:identifier "https://w3id.org/fair-metrics/general/FM_I2_M_FAIRVocabSyntax"^^xsd:string .
+<https://w3id.org/fair-metrics/general/FM_I2_M_ResolvabilityOfValues> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – I2 – Metadata - Resolvability of metadata values"^^xsd:string ;
+    dcterms:identifier "https://w3id.org/fair-metrics/general/FM_I2_M_ResolvabilityOfValues"^^xsd:string .
+
+
 
 
 
