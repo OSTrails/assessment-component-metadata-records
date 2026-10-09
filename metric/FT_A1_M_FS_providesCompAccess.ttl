@@ -34,6 +34,9 @@
     
     dcat:version "1.0.0"^^xsd:string ;
     
+    
+    
+    
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     ftr:status "Active"@en ;
      
@@ -44,7 +47,14 @@
     ftr:supportedBy <https://tools.ostrails.eu/champion>; 
     
     dpv:IsApplicableFor <https://vocabularies.coar-repositories.org/resource_types/c_1843/>;
-    dcterms:creator <https://fairsharing.org/organisations/2281>; 
+
+    
+    
+    
+    
+    dcterms:creator <https://fairsharing.org/organisations/2281> ;
+
+
     
     
     
@@ -68,6 +78,8 @@
 <https://ostrails.github.io/assessment-component-metadata-records/metric/FM_A1_FS_ProvidesCompAccess.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
     rdfs:label "FAIR Metric - A1 - Metadata - Resource provides computational access"^^xsd:string ;
     dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_A1_FS_ProvidesCompAccess.ttl"^^xsd:string .
+
+
 
 
 
