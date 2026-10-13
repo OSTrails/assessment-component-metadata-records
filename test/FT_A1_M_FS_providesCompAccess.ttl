@@ -34,7 +34,10 @@
     
     dcat:version "1.0.0"^^xsd:string ;
     
-    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    
+    
+    
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     ftr:status "Active"@en ;
      
     dcat:endpointURL <https://fair-tests.fairsharing.org/test/ft_a1_m_fs_provides_comp_access> ;
@@ -44,11 +47,18 @@
     ftr:supportedBy <https://tools.ostrails.eu/champion>; 
     
     dpv:IsApplicableFor <https://vocabularies.coar-repositories.org/resource_types/c_1843/>;
-    dcterms:creator <https://fairsharing.org/organisations/2281>; 
+
     
     
     
-    sio:SIO_000233 <https://ostrails.github.io/assessment-component-metadata-records/metric/FM_A1_M_FS_providesCompAccess.ttl> ;
+    
+    dcterms:creator <https://fairsharing.org/organisations/2281> ;
+
+
+    
+    
+    
+    sio:SIO_000233 <https://ostrails.github.io/assessment-component-metadata-records/metric/FM_A1_FS_ProvidesCompAccess.ttl> ;
     
     
     
@@ -66,9 +76,11 @@
     vcard:hasEmail <mailto:milo.thurston@oerc.ox.ac.uk> .
     
 
-<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_A1_M_FS_providesCompAccess.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
-    rdfs:label "FAIR Metric - A1 - provides computational access"^^xsd:string ;
-    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_A1_M_FS_providesCompAccess.ttl"^^xsd:string .
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_A1_FS_ProvidesCompAccess.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric - A1 - Metadata - Resource provides computational access"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_A1_FS_ProvidesCompAccess.ttl"^^xsd:string .
+
+
 
 
 
