@@ -22,7 +22,7 @@
     dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F2B_M_GM_CESSDA.ttl"^^xsd:string ;
     rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F2B_M_GM_CESSDA.ttl"^^xsd:anyURI ;
     dcat:landingPage "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F2B_M_GM_CESSDA.ttl"^^xsd:anyURI ;
-    dcterms:title "FAIR Metric– record contains metadata that is grounded in a standard vocabulary"^^xsd:string ;
+    dcterms:title "FAIR Metric - F2B - Metadata - record contains metadata that is grounded in a standard vocabulary"^^xsd:string ;
     rdfs:label "FM_F2B_M_GM_CESSDA"^^xsd:string ;
     vivo:abbreviation "FM_F2B_M_GM_CESSDA"^^xsd:string ;
     dcterms:description """```
