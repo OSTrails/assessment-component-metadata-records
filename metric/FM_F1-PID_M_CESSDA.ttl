@@ -11,28 +11,48 @@
 @prefix dpv: <https://w3id.org/dpv#> .
 @prefix sio: <http://semanticscience.org/resource/> .
 @prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix schema: <http://schema.org/> .
+
+
+
+
+
 
 <https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F1-PID_M_CESSDA.ttl> a ftr:Metric, dqv:Metric, dcat:Resource ;
     dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F1-PID_M_CESSDA.ttl"^^xsd:string ;
+    rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F1-PID_M_CESSDA.ttl"^^xsd:anyURI ;
+    dcat:landingPage "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F1-PID_M_CESSDA.ttl"^^xsd:anyURI ;
     dcterms:title "FAIR Metric– F1-PID – Metadata - Identifiers use ARK, DOI, HANDLE or URN PID schemas"^^xsd:string ;
     rdfs:label "FM_F1-PID_M_CESSDA"^^xsd:string ;
     vivo:abbreviation "FM_F1-PID_M_CESSDA"^^xsd:string ;
     dcterms:description """Evaluates a metadata record for the presence of an ID using an approved schema (CESSDA requires the use of ARK, DOI, HANDLE or URN PID schemas. Other schemas are considered invalid)."""^^xsd:string ;
     dcat:keyword "FAIR"^^xsd:string ;
+    schema:about "Not applicable"^^xsd:string ;
     ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000002> ;
     ftr:inDimension <https://doi.org/10.25504/FAIRsharing.e226cb> ;
     dcat:version "1.0.0"^^xsd:string ;
     
-    dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
+    
+    
+    
+    
     ftr:status "Active"@en ;
+     
     
     
     
     
     
-    
+    ftr:supportedBy <https://w3id.org/FAIR-Champion> ;
     dpv:IsApplicableFor <https://schema.org/Dataset>;
-    dcterms:creator <https://ror.org/02wg9xc72>; 
+
+    
+    
+    
+    
+    dcterms:creator <https://ror.org/02wg9xc72> ;
+
+
     
     
     
@@ -43,6 +63,8 @@
     dcat:contactPoint  <https://orcid.org/0000-0002-4402-9644>  . 
 
 
+
+
 <https://ror.org/02wg9xc72> a vcard:Organisation ;
     vcard:organisation-name "Consortium of European Social Science Data Archives"^^xsd:string .
 
@@ -50,6 +72,10 @@
     vcard:fn "John Shepherdson"^^xsd:string ;
     vcard:hasEmail <mailto:john.shepherdson@cessda.eu> .
     
+
+
+
+
 
 
 
