@@ -22,7 +22,7 @@
     dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I2A_M_FV.ttl"^^xsd:string ;
     rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I2A_M_FV.ttl"^^xsd:anyURI ;
     dcat:landingPage "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I2A_M_FV.ttl"^^xsd:anyURI ;
-    dcterms:title "FAIR Metric - record contains resolvable semantic vocabulary URIs"^^xsd:string ;
+    dcterms:title "FAIR Metric - I2A - Metadata - record contains resolvable semantic vocabulary URIs"^^xsd:string ;
     rdfs:label "FM_I2A_M_FV"^^xsd:string ;
     vivo:abbreviation "FM_I2A_M_FV"^^xsd:string ;
     dcterms:description """```
