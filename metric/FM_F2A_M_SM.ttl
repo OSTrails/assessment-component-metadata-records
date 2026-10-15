@@ -31,7 +31,7 @@ Checks if the document uses a supported namespace by examining the namespace URI
 
 """^^xsd:string ;
     dcat:keyword "FAIR"^^xsd:string ;
-    
+    schema:about "Not applicable"^^xsd:string ;
     ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000002> ;
     ftr:inDimension <https://w3id.org/fair/principles/terms/F2> ;
     dcat:version "1.0.0"^^xsd:string ;
