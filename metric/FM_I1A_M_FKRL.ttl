@@ -22,7 +22,7 @@
     dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I1A_M_FKRL.ttl"^^xsd:string ;
     rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I1A_M_FKRL.ttl"^^xsd:anyURI ;
     dcat:landingPage "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I1A_M_FKRL.ttl"^^xsd:anyURI ;
-    dcterms:title "FAIR Metric - record contains metadata that is expressed in a formal language (weak variant)."^^xsd:string ;
+    dcterms:title "FAIR Metric - I1A - Metadata - record contains metadata that is expressed in a formal language (weak variant)."^^xsd:string ;
     rdfs:label "FM_I1A_M_FKRL"^^xsd:string ;
     vivo:abbreviation "FM_I1A_M_FKRL"^^xsd:string ;
     dcterms:description """```
