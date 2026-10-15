@@ -27,12 +27,15 @@
     vivo:abbreviation "FM_Gen2-MI-I2A_M_DSPV"^^xsd:string ;
     dcterms:description """Checks whether a record uses DDI Sampling Procedure controlled vocabulary. The test examines sampProc (sampling procedure) elements in the data collection method section (/codeBook/stdyDscr/method/dataColl/sampProc) of DDI 2.5 metadata."""^^xsd:string ;
     dcat:keyword "FAIR"^^xsd:string ;
-    
+    schema:about "Not applicable"^^xsd:string ;
     ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000002> ;
     
     dcat:version "1.0.1"^^xsd:string ;
     adms:versionNotes "FM_Gen2-MI-I2A_M_DSPV"^^xsd:string ;
-    dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
+    
+    
+    
+    
     ftr:status "Active"@en ;
      
     dcat:endpointURL <https://fair-tests.cessda.eu/assess/test/ddi-sampleproc> ;
@@ -42,19 +45,23 @@
     ftr:supportedBy <https://tools.ostrails.eu/champion/>; 
     
     dpv:IsApplicableFor <https://schema.org/Dataset>;
-    dcterms:creator <https://ror.org/02wg9xc72>; 
+
     
     
     
-    sio:SIO_000233 <https://github.com/FAIRMetrics/Metrics/blob/master/MaturityIndicators/Gen2/Gen2_MI_F1B.md> ;
     
-  
-    sio:SIO_000233 <https://doi.org/10.25504/FAIRsharing.59ad4f> ;
+    dcterms:creator <https://ror.org/02wg9xc72> ;
+
+
     
     
     
-    dcterms:publisher  <https://orcid.org/000-0002-4402-9644>  ; 
-    dcat:contactPoint  <https://orcid.org/000-0002-4402-9644>  . 
+    sio:SIO_000233 <https://ostrails.github.io/assessment-component-metadata-records/metric/FM_Gen2-MI-I2A_M_DSPV.ttl> ;
+    
+    
+    
+    dcterms:publisher  <https://orcid.org/0000-0002-4402-9644>  ; 
+    dcat:contactPoint  <https://orcid.org/0000-0002-4402-9644>  . 
 
 
 
@@ -62,33 +69,14 @@
 <https://ror.org/02wg9xc72> a vcard:Organisation ;
     vcard:organisation-name "Consortium of European Social Science Data Archives"^^xsd:string .
 
-<https://orcid.org/000-0002-4402-9644> a vcard:Individual, foaf:Agent ;
+<https://orcid.org/0000-0002-4402-9644> a vcard:Individual, foaf:Agent ;
     vcard:fn "John Shepherdson"^^xsd:string ;
     vcard:hasEmail <mailto:john.shepherdson@cessda.eu> .
     
 
-<https://github.com/FAIRMetrics/Metrics/blob/master/MaturityIndicators/Gen2/Gen2_MI_F1B.md> a dqv:Metric, ftr:Metric, dcat:Resource;
-    rdfs:label "No name defined"^^xsd:string ;
-    dcterms:identifier "https://github.com/FAIRMetrics/Metrics/blob/master/MaturityIndicators/Gen2/Gen2_MI_F1B.md"^^xsd:string .
-
-<https://doi.org/10.25504/FAIRsharing.59ad4f> a dqv:Metric, ftr:Metric, dcat:Resource;
-    rdfs:label "No name defined"^^xsd:string ;
-    dcterms:identifier "https://doi.org/10.25504/FAIRsharing.59ad4f"^^xsd:string .
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_Gen2-MI-I2A_M_DSPV.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric - I2A - Metadata - record uses DDI Sampling Procedure Vocabulary"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_Gen2-MI-I2A_M_DSPV.ttl"^^xsd:string .
 
 
 
