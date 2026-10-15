@@ -133,6 +133,13 @@
     rdfs:label "FAIR Metric - I2A - Metadata - record contains resolvable semantic vocabulary URIs"^^xsd:string ;
     dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_I2A_M_FV.ttl"^^xsd:string .
 
+<https://github.com/FAIRMetrics/Metrics/blob/master/MaturityIndicators/Gen2/Gen2_MI_F3.md> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric - FAIR Maturity Indicator - Use of GUIDs in metadata - Gen2-MI-F3"^^xsd:string ;
+    dcterms:identifier "https://github.com/FAIRMetrics/Metrics/blob/master/MaturityIndicators/Gen2/Gen2_MI_F3.md"^^xsd:string .
+
+
+
+
 
 
 
