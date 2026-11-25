@@ -13,7 +13,7 @@
 @prefix adms: <http://www.w3.org/ns/adms#> .
 @prefix schema: <http://schema.org/> .
 
-<https://ostrails.github.io/assessment-component-metadata-records/benchmark/germplasm-dot-net-onboard.tt> 
+<https://ostrails.github.io/assessment-component-metadata-records/benchmark/germplasm-dot-net-onboard.ttl> 
 a dcat:DataService,  ftr:Benchmark ;
     dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/benchmark/germplasm-dot-net-onboard.ttl"^^xsd:string ;
     rdfs:definedBy "https://ostrails.github.io/assessment-component-metadata-records/benchmark/germplasm-dot-net-onboard.ttl"^^xsd:string ;
