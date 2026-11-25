@@ -1,0 +1,206 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ftr: <https://w3id.org/ftr#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+@prefix dpv: <https://w3id.org/dpv#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix schema: <http://schema.org/> .
+
+
+
+
+
+
+<https://ostrails.github.io/assessment-component-metadata-records/benchmark/FAT-DMP.ttl> a ftr:Benchmark, dcat:Resource ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/benchmark/FAT-DMP.ttl"^^xsd:string ;
+    rdfs:isDefinedBy "https://ostrails.github.io/assessment-component-metadata-records/benchmark/FAT-DMP.ttl"^^xsd:anyURI ;
+    dcat:landingPage "https://ostrails.github.io/assessment-component-metadata-records/benchmark/FAT-DMP.ttl"^^xsd:anyURI ;
+    dcterms:title "FAIR Assessment Tool for DMPs (TU-NET) "^^xsd:string ;
+    rdfs:label "FAT-DMP"^^xsd:string ;
+    vivo:abbreviation "FAT-DMP"^^xsd:string ;
+    dcterms:description """
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| The FAT-DMP (TU-NET) benchmark determine the FAIRness of DMPs produced by researchers within the Technology University Network (TU-NET) in Ireland; some test use FAIRsharing metadata while others examine the DMP metadata directly. TU-NET is a network for the Irish Technological Universities to share expertise, information and resources where possible across the research landscape, with an emphasis on Open Research.<br>This benchmark is of primary utility for researchers and data managers within the TU-NET community, including those in RDM support roles who may utilise scores derived from the benchmark to assess compliance with institutional Open Research policies and/or opportunities for researcher CPD/RDM skills development.<br>This benchmark enables the FAIR assessment of DMPs for research projects published via Zenodo, using metadata associated with the DMP itself (as distinct from the datasets described therein), with the aim of promoting a minimum standard of FAIRness in line with TU-NET's dedication to the values of openness, transparency, and research integrity. While provisions for DMPs containing proprietary information will be required, with embargos placed on DMPs when necessary, the FAIR benchmark will be applicable to all DMPs.<br> The FAIR assessment of DMPs will promote and encourage the publication of DMPs as outputs, in and of themselves, as well as promote a continual culture of Open Research across the data lifecycle. |
+
+
+"""^^xsd:string ;
+    dcat:keyword "FAIR"^^xsd:string, "Data Management Plan (DMP)"^^xsd:string ;
+    schema:about "All"^^xsd:string ;
+    ftr:applicationArea <http://www.fairsharing.org/ontology/subject/SRAO_0000401> ;
+    
+    dcat:version "0.2.0"^^xsd:string ;
+    
+    
+    
+    
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/>, <http://creativecommons.org/licenses/by/4.0/> ;
+    ftr:status "Active"@en ;
+     
+    
+    
+    
+    
+    
+    ftr:supportedBy <https://w3id.org/FAIR-Champion> ;
+    dpv:IsApplicableFor <https://vocabularies.coar-repositories.org/resource_types/c_ab20/>;
+
+    
+    
+    
+    
+    dcterms:creator <https://ror.org/04t0qbt32> ;
+
+
+    
+    
+    
+    
+    
+    
+    dcterms:publisher  <https://orcid.org/0009-0005-7386-0401> ,  <https://orcid.org/0000-0002-7642-5326>  ; 
+    dcat:contactPoint  <https://orcid.org/0009-0005-7386-0401> ,  <https://orcid.org/0000-0002-7642-5326>  . 
+
+
+
+
+<https://ror.org/04t0qbt32> a vcard:Organisation ;
+    vcard:organisation-name "Ollscoil Teicneolaíochta Bhaile Atha Cliath"^^xsd:string .
+
+<https://orcid.org/0009-0005-7386-0401> a vcard:Individual, foaf:Agent ;
+    vcard:fn "Sonja Francisco"^^xsd:string ;
+    vcard:hasEmail <mailto:sonja.francisco@tudublin.ie> .
+    
+
+  
+<https://orcid.org/0000-0002-7642-5326> a vcard:Individual, foaf:Agent ;
+    vcard:fn "Lindsay Dowling"^^xsd:string ;
+    vcard:hasEmail <mailto:lindsay.dowling@tudublin.ie> .
+    
+
+<https://w3id.org/fair-metrics/general/FM_F1_M_IdentUnique> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – F1 – Metadata - Identifier is globally unique"^^xsd:string ;
+    dcterms:identifier "https://w3id.org/fair-metrics/general/FM_F1_M_IdentUnique"^^xsd:string .
+
+<https://w3id.org/fair-metrics/general/FM_F1_M_IdentPersistent> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – F1 – Metadata - Identifier is persistent"^^xsd:string ;
+    dcterms:identifier "https://w3id.org/fair-metrics/general/FM_F1_M_IdentPersistent"^^xsd:string .
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F2_M_DiscoveryFields.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – F2 - Metadata – discovery-oriented metadata fields"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_F2_M_DiscoveryFields.ttl"^^xsd:string .
+
+<https://w3id.org/fair-metrics/general/FM_F3_M_MetaIdent> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – F3 – Metadata - includes its own identifier"^^xsd:string ;
+    dcterms:identifier "https://w3id.org/fair-metrics/general/FM_F3_M_MetaIdent"^^xsd:string .
+
+<https://w3id.org/fair-metrics/general/FM_F3_M_DataIdent> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – F3 – Metadata - include the identifier of the data it describes"^^xsd:string ;
+    dcterms:identifier "https://w3id.org/fair-metrics/general/FM_F3_M_DataIdent"^^xsd:string .
+
+<https://w3id.org/fair-metrics/general/FM_F4_M_MetaIndexed> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – F4 – Metadata - indexed in a searchable resource"^^xsd:string ;
+    dcterms:identifier "https://w3id.org/fair-metrics/general/FM_F4_M_MetaIndexed"^^xsd:string .
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_A1-1_M_HTTPSProt.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – A1.1 – Metadata - HTTP(S) retrieval protocol"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_A1-1_M_HTTPSProt.ttl"^^xsd:string .
+
+<https://w3id.org/fair-metrics/general/FM_A1-2_M_Auth> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – A1.2 – Metadata - retrieval protocol supports auth"^^xsd:string ;
+    dcterms:identifier "https://w3id.org/fair-metrics/general/FM_A1-2_M_Auth"^^xsd:string .
+
+<https://w3id.org/fair-metrics/general/FM_I1_M_FormLangSyntax> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – I1 – Metadata - Uses Knowledge representation language (syntactic)"^^xsd:string ;
+    dcterms:identifier "https://w3id.org/fair-metrics/general/FM_I1_M_FormLangSyntax"^^xsd:string .
+
+<https://w3id.org/fair-metrics/general/FM_I2_M_ResolvabilityOfTerms> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – I2 – Metadata - Resolvability of metadata terms"^^xsd:string ;
+    dcterms:identifier "https://w3id.org/fair-metrics/general/FM_I2_M_ResolvabilityOfTerms"^^xsd:string .
+
+<https://w3id.org/fair-metrics/general/FM_I2_M_ResolvabilityOfValues> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – I2 – Metadata - Resolvability of metadata values"^^xsd:string ;
+    dcterms:identifier "https://w3id.org/fair-metrics/general/FM_I2_M_ResolvabilityOfValues"^^xsd:string .
+
+<https://w3id.org/fair-metrics/general/FM_I3_M_QualRef> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric – I3 – Metadata - Contains Qualified Outward Links"^^xsd:string ;
+    dcterms:identifier "https://w3id.org/fair-metrics/general/FM_I3_M_QualRef"^^xsd:string .
+
+<https://w3id.org/fair-metrics/general/FM_R1-1_M_DbStdLic> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric - R1.1 - Metadata - Database-level licenses"^^xsd:string ;
+    dcterms:identifier "https://w3id.org/fair-metrics/general/FM_R1-1_M_DbStdLic"^^xsd:string .
+
+<https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.2_M_creatorORCID.ttl> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric - R1.2 - Metadata - Creator ORCIDs"^^xsd:string ;
+    dcterms:identifier "https://ostrails.github.io/assessment-component-metadata-records/metric/FM_R1.2_M_creatorORCID.ttl"^^xsd:string .
+
+<https://w3id.org/fair-metrics/esrf/FM_R1-2_M_Affil_ESRF> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric - R1.2 - Metadata - Author affiliation is defined in metadata"^^xsd:string ;
+    dcterms:identifier "https://w3id.org/fair-metrics/esrf/FM_R1-2_M_Affil_ESRF"^^xsd:string .
+
+<https://w3id.org/fair-metrics/esrf/FM_R1-2_M_Fund_ESRF> a dqv:Metric, ftr:Metric, dcat:Resource;
+    rdfs:label "FAIR Metric - R1.2 - Metadata - Funding information is defined in metadata"^^xsd:string ;
+    dcterms:identifier "https://w3id.org/fair-metrics/esrf/FM_R1-2_M_Fund_ESRF"^^xsd:string .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
